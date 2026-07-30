@@ -1,3 +1,58 @@
+/* === FACILITADOR SECTION === */
+.facilitador-section {
+  margin-bottom: var(--space-2xl);
+}
+.facilitador-section h2 {
+  font-family: var(--font-heading);
+  font-size: 1.5rem;
+  letter-spacing: -0.02em;
+  margin-bottom: var(--space-md);
+  padding-bottom: var(--space-sm);
+  border-bottom: 2px solid var(--accent-soft);
+}
+.facilitador-card {
+  padding: var(--space-lg);
+  border-radius: var(--radius-lg);
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  margin-bottom: var(--space-md);
+}
+.facilitador-card h3 {
+  font-family: var(--font-heading);
+  font-size: 1.2rem;
+  margin-bottom: var(--space-sm);
+  letter-spacing: -0.02em;
+}
+.facilitador-card ul {
+  padding-left: var(--space-lg);
+  display: grid;
+  gap: var(--space-sm);
+}
+.facilitador-card li {
+  list-style: disc;
+  font-size: 0.9375rem;
+  line-height: 1.7;
+  color: var(--color-text);
+}
+.facilitador-card p {
+  font-size: 0.9375rem;
+  line-height: 1.7;
+  color: var(--color-muted);
+}
+.dica {
+  background: var(--accent-soft);
+  border-color: var(--accent-border);
+  border-radius: var(--radius-md);
+  padding: var(--space-md);
+  font-size: 0.9rem;
+  display: flex;
+  gap: var(--space-sm);
+  align-items: flex-start;
+}
+.dica strong {
+  color: var(--accent-text);
+}
+
 /* === PAPÉIS DO GUIA === */
 .guia-papeis {
   display: grid;
@@ -124,17 +179,4 @@
 }
 .guia-situacao p { font-size: 0.9rem; color: var(--color-muted); }
 
-/* === CITAÇÃO === */
-.guia-citacao {
-  background: var(--accent-soft);
-  border-left: 4px solid var(--accent);
-  border-radius: var(--radius-md);
-  padding: var(--space-xl);
-  margin: var(--space-lg) 0;
-}
-.guia-citacao p {
-  font-size: 1.1rem;
-  font-style: italic;
-  color: var(--color-text);
-  max-width: 100%;
-}
+
