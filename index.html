@@ -12,10 +12,10 @@
   <a class="skip-link" href="#main">Ir para o conteúdo</a>
 
   <header class="site-header" role="banner">
-    <div class="header-inner">
-      <a href="index.html" class="logo" aria-label="Trilha de Novos — Voltar ao início">
+    <div class="container header-inner">
+      <a href="index.html" class="logo" aria-label="Trilha de Novos — Página inicial">
         Trilha de Novos
-        <span class="logo-sub">Comunidade Vitral</span>
+        <span>Comunidade Vitral</span>
       </a>
       <nav class="nav" role="navigation" aria-label="Navegação principal">
         <a href="index.html" class="active">Início</a>
@@ -26,48 +26,50 @@
   </header>
 
   <header class="mobile-header" role="banner">
-    <div class="header-inner">
-      <a href="index.html" class="logo">Trilha de Novos</a>
-      <nav class="mobile-nav" role="navigation" aria-label="Navegação principal">
-        <a href="index.html" class="active">Início</a>
-        <a href="guia.html">Guia</a>
-        <a href="complementar.html">Material</a>
-      </nav>
-    </div>
+    <nav class="mobile-nav" role="navigation" aria-label="Navegação principal">
+      <a href="index.html" class="active">Início</a>
+      <a href="guia.html">Guia</a>
+      <a href="complementar.html">Material</a>
+    </nav>
   </header>
 
   <main id="main">
-    <section class="hero">
-      <div class="etapa-badge">Estação 1 · Jornada do Discípulo</div>
-      <h1>Trilha de Novos</h1>
-      <p class="subtitle">9 encontros para descobrir quem você é em Deus e qual é o seu lugar na comunidade.</p>
-      <p style="color:var(--color-muted);max-width:600px;margin:0 auto var(--space-xl);">
-        A Trilha de Novos é o ponto de partida da Jornada do Discípulo na Comunidade Vitral.
-        Cada passo é um encontro para aprender, refletir e praticar — sempre em comunidade, no seu ritmo.
-      </p>
-      <a href="#passos" class="btn btn-primary">Conheça os Passos</a>
-    </section>
+    <div class="container">
+      <section class="hero">
+        <div class="etapa-badge">Estação 1 · Jornada do Discípulo</div>
+        <h1>Trilha de Novos</h1>
+        <p class="subtitle">9 encontros para descobrir quem você é em Deus e qual é o seu lugar na comunidade.</p>
+        <p style="color:var(--color-muted);max-width:600px;margin:0 auto var(--space-xl);">
+          A Trilha de Novos é o ponto de partida da Jornada do Discípulo na Comunidade Vitral.
+          Cada passo é um encontro para aprender, refletir e praticar — sempre em comunidade, no seu ritmo.
+        </p>
+        <a href="#passos" class="btn btn-primary">Conheça os Passos</a>
+      </section>
 
-    <section class="section" id="passos">
-      <h2 style="text-align:center;">Os 9 Passos</h2>
-      <p style="text-align:center;max-width:600px;margin:0 auto var(--space-lg);">
-        Cada passo é um encontro. Cada encontro é uma conversa. Cada conversa te aproxima de Deus e dos outros.
-      </p>
+      <section class="section" id="passos">
+        <h2 style="text-align:center;">Os 9 Passos</h2>
+        <p style="text-align:center;max-width:600px;margin:0 auto var(--space-lg);">
+          Cada passo é um encontro. Cada encontro é uma conversa. Cada conversa te aproxima de Deus e dos outros.
+        </p>
 
-      <div class="passos-grid" id="passos-grid"></div>
-    </section>
+        <div class="passos-grid" id="passos-grid"></div>
+      </section>
 
-    <section class="section" style="text-align:center;">
-      <h2>Pronto para começar?</h2>
-      <p style="max-width:500px;margin:0 auto var(--space-lg);">
-        A Trilha de Novos é vivida em pequenos grupos, com um guia e outras pessoas que também estão descobrindo seu lugar no vitral.
-      </p>
-      <a href="guia.html" class="btn btn-primary">Saiba mais sobre o Guia</a>
-    </section>
+      <section class="section" style="text-align:center;">
+        <h2>Pronto para começar?</h2>
+        <p style="max-width:500px;margin:0 auto var(--space-lg);">
+          A Trilha de Novos é vivida em pequenos grupos, com um guia e outras pessoas que também estão descobrindo seu lugar no vitral.
+        </p>
+        <a href="guia.html" class="btn btn-primary">Saiba mais sobre o Guia</a>
+      </section>
+    </div>
   </main>
 
-  <footer class="site-footer">
-    <p>Trilha de Novos · Comunidade Vitral — IPIB São José do Rio Preto</p>
+  <footer class="site-footer" role="contentinfo">
+    <div class="container footer-inner">
+      <strong>Trilha de Novos</strong>
+      <p>Comunidade Vitral · IPIB São José do Rio Preto</p>
+    </div>
   </footer>
 
   <script>
