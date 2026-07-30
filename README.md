@@ -30,6 +30,8 @@ trilha_de_novos/
 ├── apostilas/              # Apostilas .docx originais
 ├── docs/apostilas/         # Cópia para download via GitHub Pages
 ├── assets/                 # Imagens e recursos estáticos
+├── favicon.svg             # Favicon do site
+├── 404.html                # Página de erro 404 personalizada
 ├── openspec/               # Artefatos OpenSpec (proposal, specs, design, tasks)
 ├── CLAUDE.md               # Regras de Ouro + instruções para IA
 ├── CHANGELOG.md            # Histórico de versões
@@ -43,6 +45,7 @@ trilha_de_novos/
 | `index.html` | Hero, grid com os 9 passos, CTA para o Mapa |
 | `mapa.html` | Guia do facilitador: Seu Papel, Antes do Encontro, Estrutura, Roteiro, Perguntas, Validação, Situações, Cuidado, Checklist, Dica final |
 | `complementar.html` | 6 seções: App da Bíblia, Lectio 365, Devocionais, Podcasts, Playlists, OneYouVersion |
+| `404.html` | Página de erro personalizada com link de volta ao início |
 | `passo-1` a `passo-9` | Cada passo com 6 seções: Para Começar, Ferramentas, Ouça, Aprofunde, Pratique, Organize-se |
 
 ## Design System

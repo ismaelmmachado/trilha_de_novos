@@ -5,9 +5,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Material Complementar · Trilha de Novos</title>
   <meta name="description" content="Materiais complementares para aprofundar os temas da Trilha de Novos na Comunidade Vitral." />
+  <meta property="og:title" content="Material Complementar · Trilha de Novos" />
+  <meta property="og:description" content="Materiais complementares para aprofundar os temas da Trilha de Novos na Comunidade Vitral." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://ismaelmmachado.github.io/trilha_de_novos/complementar.html" />
+  <meta name="twitter:card" content="summary" />
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="css/tokens.css" />
   <link rel="stylesheet" href="css/estilo.css" />
   <link rel="stylesheet" href="css/complementar.css" />
+  <link rel="stylesheet" href="css/print.css" media="print" />
 </head>
 <body>
   <a class="skip-link" href="#main">Ir para o conteúdo</a>
@@ -30,7 +40,7 @@
     <nav class="mobile-nav" role="navigation" aria-label="Navegação principal">
       <a href="index.html">Início</a>
       <a href="mapa.html">Mapa</a>
-      <a href="complementar.html" class="active">Material</a>
+      <a href="complementar.html" class="active">Material Complementar</a>
     </nav>
   </header>
 
@@ -43,14 +53,10 @@
       </nav>
     </div>
 
-    <div class="container" style="padding:var(--space-xl) 0 var(--space-2xl);">
-      <div class="page-header" style="padding-top:0;border-bottom:none;">
-        <h1 style="font-family:var(--font-heading);font-size:clamp(2rem,4vw,3rem);letter-spacing:-0.03em;">
-          Material Complementar
-        </h1>
-        <p style="color:var(--color-muted);margin-top:var(--space-sm);font-size:1.1rem;max-width:640px;">
-          Recursos adicionais para aprofundar sua jornada na Trilha de Novos.
-        </p>
+    <div class="container complementar-main">
+      <div class="page-header complementar-header">
+        <h1>Material Complementar</h1>
+        <p class="complementar-subtitle">Recursos adicionais para aprofundar sua jornada na Trilha de Novos.</p>
       </div>
 
       <div class="complementar-grid">
@@ -62,14 +68,14 @@
                 <strong>O Deus que se Importa</strong>
                 <span>Autor a definir · Teologia do cuidado de Deus</span>
               </div>
-              <span class="comp-link" style="opacity:0.5">Em breve</span>
+              <span class="comp-link" class="comp-em-breve">Em breve</span>
             </div>
             <div class="comp-item">
               <div class="comp-item-info">
                 <strong>Discipulado: O Caminho do Seguidor de Cristo</strong>
                 <span>Autor a definir · Fundamentos do discipulado</span>
               </div>
-              <span class="comp-link" style="opacity:0.5">Em breve</span>
+              <span class="comp-link" class="comp-em-breve">Em breve</span>
             </div>
           </div>
         </div>
@@ -82,7 +88,7 @@
                 <strong>Praticando o Caminho</strong>
                 <span>Podcast oficial da jornada · Episódios semanais</span>
               </div>
-              <span class="comp-link" style="opacity:0.5">Em breve</span>
+              <span class="comp-link" class="comp-em-breve">Em breve</span>
             </div>
           </div>
         </div>
@@ -95,8 +101,8 @@
               <p class="podcast-convite">Aperte o play e venha caminhar conosco.</p>
             </div>
             <div class="podcast-card-actions">
-              <a class="comp-link podcast-link" href="https://open.spotify.com/show/1prjsrcxPho9otrP1VUWT4" target="_blank">🎧 Ouvir no Spotify</a>
-              <a class="comp-link podcast-link" href="https://www.spotify.com/download/" target="_blank">📲 Baixar o Spotify</a>
+              <a class="comp-link podcast-link" href="https://open.spotify.com/show/1prjsrcxPho9otrP1VUWT4" target="_blank" rel="noopener noreferrer">🎧 Ouvir no Spotify</a>
+              <a class="comp-link podcast-link" href="https://www.spotify.com/download/" target="_blank" rel="noopener noreferrer">📲 Baixar o Spotify</a>
             </div>
           </div>
         </div>
@@ -109,7 +115,7 @@
                 <strong>Playlists da Jornada</strong>
                 <span>Músicas que acompanham cada etapa do discipulado</span>
               </div>
-              <span class="comp-link" style="opacity:0.5">Em breve</span>
+              <span class="comp-link" class="comp-em-breve">Em breve</span>
             </div>
           </div>
         </div>
@@ -122,7 +128,7 @@
                 <strong>Diário de Bordo da Jornada</strong>
                 <span>PDF para download · Acompanhe seu progresso</span>
               </div>
-              <span class="comp-link" style="opacity:0.5">Em breve</span>
+              <span class="comp-link" class="comp-em-breve">Em breve</span>
             </div>
           </div>
         </div>
@@ -135,14 +141,14 @@
                 <strong>Bible App (YouVersion)</strong>
                 <span>A Bíblia no seu bolso, com centenas de versões, planos de leitura e devocionais. Siga a Comunidade Vitral e caminhe com outros aprendizes. 100% gratuito, sem anúncios.</span>
               </div>
-              <a class="comp-link" href="https://www.bible.com/organizations/79172d03-a943-4051-aebf-285b525546f1" target="_blank">Baixar</a>
+              <a class="comp-link" href="https://www.bible.com/organizations/79172d03-a943-4051-aebf-285b525546f1" target="_blank" rel="noopener noreferrer">Baixar</a>
             </div>
             <div class="comp-item">
               <div class="comp-item-info">
                 <strong>Lectio 365</strong>
                 <span>Um devocional diário em português que convida você a fazer uma pausa na presença de Deus. Ore com a Bíblia pela manhã, ao meio-dia e à noite. Leia ou ouça — onde estiver. Gratuito, criado pelo movimento 24-7 Prayer.</span>
               </div>
-              <a class="comp-link" href="https://lectio365.com/pt-br/o-aplicativo/" target="_blank">Baixar</a>
+              <a class="comp-link" href="https://lectio365.com/pt-br/o-aplicativo/" target="_blank" rel="noopener noreferrer">Baixar</a>
             </div>
           </div>
         </div>

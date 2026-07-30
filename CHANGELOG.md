@@ -1,5 +1,25 @@
 # Changelog
 
+## Tag: v2.8.0-revisao-geral (30/07/2026)
+
+- Adiciona `rel="noopener noreferrer"` em todos os links com `target="_blank"` (31 links em 12 arquivos)
+- Remove `@import` do Google Fonts de `tokens.css` e carrega via `<link>` no `<head>` para melhor performance
+- Adiciona favicon (`favicon.svg`) em todas as páginas
+- Adiciona Open Graph e Twitter Cards em todas as páginas
+- Remove todos os `style="..."` inline de `mapa.html` e `complementar.html`, migrando para classes CSS
+- Adiciona classes `.mapa-page-header`, `.mapa-subtitle`, `.mapa-dica-mt`, `.mapa-intro-mb`, `.mapa-intro-perguntas`, `.mapa-estrutura-h3`, `.mapa-dica-final` em `css/mapa.css`
+- Adiciona classes `.complementar-main`, `.complementar-header`, `.complementar-subtitle`, `.comp-em-breve` em `css/complementar.css`
+- Adiciona botão "voltar ao topo" fixo no `mapa.html`
+- Corrige nome "Material" → "Material Complementar" na nav mobile do `complementar.html`
+- Cria página `404.html` personalizada
+- Cria `css/print.css` com estilos de impressão
+- Atualiza `scripts/gerar-passos.js` com todas as melhorias de cabeçalho
+
+## Tag: v2.7.0-docs-changelog-readme (30/07/2026)
+
+- Cria `CHANGELOG.md` com histórico completo de versões
+- Cria `README.md` com documentação do projeto
+
 ## Tag: v2.6.0-mapa-secoes-restantes (30/07/2026)
 
 - Alinha visualmente as seções Estrutura, Situações, Cuidado com Quem Cuida e Checklist no `mapa.html` com o design de referência (`facilitador.html`)

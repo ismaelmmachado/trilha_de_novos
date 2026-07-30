@@ -104,7 +104,7 @@ function renderFerramentas() {
             <span>A Bíblia no seu bolso. Siga a Comunidade Vitral.</span>
           </div>
         </div>
-        <a class="ferramenta-link" href="https://www.bible.com/organizations/79172d03-a943-4051-aebf-285b525546f1" target="_blank">Baixar</a>
+        <a class="ferramenta-link" href="https://www.bible.com/organizations/79172d03-a943-4051-aebf-285b525546f1" target="_blank" rel="noopener noreferrer">Baixar</a>
       </div>
       <div class="ferramenta-item">
         <div class="ferramenta-item-content">
@@ -114,7 +114,7 @@ function renderFerramentas() {
             <span>Devocional diário em português. Ore com a Bíblia.</span>
           </div>
         </div>
-        <a class="ferramenta-link" href="https://lectio365.com/pt-br/o-aplicativo/" target="_blank">Baixar</a>
+        <a class="ferramenta-link" href="https://lectio365.com/pt-br/o-aplicativo/" target="_blank" rel="noopener noreferrer">Baixar</a>
       </div>
       <div class="ferramenta-item">
         <div class="ferramenta-item-content">
@@ -124,7 +124,7 @@ function renderFerramentas() {
             <span>Podcast da Comunidade Vitral para sua jornada.</span>
           </div>
         </div>
-        <a class="ferramenta-link" href="https://open.spotify.com/show/1prjsrcxPho9otrP1VUWT4" target="_blank">Ouvir</a>
+        <a class="ferramenta-link" href="https://open.spotify.com/show/1prjsrcxPho9otrP1VUWT4" target="_blank" rel="noopener noreferrer">Ouvir</a>
       </div>
     </div>
   </div>
@@ -249,8 +249,17 @@ function gerarPagina(passo) {
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>${passo.titulo} · Trilha de Novos</title>
   <meta name="description" content="${passo.resumo}" />
-  <link rel="stylesheet" href="css/tokens.css" />
+  <meta property="og:title" content="${passo.titulo} · Trilha de Novos" />
+  <meta property="og:description" content="${passo.resumo}" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://ismaelmmachado.github.io/trilha_de_novos/passo-${passo.id}.html" />
+  <meta name="twitter:card" content="summary" />
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="css/estilo.css" />
+  <link rel="stylesheet" href="css/print.css" media="print" />
 </head>
 <body>
   <a class="skip-link" href="#main">Ir para o conteúdo</a>

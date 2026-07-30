@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-etapa="1">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Página não encontrada · Trilha de Novos</title>
+  <meta name="description" content="Página não encontrada." />
+  <meta property="og:title" content="Página não encontrada · Trilha de Novos" />
+  <meta property="og:type" content="website" />
+  <meta name="twitter:card" content="summary" />
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/tokens.css" />
+  <link rel="stylesheet" href="css/estilo.css" />
+  <style>
+    .error-page {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      min-height: 60vh;
+      padding: var(--space-3xl) 0;
+    }
+    .error-page h1 {
+      font-family: var(--font-heading);
+      font-size: clamp(4rem, 10vw, 8rem);
+      letter-spacing: -0.04em;
+      line-height: 1;
+      background: var(--accent-gradient);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      margin-bottom: var(--space-md);
+    }
+    .error-page p {
+      font-size: 1.1rem;
+      color: var(--color-muted);
+      max-width: 400px;
+      margin-bottom: var(--space-xl);
+      line-height: 1.7;
+    }
+  </style>
+</head>
+<body>
+  <a class="skip-link" href="#main">Ir para o conteúdo</a>
+
+  <header class="site-header" role="banner">
+    <div class="container header-inner">
+      <a href="index.html" class="logo" aria-label="Trilha de Novos — Página inicial">
+        Trilha de Novos
+        <span>Comunidade Vitral</span>
+      </a>
+      <nav class="nav" role="navigation" aria-label="Navegação principal">
+        <a href="index.html">Início</a>
+        <a href="mapa.html">Mapa</a>
+        <a href="complementar.html">Material Complementar</a>
+      </nav>
+    </div>
+  </header>
+
+  <header class="mobile-header" role="banner">
+    <nav class="mobile-nav" role="navigation" aria-label="Navegação principal">
+      <a href="index.html">Início</a>
+      <a href="mapa.html">Mapa</a>
+      <a href="complementar.html">Material Complementar</a>
+    </nav>
+  </header>
+
+  <main id="main">
+    <div class="container error-page">
+      <h1>404</h1>
+      <p>Parece que este caminho ainda não foi aberto. Que tal voltar ao começo?</p>
+      <a href="index.html" class="btn btn-primary">Voltar ao Início</a>
+    </div>
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="container footer-inner">
+      <strong>Trilha de Novos</strong>
+      <p>Comunidade Vitral · IPIB São José do Rio Preto</p>
+    </div>
+  </footer>
+</body>
+</html>
