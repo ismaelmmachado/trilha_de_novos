@@ -39,6 +39,16 @@
   line-height: 1.7;
   color: var(--color-muted);
 }
+details.mapa-card summary {
+  cursor: pointer;
+  font-weight: 600;
+}
+details.mapa-card summary::-webkit-details-marker {
+  color: var(--accent-text);
+}
+details.mapa-card[open] {
+  border-color: var(--accent-border);
+}
 .dica {
   background: var(--accent-soft);
   border-color: var(--accent-border);
