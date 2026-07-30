@@ -13,7 +13,7 @@ function renderHeader() {
     </a>
     <nav class="nav" role="navigation" aria-label="Navegação principal">
       <a href="index.html">Início</a>
-      <a href="guia.html">Guia</a>
+      <a href="mapa.html">Mapa</a>
       <a href="complementar.html">Material Complementar</a>
     </nav>
   </div>
@@ -22,7 +22,7 @@ function renderHeader() {
 <header class="mobile-header" role="banner">
   <nav class="mobile-nav" role="navigation" aria-label="Navegação principal">
     <a href="index.html">Início</a>
-    <a href="guia.html">Guia</a>
+    <a href="mapa.html">Mapa</a>
     <a href="complementar.html">Material</a>
   </nav>
 </header>`;
