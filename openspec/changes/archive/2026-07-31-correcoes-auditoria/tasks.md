@@ -22,7 +22,7 @@
 
 ## 4. Verificação
 
-- [ ] 4.1 Validar que todos os `href`/`src`/âncoras internas existem (link checker)
-- [ ] 4.2 Recalcular contraste das novas cores de botão (≥ 4.5:1)
-- [ ] 4.3 Conferir visual no navegador: pills "Em breve", nav mobile, back-to-top, 404, grid do index
-- [ ] 4.4 Revisar contra o checklist da Regra de Ouro (NVT, tom, sem jargões)
+- [x] 4.1 Validar que todos os `href`/`src`/âncoras internas existem (link checker)
+- [x] 4.2 Recalcular contraste das novas cores de botão (≥ 4.5:1)
+- [x] 4.3 Conferir visual no navegador: pills "Em breve", nav mobile, back-to-top, 404, grid do index
+- [x] 4.4 Revisar contra o checklist da Regra de Ouro (NVT, tom, sem jargões)

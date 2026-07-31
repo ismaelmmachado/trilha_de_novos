@@ -129,10 +129,27 @@ Porém, há **2 problemas críticos** (HTML inválido e gerador dessincronizado)
 
 ---
 
-## Próximos passos (a serem feitos depois desta auditoria)
+## Situação final
 
-1. Corrigir C1 e C2 (gerador + classes duplicadas).
-2. Corrigir I1 (contraste do botão), I2/I3 (navegação e aria-label padronizados).
-3. Regularizar o git (I4) e atualizar README/CHANGELOG (I5).
-4. Tratar os itens menores M1–M8.
-5. Revisar contra o checklist da Regra de Ouro (CLAUDE.md) antes de fechar.
+Todas as correções desta auditoria foram aplicadas e salvas. Segue o status por item:
+
+| Item | Correção | Versão |
+|---|---|---|
+| C1 (gerador sem `og:image`) | `og:image` adicionado ao template de `gerar-passos.js` + passos regeneradas | v2.10.0 |
+| C2 (pills `class` duplicado) | `class="comp-link comp-em-breve"` nas 5 pills de `complementar.html` | v2.10.0 |
+| I1 (contraste do botão) | Token `--accent-on-accent` (#422006) + fundo sólido `var(--accent)` (7.6:1) | v2.10.0 |
+| I2 (nav mobile inconsistente) | Label padronizado "Material Complementar" no gerador e em todas as páginas | v2.10.0 |
+| I3 (aria-label do logo) | Padronizado "Trilha de Novos — Voltar ao início" nas páginas estáticas | v2.10.0 |
+| I4 (estado do git) | `og-image.svg` commitado; apostilas movidas para `docs/apostilas/` e órfãos removidos do git | v2.10.0 |
+| I5 (README/CHANGELOG) | Estrutura de pastas e tags atualizadas; entradas v2.9.0 e v2.9.1 adicionadas | v2.10.0 |
+| M1 (estilos inline do index) | Movidos para classes em `css/estilo.css` (`.hero-intro`, `.section-title-center`, `.section-intro`, `.section-cta`) | v2.10.0 |
+| M2 (404 com `<style>` inline) | Estilo movido para `estilo.css` (classes `.error-page*`) + `print.css` adicionado | v2.10.0 |
+| M3 (back-to-top `href="#"`) | `href="#top"` com `id="top"` no body | v2.10.0 |
+| M4 (breadcrumb no `<main>`) | Breadcrumb do complementar movido para fora do `<main>` | v2.10.0 |
+| M5 (botão some na impressão) | Mantido oculto na impressão (decisão confirmada) | v2.10.0 |
+| M6 (citações divergentes da NVT) | 3 citações ajustadas ao texto literal da NVT em `dados/passos.json` | v2.10.0 |
+| M7 (index duplica dados) | `fetch('dados/passos.json')` com campo `descricao` | v2.10.0 |
+| M8 (processo OpenSpec) | Correções propostas em `correcoes-auditoria`; mudanças arquivadas e specs sincronizadas | v2.11.1 |
+| Cache (página sem estilo) | Cache-busting `?v=` nos CSS (13 páginas), fontes async com `<noscript>`, `.nojekyll` | v2.11.0 |
+
+Verificações finais executadas: link checker interno, contraste recalculado (≥ 4.5:1), visual conferido no navegador (desktop e mobile, 13/13 páginas) e revisão contra o checklist da Regra de Ouro (NVT, tom acolhedor, sem jargões).
