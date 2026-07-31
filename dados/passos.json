@@ -31,7 +31,7 @@
         { "dia": "Dom", "texto": "Leia o documento \"VITRAL — Quem Somos e Como Caminhamos Juntos\"" }
       ]
     },
-    "pdf": "apostilas/doc_54a513f30643_VITRAL — Quem Somos e Como Caminhamos Juntos • v2.2.docx"
+    "pdf": "docs/apostilas/doc_54a513f30643_VITRAL — Quem Somos e Como Caminhamos Juntos • v2.2.docx"
   },
   {
     "id": 2,
@@ -65,7 +65,7 @@
         { "dia": "Dom", "texto": "Leia 1 Pedro 2.9-10 — \"Vocês são povo de Deus\"" }
       ]
     },
-    "pdf": "apostilas/doc_90cb69f68768_ESTAÇÃO 1 - PASSO 2 — QUEM SOMOS DIANTE DE DEUS.docx"
+    "pdf": "docs/apostilas/doc_90cb69f68768_ESTAÇÃO 1 - PASSO 2 — QUEM SOMOS DIANTE DE DEUS.docx"
   },
   {
     "id": 3,
@@ -99,7 +99,7 @@
         { "dia": "Dom", "texto": "Ore com suas próprias palavras: \"Senhor, eu confio em Ti.\"" }
       ]
     },
-    "pdf": "apostilas/doc_38f0c69bdd4f_ESTAÇÃO 1 - PASSO 3 — A SEGURANÇA DA FÉ.docx"
+    "pdf": "docs/apostilas/doc_38f0c69bdd4f_ESTAÇÃO 1 - PASSO 3 — A SEGURANÇA DA FÉ.docx"
   },
   {
     "id": 4,
@@ -133,7 +133,7 @@
         { "dia": "Dom", "texto": "Participe do Encontro e ore por alguém." }
       ]
     },
-    "pdf": "apostilas/doc_05b8304985f7_ESTAÇÃO 1 - PASSO 4 — O RITMO DA VIDA COM DEUS.docx"
+    "pdf": "docs/apostilas/doc_05b8304985f7_ESTAÇÃO 1 - PASSO 4 — O RITMO DA VIDA COM DEUS.docx"
   },
   {
     "id": 5,
@@ -167,7 +167,7 @@
         { "dia": "Dom", "texto": "Identifique seu limite: o que você NÃO pode fazer agora? E está tudo bem." }
       ]
     },
-    "pdf": "apostilas/doc_4bb8e863e609_ESTAÇÃO 1 - PASSO 5 — SEU LUGAR NO VITRAL.docx"
+    "pdf": "docs/apostilas/doc_4bb8e863e609_ESTAÇÃO 1 - PASSO 5 — SEU LUGAR NO VITRAL.docx"
   },
   {
     "id": 6,
@@ -201,7 +201,7 @@
         { "dia": "Dom", "texto": "Na Ceia, receba o pão e o vinho como presente, não como obrigação." }
       ]
     },
-    "pdf": "apostilas/doc_eb81d54f44c0_ESTAÇÃO 1 - PASSO 6 — OS SINAIS DA CAMINHADA.docx"
+    "pdf": "docs/apostilas/doc_eb81d54f44c0_ESTAÇÃO 1 - PASSO 6 — OS SINAIS DA CAMINHADA.docx"
   },
   {
     "id": 7,
@@ -235,7 +235,7 @@
         { "dia": "Dom", "texto": "Converse com seu acompanhante sobre o que está sentindo." }
       ]
     },
-    "pdf": "apostilas/doc_ba215c5fced2_ESTAÇÃO 1 - PASSO 7 — FAZER PARTE DA FAMÍLIA.docx"
+    "pdf": "docs/apostilas/doc_ba215c5fced2_ESTAÇÃO 1 - PASSO 7 — FAZER PARTE DA FAMÍLIA.docx"
   },
   {
     "id": 8,
@@ -269,7 +269,7 @@
         { "dia": "Dom", "texto": "Participe do Encontro e converse com seu acompanhante." }
       ]
     },
-    "pdf": "apostilas/doc_a049347c5f96_ESTAÇÃO 1 - PASSO 8 — CELEBRAÇÃO E ENVIO.docx"
+    "pdf": "docs/apostilas/doc_a049347c5f96_ESTAÇÃO 1 - PASSO 8 — CELEBRAÇÃO E ENVIO.docx"
   },
   {
     "id": 9,
@@ -303,6 +303,6 @@
         { "dia": "Dom", "texto": "Tome sua decisão. A mesa está posta. O vitral tem espaço para você." }
       ]
     },
-    "pdf": "apostilas/doc_56d1faf2a6ab_ESTAÇÃO 1 - PASSO 9 — PREPARAÇÃO PARA A MEMBRESIA.docx"
+    "pdf": "docs/apostilas/doc_56d1faf2a6ab_ESTAÇÃO 1 - PASSO 9 — PREPARAÇÃO PARA A MEMBRESIA.docx"
   }
 ]
