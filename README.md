@@ -64,11 +64,17 @@ node scripts/gerar-passos.js
 
 Gera os arquivos `passo-1.html` a `passo-9.html` a partir de `dados/passos.json`.
 
+> **Cache-busting:** todas as folhas de estilo são carregadas com `?v=<versão>`
+> (ex.: `css/estilo.css?v=2.10.0`) para forçar o navegador a baixar o CSS atualizado.
+> Ao lançar uma nova versão/tag, **suba o `?v=`** em todas as páginas (`index`,
+> `mapa`, `complementar`, `404`) e no `scripts/gerar-passos.js`, depois regenere as passos.
+> GitHub Pages não permite cabeçalhos `Cache-Control` personalizados — a query string é o mecanismo.
+
 ## Versionamento
 
 - **Branch ativa:** `homologacao`
 - **Branch de produção:** `main`
-- **Tags:** v1.0.0 a v2.10.0 (ver [CHANGELOG.md](CHANGELOG.md))
+- **Tags:** v1.0.0 a v2.11.0 (ver [CHANGELOG.md](CHANGELOG.md))
 - **GitHub Pages:** https://ismaelmmachado.github.io/trilha_de_novos
 
 ## Repositório

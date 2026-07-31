@@ -1,5 +1,12 @@
 # Changelog
 
+## Tag: v2.11.0-cache-bust (31/07/2026)
+
+- Adiciona cache-busting (`?v=2.10.0`) a todas as folhas de estilo (`tokens.css`, `estilo.css`, `mapa.css`, `complementar.css`, `print.css`) nas 13 páginas + gerador — força o navegador a baixar o CSS atualizado, corrigindo exibição sem estilo por cache antigo do GitHub Pages
+- Torna o carregamento do Google Fonts não-bloqueante (`media="print" onload="this.media='all'"` com fallback `<noscript>`) para evitar página presa em redes lentas/bloqueadas
+- Adiciona `.nojekyll` na raiz (desliga o processamento Jekyll do GitHub Pages)
+- Documenta a convenção de bump do `?v=` no README
+
 ## Tag: v2.10.0-correcoes-auditoria (31/07/2026)
 
 - Corrige atributo `class` duplicado nas 5 pills "Em breve" de `complementar.html`
