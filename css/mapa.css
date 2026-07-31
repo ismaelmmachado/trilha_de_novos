@@ -107,8 +107,8 @@ details.mapa-card[open] {
   width: 48px;
   height: 48px;
   border-radius: var(--radius-full);
-  background: var(--accent-gradient);
-  color: white;
+  background: var(--accent);
+  color: var(--accent-on-accent);
   display: flex;
   align-items: center;
   justify-content: center;

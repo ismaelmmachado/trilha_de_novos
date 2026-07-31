@@ -289,8 +289,8 @@ ul { list-style: none; }
   gap: var(--space-sm);
   padding: var(--space-sm) var(--space-lg);
   border-radius: var(--radius-full);
-  background: var(--accent-gradient);
-  color: white;
+  background: var(--accent);
+  color: var(--accent-on-accent);
   font-weight: 600;
   font-size: 0.9rem;
   min-height: 44px;
@@ -301,7 +301,7 @@ ul { list-style: none; }
 .download-btn:hover {
   transform: translateY(-2px);
   box-shadow: 0 6px 20px var(--accent-border);
-  color: white;
+  color: var(--accent-on-accent);
 }
 
 .download-icon { font-size: 1.1rem; font-weight: 700; }
@@ -551,15 +551,15 @@ ul { list-style: none; }
 }
 
 .btn-primary {
-  background: var(--accent-gradient);
-  color: white;
+  background: var(--accent);
+  color: var(--accent-on-accent);
   box-shadow: 0 4px 14px var(--accent-border);
 }
 
 .btn-primary:hover {
   transform: translateY(-2px);
   box-shadow: 0 6px 20px var(--accent-border);
-  color: white;
+  color: var(--accent-on-accent);
 }
 
 .btn-secondary {
@@ -656,6 +656,57 @@ ul { list-style: none; }
   color: var(--color-muted);
   max-width: var(--content-max);
   margin-bottom: var(--space-md);
+  line-height: 1.7;
+}
+
+/* === INDEX — LANDING === */
+.hero-intro {
+  color: var(--color-muted);
+  max-width: 600px;
+  margin: 0 auto var(--space-xl);
+}
+.section-title-center {
+  text-align: center;
+}
+.section-intro {
+  text-align: center;
+  max-width: 600px;
+  margin: 0 auto var(--space-lg);
+}
+.section-cta {
+  text-align: center;
+}
+.section-cta p {
+  max-width: 500px;
+  margin: 0 auto var(--space-lg);
+}
+
+/* === PÁGINA 404 === */
+.error-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  min-height: 60vh;
+  padding: var(--space-3xl) 0;
+}
+.error-page h1 {
+  font-family: var(--font-heading);
+  font-size: clamp(4rem, 10vw, 8rem);
+  letter-spacing: -0.04em;
+  line-height: 1;
+  background: var(--accent-gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: var(--space-md);
+}
+.error-page p {
+  font-size: 1.1rem;
+  color: var(--color-muted);
+  max-width: 400px;
+  margin-bottom: var(--space-xl);
   line-height: 1.7;
 }
 

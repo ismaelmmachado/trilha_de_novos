@@ -43,5 +43,6 @@
   --accent-border: rgba(234, 179, 8, 0.15);
   --accent-hover: rgba(234, 179, 8, 0.08);
   --accent-text: #92400E;
+  --accent-on-accent: #422006;
   --accent-gradient: linear-gradient(135deg, #EAB308, #854D0E);
 }

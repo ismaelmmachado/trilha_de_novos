@@ -27,10 +27,10 @@ trilha_de_novos/
 │   └── gerar-passos.js     # Gerador das páginas de passo
 ├── dados/
 │   └── passos.json         # Conteúdo dos 9 passos
-├── apostilas/              # Apostilas .docx originais
-├── docs/apostilas/         # Cópia para download via GitHub Pages
-├── assets/                 # Imagens e recursos estáticos
+├── docs/apostilas/         # Apostilas .docx originais (download via GitHub Pages)
+├── docs/auditoria-2026-07-31.md  # Relatório de auditoria do site
 ├── favicon.svg             # Favicon do site
+├── og-image.svg            # Imagem de compartilhamento (Open Graph)
 ├── 404.html                # Página de erro 404 personalizada
 ├── openspec/               # Artefatos OpenSpec (proposal, specs, design, tasks)
 ├── CLAUDE.md               # Regras de Ouro + instruções para IA
@@ -68,7 +68,7 @@ Gera os arquivos `passo-1.html` a `passo-9.html` a partir de `dados/passos.json`
 
 - **Branch ativa:** `homologacao`
 - **Branch de produção:** `main`
-- **Tags:** v1.0.0 a v2.6.0 (ver [CHANGELOG.md](CHANGELOG.md))
+- **Tags:** v1.0.0 a v2.10.0 (ver [CHANGELOG.md](CHANGELOG.md))
 - **GitHub Pages:** https://ismaelmmachado.github.io/trilha_de_novos
 
 ## Repositório

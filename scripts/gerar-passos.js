@@ -23,7 +23,7 @@ function renderHeader() {
   <nav class="mobile-nav" role="navigation" aria-label="Navegação principal">
     <a href="index.html">Início</a>
     <a href="mapa.html">Mapa</a>
-    <a href="complementar.html">Material</a>
+    <a href="complementar.html">Material Complementar</a>
   </nav>
 </header>`;
 }
@@ -253,6 +253,7 @@ function gerarPagina(passo) {
   <meta property="og:description" content="${passo.resumo}" />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://ismaelmmachado.github.io/trilha_de_novos/passo-${passo.id}.html" />
+  <meta property="og:image" content="https://ismaelmmachado.github.io/trilha_de_novos/og-image.svg" />
   <meta name="twitter:card" content="summary" />
   <link rel="icon" href="favicon.svg" type="image/svg+xml" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />

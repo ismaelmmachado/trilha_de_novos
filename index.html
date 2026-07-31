@@ -40,7 +40,7 @@
     <nav class="mobile-nav" role="navigation" aria-label="Navegação principal">
       <a href="index.html" class="active">Início</a>
       <a href="mapa.html">Mapa</a>
-      <a href="complementar.html">Material</a>
+      <a href="complementar.html">Material Complementar</a>
     </nav>
   </header>
 
@@ -50,7 +50,7 @@
         <div class="etapa-badge">Estação 1 · Jornada do Discípulo</div>
         <h1>Trilha de Novos</h1>
         <p class="subtitle">9 encontros para descobrir quem você é em Deus e qual é o seu lugar na comunidade.</p>
-        <p style="color:var(--color-muted);max-width:600px;margin:0 auto var(--space-xl);">
+        <p class="hero-intro">
           A Trilha de Novos é o ponto de partida da Jornada do Discípulo na Comunidade Vitral.
           Cada passo é um encontro para aprender, refletir e praticar — sempre em comunidade, no seu ritmo.
         </p>
@@ -58,17 +58,17 @@
       </section>
 
       <section class="section" id="passos">
-        <h2 style="text-align:center;">Os 9 Passos</h2>
-        <p style="text-align:center;max-width:600px;margin:0 auto var(--space-lg);">
+        <h2 class="section-title-center">Os 9 Passos</h2>
+        <p class="section-intro">
           Cada passo é um encontro. Cada encontro é uma conversa. Cada conversa te aproxima de Deus e dos outros.
         </p>
 
         <div class="passos-grid" id="passos-grid"></div>
       </section>
 
-      <section class="section" style="text-align:center;">
+      <section class="section section-cta">
         <h2>Pronto para começar?</h2>
-        <p style="max-width:500px;margin:0 auto var(--space-lg);">
+        <p>
           A Trilha de Novos é vivida em pequenos grupos, com um guia e outras pessoas que também estão descobrindo seu lugar no vitral.
         </p>
         <a href="mapa.html" class="btn btn-primary">Saiba mais sobre o Mapa</a>
@@ -84,31 +84,27 @@
   </footer>
 
   <script>
-    const passos = [
-      { id: 1, titulo: "Acolhimento e Identidade da Casa", descricao: "Conheça a história da Vitral: quem somos, por que existimos e qual é o nosso jeito de viver e receber." },
-      { id: 2, titulo: "Quem Somos Diante de Deus", descricao: "Descubra quem você é diante de Deus — sua identidade, suas marcas e o seu lugar na grande história." },
-      { id: 3, titulo: "A Segurança da Fé", descricao: "Entenda que a certeza da salvação não está em você — está em Deus. E aprenda a descansar na promessa." },
-      { id: 4, titulo: "O Ritmo da Vida com Deus", descricao: "Aprenda ferramentas simples para viver a fé no dia a dia: o C.A.F.É. e o G.A.P.I.S." },
-      { id: 5, titulo: "Seu Lugar no Vitral", descricao: "Descubra seus dons, seus limites e como servir sem se perder. Cada pessoa tem uma cor única no vitral." },
-      { id: 6, titulo: "Os Sinais da Caminhada", descricao: "Conheça o Batismo e a Ceia — o abraço de Deus antes do pedido e a mesa que continua posta." },
-      { id: 7, titulo: "Fazer Parte da Família", descricao: "Reflita sobre o que significa pertencer à Vitral e assumir um compromisso com a comunidade." },
-      { id: 8, titulo: "Celebração e Envio", descricao: "Olhe para trás com gratidão e para frente com esperança. Celebre o caminho percorrido." },
-      { id: 9, titulo: "Preparação para a Membresia", descricao: "Entenda a história da IPIB, os 5 Solas, o que significa ser Mordomo e o compromisso da Aliança." }
-    ];
-
     const grid = document.getElementById('passos-grid');
-    passos.forEach(p => {
-      const card = document.createElement('a');
-      card.href = `passo-${p.id}.html`;
-      card.className = 'passo-card';
-      card.innerHTML = `
-        <div class="passo-numero">${p.id}</div>
-        <h3>${p.titulo}</h3>
-        <p>${p.descricao}</p>
-        <span class="btn btn-outline">Abrir Passo</span>
-      `;
-      grid.appendChild(card);
-    });
+
+    fetch('dados/passos.json')
+      .then(res => res.json())
+      .then(passos => {
+        passos.forEach(p => {
+          const card = document.createElement('a');
+          card.href = `passo-${p.id}.html`;
+          card.className = 'passo-card';
+          card.innerHTML = `
+            <div class="passo-numero">${p.id}</div>
+            <h3>${p.titulo}</h3>
+            <p>${p.descricao}</p>
+            <span class="btn btn-outline">Abrir Passo</span>
+          `;
+          grid.appendChild(card);
+        });
+      })
+      .catch(err => {
+        grid.innerHTML = '<p>Não foi possível carregar os passos. Tente novamente mais tarde.</p>';
+      });
   </script>
 </body>
 </html>
