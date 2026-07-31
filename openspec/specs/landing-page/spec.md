@@ -26,12 +26,12 @@ A página inicial SHALL exibir cards para cada um dos 9 passos, cada um com tít
 
 ### Requirement: Navegação principal
 
-A página inicial SHALL incluir navegação para as páginas Guia e Material Complementar, tanto em desktop quanto mobile.
+A página inicial SHALL incluir navegação para as páginas Mapa e Material Complementar, tanto em desktop quanto mobile.
 
 #### Scenario: Navegação completa
 
 - **WHEN** o usuário acessa a página inicial
-- **THEN** o header contém links para "Início" (ativo), "Guia" e "Material Complementar"
+- **THEN** o header contém links para "Início" (ativo), "Mapa" e "Material Complementar"
 
 #### Scenario: Navegação mobile responsiva
 

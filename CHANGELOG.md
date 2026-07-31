@@ -1,5 +1,18 @@
 # Changelog
 
+## Tag: v2.11.2-docs (31/07/2026)
+
+- Renomeia a spec `guia-page` → `mapa-page` em `openspec/specs/` (pasta + conteúdo: `guia.html` → `mapa.html`, nav "Guia" → "Mapa", breadcrumb "Início / Mapa") — documentação alinhada à página real do site
+- Atualiza `complementar-page` e `landing-page`: link de navegação "Guia" → "Mapa"
+- Corrige `step-page-generator`: caminho de download `apostilas/` → `docs/apostilas/`
+- README: "Guia do facilitador" → "Orientação para facilitadores" e lista de tags até v2.11.2
+
+## Tag: v2.11.1-docs (31/07/2026)
+
+- Finaliza `docs/auditoria-2026-07-31.md` com seção "Situação final" (item → correção → versão)
+- Marca como concluídas as tasks 4.1–4.4 de `correcoes-auditoria` e as 14 tasks de `site-trilha-de-novos`
+- Arquivamento OpenSpec: `site-trilha-de-novos` (com sync das 5 specs principais em `openspec/specs/`) e `correcoes-auditoria` (skip_specs) movidos para `openspec/changes/archive/`
+
 ## Tag: v2.11.0-cache-bust (31/07/2026)
 
 - Adiciona cache-busting (`?v=2.10.0`) a todas as folhas de estilo (`tokens.css`, `estilo.css`, `mapa.css`, `complementar.css`, `print.css`) nas 13 páginas + gerador — força o navegador a baixar o CSS atualizado, corrigindo exibição sem estilo por cache antigo do GitHub Pages

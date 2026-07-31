@@ -22,5 +22,5 @@ A página SHALL incluir o mesmo header, navegação e breadcrumb das demais pág
 #### Scenario: Navegação consistente
 
 - **WHEN** o usuário acessa `complementar.html`
-- **THEN** o header tem links para Início, Guia e Material Complementar (destacado como página atual)
+- **THEN** o header tem links para Início, Mapa e Material Complementar (destacado como página atual)
 - **AND** o breadcrumb mostra "Início / Material Complementar"

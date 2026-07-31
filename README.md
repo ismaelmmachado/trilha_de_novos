@@ -43,7 +43,7 @@ trilha_de_novos/
 | Página | Conteúdo |
 |---|---|
 | `index.html` | Hero, grid com os 9 passos, CTA para o Mapa |
-| `mapa.html` | Guia do facilitador: Seu Papel, Antes do Encontro, Estrutura, Roteiro, Perguntas, Validação, Situações, Cuidado, Checklist, Dica final |
+| `mapa.html` | Orientação para facilitadores: Seu Papel, Antes do Encontro, Estrutura, Roteiro, Perguntas, Validação, Situações, Cuidado, Checklist, Dica final |
 | `complementar.html` | 6 seções: App da Bíblia, Lectio 365, Devocionais, Podcasts, Playlists, OneYouVersion |
 | `404.html` | Página de erro personalizada com link de volta ao início |
 | `passo-1` a `passo-9` | Cada passo com 6 seções: Para Começar, Ferramentas, Ouça, Aprofunde, Pratique, Organize-se |
@@ -74,7 +74,7 @@ Gera os arquivos `passo-1.html` a `passo-9.html` a partir de `dados/passos.json`
 
 - **Branch ativa:** `homologacao`
 - **Branch de produção:** `main`
-- **Tags:** v1.0.0 a v2.11.0 (ver [CHANGELOG.md](CHANGELOG.md))
+- **Tags:** v1.0.0 a v2.11.2 (ver [CHANGELOG.md](CHANGELOG.md))
 - **GitHub Pages:** https://ismaelmmachado.github.io/trilha_de_novos
 
 ## Repositório

@@ -63,7 +63,7 @@ Cada página de passo SHALL exibir um botão de download que referencie o arquiv
 #### Scenario: Botão de download
 
 - **WHEN** o usuário visualiza a seção "Para Começar"
-- **THEN** há um botão com classe `.download-btn` e fundo gradiente apontando para `apostilas/{arquivo}.docx`
+- **THEN** há um botão com classe `.download-btn` e fundo gradiente apontando para `docs/apostilas/{arquivo}.docx`
 
 ### Requirement: Grid semanal (Organize-se)
 
