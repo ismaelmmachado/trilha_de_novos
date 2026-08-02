@@ -46,3 +46,17 @@ A página SHALL incluir um skip link como primeiro elemento do `<body>` para nav
 
 - **WHEN** o usuário inspeciona o HTML da página
 - **THEN** o primeiro elemento após `<body>` é `<a class="skip-link" href="#main">Ir para o conteúdo</a>`
+
+### Requirement: aria-label do logo
+
+A página inicial SHALL usar o `aria-label` "Trilha de Novos — Página inicial" no logo. Nas demais páginas (mapa, complementar, 404 e passos), o logo usa "Trilha de Novos — Voltar ao início", pois nelas ele é um atalho de navegação para a home.
+
+#### Scenario: Label da home
+
+- **WHEN** o usuário inspeciona o logo do `index.html`
+- **THEN** o `aria-label` é "Trilha de Novos — Página inicial"
+
+#### Scenario: Label nas subpáginas
+
+- **WHEN** o usuário inspeciona o logo de `mapa.html`, `complementar.html`, `404.html` ou `passo-{N}.html`
+- **THEN** o `aria-label` é "Trilha de Novos — Voltar ao início"

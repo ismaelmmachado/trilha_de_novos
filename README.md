@@ -6,7 +6,7 @@ Site estático da Trilha de Novos, o programa de discipulado da [Comunidade Vitr
 
 - **HTML semântico** + **CSS puro** (sem frameworks, sem build)
 - **Design tokens** via CSS custom properties (`css/tokens.css`) — etapa 1 amarelo
-- **Componentes** em `css/estilo.css`, `css/mapa.css`, `css/complementar.css`
+- **Componentes** em `css/estilo.css`, `css/mapa.css`, `css/complementar.css`, `css/print.css`
 - **Gerador Node.js** (`scripts/gerar-passos.js`) que lê `dados/passos.json` e gera as 9 páginas de passo
 - **Zero dependências** — site 100% offline, servido via GitHub Pages
 
@@ -22,13 +22,15 @@ trilha_de_novos/
 │   ├── tokens.css          # Design tokens (cores, fontes, espaçamentos)
 │   ├── estilo.css          # Componentes globais
 │   ├── mapa.css            # Classes .mapa-* (facilitador)
-│   └── complementar.css    # Classes do material complementar
+│   ├── complementar.css    # Classes do material complementar
+│   └── print.css           # Estilos de impressão
 ├── scripts/
 │   └── gerar-passos.js     # Gerador das páginas de passo
 ├── dados/
 │   └── passos.json         # Conteúdo dos 9 passos
 ├── docs/apostilas/         # Apostilas .docx originais (download via GitHub Pages)
-├── docs/auditoria-2026-07-31.md  # Relatório de auditoria do site
+├── docs/auditoria-2026-07-31.md  # Relatório de auditoria do site (2026-07-31)
+├── docs/auditoria-2026-08-02.md  # Relatório de auditoria técnica (2026-08-02)
 ├── favicon.svg             # Favicon do site
 ├── og-image.svg            # Imagem de compartilhamento (Open Graph)
 ├── 404.html                # Página de erro 404 personalizada
@@ -42,7 +44,7 @@ trilha_de_novos/
 
 | Página | Conteúdo |
 |---|---|
-| `index.html` | Hero, grid com os 9 passos, CTA para o Mapa |
+| `index.html` | Hero, grid com os 9 passos (montado via `fetch('dados/passos.json')`), CTA para o Mapa |
 | `mapa.html` | Orientação para facilitadores: Seu Papel, Antes do Encontro, Estrutura, Roteiro, Perguntas, Validação, Situações, Cuidado, Checklist, Dica final |
 | `complementar.html` | 6 seções: App da Bíblia, Lectio 365, Devocionais, Podcasts, Playlists, OneYouVersion |
 | `404.html` | Página de erro personalizada com link de volta ao início |
@@ -66,15 +68,17 @@ Gera os arquivos `passo-1.html` a `passo-9.html` a partir de `dados/passos.json`
 
 > **Cache-busting:** todas as folhas de estilo são carregadas com `?v=<versão>`
 > (ex.: `css/estilo.css?v=2.10.0`) para forçar o navegador a baixar o CSS atualizado.
-> Ao lançar uma nova versão/tag, **suba o `?v=`** em todas as páginas (`index`,
-> `mapa`, `complementar`, `404`) e no `scripts/gerar-passos.js`, depois regenere as passos.
+> Ao alterar qualquer CSS (mudança em `tokens.css`, `estilo.css`, `mapa.css`,
+> `complementar.css` ou `print.css`), **suba o `?v=`** para a nova versão em todas as
+> páginas (`index`, `mapa`, `complementar`, `404`) e no `scripts/gerar-passos.js`,
+> depois regenere as passos. Tags de documentação pura não exigem bump.
 > GitHub Pages não permite cabeçalhos `Cache-Control` personalizados — a query string é o mecanismo.
 
 ## Versionamento
 
 - **Branch ativa:** `homologacao`
 - **Branch de produção:** `main`
-- **Tags:** v1.0.0 a v2.11.2 (ver [CHANGELOG.md](CHANGELOG.md))
+- **Tags:** v1.0.0 a v2.12.0 (ver [CHANGELOG.md](CHANGELOG.md))
 - **GitHub Pages:** https://ismaelmmachado.github.io/trilha_de_novos
 
 ## Repositório

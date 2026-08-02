@@ -1,5 +1,11 @@
 # Changelog
 
+## Tag: v2.12.0-auditoria-tecnica-2026-08-02 (02/08/2026)
+
+- Adiciona `docs/auditoria-2026-08-02.md` com auditoria técnica completa (somente leitura) do site — 0 críticos, 5 importantes (I1–I5), 8 menores (M1–M8); serve de roteiro para as próximas correções
+- Migra comandos `opsx-*` e skills `openspec-*` de `.opencode/` para o diretório global `/root/.opencode/` (6 comandos + 6 skills removidos do repo)
+- Atualiza `CLAUDE.md` para apontar para os comandos globais do OpenSpec
+
 ## Tag: v2.11.2-docs (31/07/2026)
 
 - Renomeia a spec `guia-page` → `mapa-page` em `openspec/specs/` (pasta + conteúdo: `guia.html` → `mapa.html`, nav "Guia" → "Mapa", breadcrumb "Início / Mapa") — documentação alinhada à página real do site

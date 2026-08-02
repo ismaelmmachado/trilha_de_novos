@@ -3,6 +3,15 @@ schema: spec-driven
 # Project context (optional)
 # This is shown to AI when creating artifacts.
 # Add your tech stack, conventions, style guides, domain knowledge, etc.
+context: |
+  Site estático da Trilha de Novos (Comunidade Vitral / IPIB) — programa de discipulado com 9 encontros.
+  Stack: HTML semântico + CSS puro (tokens em css/tokens.css), sem frameworks nem build.
+  Gerador Node.js (scripts/gerar-passos.js) lê dados/passos.json e gera passo-1..9.html.
+  Branch ativa: homologacao; produção: main. GitHub Pages (ismaelmmachado.github.io/trilha_de_novos).
+  Toda citação bíblica deve usar a NVT (Nova Versão Transformadora).
+  Conteúdo deve seguir a Regra de Ouro (CLAUDE.md): simples, missional, acolhedor, sem jargões,
+  coerente com o Playbook da Vitral. Convenção de cache-busting: subir o ?v= a cada mudança de CSS.
+  Versionamento semântico com tags; auditorias técnicas em docs/auditoria-*.md.
 # Example:
 #   context: |
 #     Tech stack: TypeScript, React, Node.js

@@ -8,7 +8,7 @@ Gerador de páginas estáticas que lê dados estruturados em JSON e produz arqui
 
 ### Requirement: Dados estruturados em JSON
 
-O sistema SHALL usar um arquivo `dados/passos.json` contendo dados de todos os 9 passos, com campos para título, subtítulo, resumo, seções (para-comecar, ferramentas, ouca, aprofunde, pratique, organize-se) e referência ao PDF da apostila.
+O sistema SHALL usar um arquivo `dados/passos.json` contendo dados de todos os 9 passos, com campos para título, subtítulo, resumo, seções (`para_comecar`, `ferramentas`, `ouca`, `aprofunde`, `pratique`, `organizese`) e referência ao PDF da apostila.
 
 #### Scenario: Arquivo passos.json válido
 
@@ -35,7 +35,7 @@ Cada página de passo SHALL conter exatamente 6 seções na seguinte ordem: Para
 
 ### Requirement: Placeholders para seções vazias
 
-Seções sem conteúdo preenchido SHALL exibir um placeholder visual indicando "Em breve" em vez de ficarem ocultas ou quebrarem o layout.
+O gerador SHALL ler os campos `ferramentas`, `ouca` e `aprofunde` de cada passo do JSON e renderizar as seções a partir desses dados. Seções sem conteúdo preenchido SHALL exibir um placeholder visual indicando "Em breve" em vez de ficarem ocultas ou quebrarem o layout. Nenhum conteúdo dessas seções deve ser fixo no código do gerador.
 
 #### Scenario: Placeholder de áudio
 
@@ -45,7 +45,17 @@ Seções sem conteúdo preenchido SHALL exibir um placeholder visual indicando "
 #### Scenario: Placeholder de ferramentas
 
 - **WHEN** `ferramentas` é um array vazio
-- **THEN** a seção exibe um placeholder estilizado
+- **THEN** a seção exibe um placeholder estilizado com o texto "Em breve"
+
+#### Scenario: Aprofunde sem conteúdo
+
+- **WHEN** `aprofunde` não tem itens preenchidos
+- **THEN** a seção exibe um placeholder estilizado com o texto "Em breve"
+
+#### Scenario: Conteúdo preenchido por passo
+
+- **WHEN** um passo tem itens em `ferramentas`, `ouca` ou `aprofunde`
+- **THEN** a seção correspondente exibe apenas o conteúdo daquele passo, sem conteúdo hardcoded de outros passos
 
 ### Requirement: Breadcrumb em páginas de passo
 

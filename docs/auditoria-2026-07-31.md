@@ -1,5 +1,7 @@
 # Auditoria do Site Trilha de Novos
 
+> Auditoria seguinte: [auditoria-2026-08-02.md](auditoria-2026-08-02.md) (auditoria técnica, roteiro das próximas correções).
+
 **Data:** 31 de julho de 2026
 **Objetivo:** Auditoria completa (somente leitura) do site estático da Trilha de Novos — Comunidade Vitral. Nenhuma correção foi feita nesta etapa; os achados abaixo servem como roteiro para as próximas correções.
 **Escopo:** 13 páginas HTML (`index`, `mapa`, `complementar`, `404`, `passo-1..9`), CSS, JS do gerador, `dados/passos.json`, apostilas, estado do git e conformidade com o CLAUDE.md (Regra de Ouro).
