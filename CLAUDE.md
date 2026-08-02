@@ -193,6 +193,10 @@ Esta regra não pode ser violada. Sempre que o usuário disser "salvar", execute
 
 ## OpenSpec Workflow
 
-Este projeto usa OpenSpec para spec-driven development. Comandos disponíveis via OpenCode:
+Este projeto usa OpenSpec para spec-driven development. Os comandos são **globais** (instalados em `/root/.opencode/commands/`, disponíveis em todos os projetos via OpenCode):
 - `/opsx-propose` — criar uma proposta
 - `/opsx-explore` — explorar ideias sem compromisso
+- `/opsx-apply` — implementar as tasks de uma change aprovada
+- `/opsx-archive` — arquivar a change e sincronizar deltas nas main specs
+- `/opsx-sync` — sincronizar delta specs para as main specs
+- `/opsx-update` — revisar e manter coerentes os artefatos de uma change
