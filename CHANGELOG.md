@@ -1,5 +1,10 @@
 # Changelog
 
+## Tag: v2.14.1-orientacao-bootstrap (03/08/2026)
+
+- Adiciona `docs/ORIENTACAO-BOOTSTRAP-CONTRATO.md` — texto reutilizável para criar o contrato de manutenção de conteúdo em outro site de trilha (já normalizado/data-driven), com as mesmas regras deste projeto: mapeamento real das seções, criação de `docs/MANUTENCAO.md`, registro no CLAUDE.md e validação ponta a ponta
+- README: referencia o novo arquivo na árvore de estrutura
+
 ## Tag: v2.14.0-docs (03/08/2026)
 
 - Cria `docs/MANUTENCAO.md` — contrato de manutenção de conteúdo dos passos: fonte da verdade (JSON), tabela seção → campo, formatos de solicitação (arquivo Markdown completo + instrução em linha), ações INCLUIR/SUBSTITUIR/REMOVER, fluxo de execução e regras de segurança
