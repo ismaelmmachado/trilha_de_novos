@@ -1,5 +1,11 @@
 # Changelog
 
+## Tag: v2.15.0-runbook-atualizacao-geral (03/08/2026)
+
+- Cria `docs/ATUALIZACAO-GERAL.md` — runbook de atualização geral do projeto: inventário de conteúdo, workflow em 6 etapas (contexto, conteúdo, código, regeneração, verificação, versionamento), checklist de verificação e controle de pendências da auditoria
+- Atualiza `openspec/config.yaml`: contexto passa a citar `docs/MANUTENCAO.md` e `docs/ATUALIZACAO-GERAL.md`
+- README: referencia o runbook na árvore de estrutura e na seção de manutenção
+
 ## Tag: v2.14.1-orientacao-bootstrap (03/08/2026)
 
 - Adiciona `docs/ORIENTACAO-BOOTSTRAP-CONTRATO.md` — texto reutilizável para criar o contrato de manutenção de conteúdo em outro site de trilha (já normalizado/data-driven), com as mesmas regras deste projeto: mapeamento real das seções, criação de `docs/MANUTENCAO.md`, registro no CLAUDE.md e validação ponta a ponta
