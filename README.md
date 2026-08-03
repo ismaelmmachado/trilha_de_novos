@@ -7,7 +7,7 @@ Site estático da Trilha de Novos, o programa de discipulado da [Comunidade Vitr
 - **HTML semântico** + **CSS puro** (sem frameworks, sem build)
 - **Design tokens** via CSS custom properties (`css/tokens.css`) — etapa 1 amarelo
 - **Componentes** em `css/estilo.css`, `css/mapa.css`, `css/complementar.css`, `css/print.css`
-- **Gerador Node.js** (`scripts/gerar-passos.js`) que lê `dados/passos.json` e gera as 9 páginas de passo
+- **Gerador Node.js** (`scripts/gerar-passos.js`) 100% data-driven — lê `dados/passos.json` e gera as 9 páginas de passo; todas as 6 seções (Para Começar, Ferramentas, Ouça, Aprofunde, Pratique, Organize-se) são renderizadas a partir do JSON
 - **Zero dependências** — site 100% offline, servido via GitHub Pages
 
 ## Estrutura
@@ -66,6 +66,25 @@ node scripts/gerar-passos.js
 
 Gera os arquivos `passo-1.html` a `passo-9.html` a partir de `dados/passos.json`.
 
+## Manutenção de conteúdo dos passos
+
+Todo o conteúdo dos 9 passos vive em `dados/passos.json`. **Nunca edite `passo-N.html` na mão** — essas páginas são geradas. Para atualizar o conteúdo de um passo:
+
+1. Edite o campo correspondente no `dados/passos.json` (ex.: `para_comecar`, `pratique`, `organizese`, `ferramentas`, `ouca`, `aprofunde`)
+2. Rode `node scripts/gerar-passos.js`
+3. Faça o commit das mudanças no JSON + nos HTML gerados
+
+### Campos por seção
+
+| Seção | Campo no JSON | Estrutura |
+|---|---|---|
+| Para Começar | `para_comecar` | `{ texto, pergunta }` |
+| Ferramentas | `ferramentas` | `[{ icon, nome, descricao, link, rotulo }]` — vazio → "Em breve" |
+| Ouça | `ouca` | `{ tipo: "placeholder" \| "player", src, titulo, descricao }` — `tipo` ≠ `player` → "Em breve" |
+| Aprofunde | `aprofunde` | `{ livro: { titulo, autor, link }, musica: { titulo, artista, link } }` — vazio → "Em breve" |
+| Pratique | `pratique` | `{ experimento, pergunta }` |
+| Organize-se | `organizese` | `{ introducao, dias: [{ dia, texto }] }` — 7 dias, dias sem texto → "Em breve" |
+
 > **Cache-busting:** todas as folhas de estilo são carregadas com `?v=<versão>`
 > (ex.: `css/estilo.css?v=2.10.0`) para forçar o navegador a baixar o CSS atualizado.
 > Ao alterar qualquer CSS (mudança em `tokens.css`, `estilo.css`, `mapa.css`,
@@ -78,7 +97,7 @@ Gera os arquivos `passo-1.html` a `passo-9.html` a partir de `dados/passos.json`
 
 - **Branch ativa:** `homologacao`
 - **Branch de produção:** `main`
-- **Tags:** v1.0.0 a v2.12.0 (ver [CHANGELOG.md](CHANGELOG.md))
+- **Tags:** v1.0.0 a v2.13.0 (ver [CHANGELOG.md](CHANGELOG.md))
 - **GitHub Pages:** https://ismaelmmachado.github.io/trilha_de_novos
 
 ## Repositório

@@ -1,5 +1,13 @@
 # Changelog
 
+## Tag: v2.13.0-gerador-data-driven (03/08/2026)
+
+- Torna o gerador `scripts/gerar-passos.js` 100% data-driven: as seções Ferramentas, Ouça e Aprofunde agora são renderizadas a partir de `dados/passos.json` (antes eram fixas no código do gerador)
+- Nova estrutura em `dados/passos.json`: `ferramentas` como array `[{ icon, nome, descricao, link, rotulo }]`, `ouca` com `{ tipo: "placeholder" | "player", src, titulo, descricao }` e `aprofunde` com `{ livro, musica }`
+- Migra as 3 ferramentas (Bible App, Lectio 365, Vitral no Spotify) para o JSON dos 9 passos — visual mantido, conteúdo agora editável por passo
+- Seções sem conteúdo exibem placeholder "Em breve" (Ferramentas, Ouça, Aprofunde)
+- README: documenta o fluxo de manutenção de conteúdo (JSON → gerador → HTML) e a tabela de campos por seção
+
 ## Tag: v2.12.0-auditoria-tecnica-2026-08-02 (02/08/2026)
 
 - Adiciona `docs/auditoria-2026-08-02.md` com auditoria técnica completa (somente leitura) do site — 0 críticos, 5 importantes (I1–I5), 8 menores (M1–M8); serve de roteiro para as próximas correções
