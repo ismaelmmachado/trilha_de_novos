@@ -1,5 +1,12 @@
 # Changelog
 
+## Tag: v2.14.0-docs (03/08/2026)
+
+- Cria `docs/MANUTENCAO.md` — contrato de manutenção de conteúdo dos passos: fonte da verdade (JSON), tabela seção → campo, formatos de solicitação (arquivo Markdown completo + instrução em linha), ações INCLUIR/SUBSTITUIR/REMOVER, fluxo de execução e regras de segurança
+- Documenta o schema das seções Ferramentas, Ouça e Aprofunde na spec `step-page-generator` (`ferramentas` array de `{ icon, nome, descricao, link, rotulo }`, `ouca` com `tipo` placeholder/player, `aprofunde` com `livro`/`musica`) e consolida os cenários de placeholder
+- Atualiza `docs/auditoria-2026-08-02.md`: marca I1 (gerador hardcoded) como resolvido na v2.13.0 e ajusta a tabela de prioridades
+- README: referencia `docs/MANUTENCAO.md` na seção de manutenção e na árvore de estrutura
+
 ## Tag: v2.13.1-orientacao-data-driven (03/08/2026)
 
 - Adiciona `docs/ORIENTACAO-AJUSTE-DATA-DRIVEN.md` — texto reutilizável para preparar outros sites de trilha para o processo de manutenção de conteúdo data-driven (diagnóstico de cenário A/B/C, Fase 2A tornar gerador data-driven, Fase 2B criar gerador do zero, verificação)

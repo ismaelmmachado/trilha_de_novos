@@ -10,7 +10,7 @@
 
 O site está **funcional, consistente e no geral bem feito**. A auditoria anterior (2026-07-31) foi resolvida: não há mais HTML inválido, o gerador emite `og:image`, o contraste dos botões passou para 7.6:1 e as citações bíblicas seguem a NVT.
 
-Esta auditoria encontrou **0 problemas críticos**, **5 achados importantes** e **8 achados menores**. O achado mais relevante é a **fonte da verdade dessincronizada** no gerador: as seções Ferramentas, Ouça e Aprofunde estão "hardcoded" no código e ignoram o JSON — o que limita futuras edições de conteúdo. Também há um **problema de acessibilidade** novo (contraste do hover do botão "voltar ao topo") e um **estado do git pendente** (12 arquivos deletados e `CLAUDE.md` modificado sem commit).
+Esta auditoria encontrou **0 problemas críticos**, **5 achados importantes** e **8 achados menores**. O achado mais relevante — a **fonte da verdade dessincronizada** no gerador (seções Ferramentas, Ouça e Aprofunde hardcoded no código) — **foi resolvido na v2.13.0**. Seguem pendentes **4 achados importantes** (I2–I5) e **8 menores** (M1–M8).
 
 ---
 
@@ -27,6 +27,7 @@ Nenhum achado crítico nesta auditoria. Todas as verificações que antes eram c
 - **Problema:** as funções de renderização destas 3 seções **não recebem o passo** e produzem conteúdo fixo: Ferramentas sempre mostra "Bible App, Lectio 365, Vitral no Spotify", Ouça sempre mostra "Em breve" e Aprofunde sempre mostra "Livro Sugerido / Música Sugerida — Em breve". Os campos `ferramentas`, `ouca` e `aprofunde` de `dados/passos.json` **nunca são lidos** (hoje estão vazios em todos os 9 passos).
 - **Impacto:** é impossível variar o conteúdo destas seções por passo sem editar o código do gerador. Quem preencher o JSON esperando que ele apareça no site vai se frustrar. É a mesma classe de problema da antiga C1 (gerador dessincronizado das páginas), agora sobre conteúdo, não sobre meta tags. Também diverge da spec `step-page-generator`, que define placeholders "Em breve" **baseados em arrays vazios** do JSON.
 - **Correção sugerida:** fazer `renderFerramentas(passo)`, `renderOuca(passo)` e `renderAprofunde(passo)` lerem os dados do JSON; ou, se as 3 seções forem realmente fixas para toda a Trilha, remover os campos do JSON (e ajustar a spec) para eliminar a segunda fonte da verdade.
+- **Status: ✅ Resolvido na v2.13.0-gerador-data-driven.** `renderFerramentas(passo)`, `renderOuca(passo)` e `renderAprofunde(passo)` agora recebem o passo e leem os dados do JSON; as 3 ferramentas comuns foram migradas para o JSON dos 9 passos; seções vazias exibem o placeholder "Em breve" (spec alinhada em `openspec/specs/step-page-generator/spec.md`).
 
 ### I2. Contraste do hover do botão "voltar ao topo" (branco sobre amarelo)
 - **Onde:** `css/mapa.css:122-126` (`.back-to-top:hover`)
@@ -129,6 +130,7 @@ Prioridade sugerida para correção:
 
 | Prioridade | Itens |
 |---|---|
-| Alta | I1 (gerador hardcoded), I2 (contraste hover), I3 (fallback sem JS), I4 (aria-label), I5 (estado do git) |
+| ✅ Resolvido (v2.13.0) | I1 (gerador hardcoded) |
+| Alta | I2 (contraste hover), I3 (fallback sem JS), I4 (aria-label), I5 (estado do git) |
 | Média | M5 (og-image SVG → PNG), M6 (print do mapa), M7 (Estação vs Etapa), M8 (convenção `?v=`) |
 | Baixa | M1 (`scope` no th), M2 (meta description), M3 (CSS morto), M4 (border-color sem width) |
