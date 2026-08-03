@@ -89,84 +89,120 @@ function renderParaComecar(passo) {
 </div>`;
 }
 
-function renderFerramentas() {
+function renderFerramentas(passo) {
+  const ferramentas = passo.ferramentas || [];
+  if (ferramentas.length === 0) {
+    return `
+<div class="step-section">
+  ${renderSectionHeader('🛠️', 'Ferramentas')}
+  <div class="step-section-content">
+    <div class="ouca-placeholder"><p>Em breve</p></div>
+  </div>
+</div>`;
+  }
+  const itens = ferramentas.map(f => `
+      <div class="ferramenta-item">
+        <div class="ferramenta-item-content">
+          <span class="ferramenta-icon">${f.icon || '🛠️'}</span>
+          <div class="ferramenta-info">
+            <strong>${f.nome}</strong>
+            <span>${f.descricao || ''}</span>
+          </div>
+        </div>
+        <a class="ferramenta-link" href="${f.link}" target="_blank" rel="noopener noreferrer">${f.rotulo || 'Abrir'}</a>
+      </div>`).join('\n');
+
   return `
 <div class="step-section">
   ${renderSectionHeader('🛠️', 'Ferramentas')}
   <div class="step-section-content">
     <p class="ferramentas-intro">Ferramentas que podem apoiar sua caminhada:</p>
     <div class="ferramentas-list">
-      <div class="ferramenta-item">
-        <div class="ferramenta-item-content">
-          <span class="ferramenta-icon">📖</span>
-          <div class="ferramenta-info">
-            <strong>Bible App (YouVersion)</strong>
-            <span>A Bíblia no seu bolso. Siga a Comunidade Vitral.</span>
-          </div>
-        </div>
-        <a class="ferramenta-link" href="https://www.bible.com/organizations/79172d03-a943-4051-aebf-285b525546f1" target="_blank" rel="noopener noreferrer">Baixar</a>
-      </div>
-      <div class="ferramenta-item">
-        <div class="ferramenta-item-content">
-          <span class="ferramenta-icon">🙏</span>
-          <div class="ferramenta-info">
-            <strong>Lectio 365</strong>
-            <span>Devocional diário em português. Ore com a Bíblia.</span>
-          </div>
-        </div>
-        <a class="ferramenta-link" href="https://lectio365.com/pt-br/o-aplicativo/" target="_blank" rel="noopener noreferrer">Baixar</a>
-      </div>
-      <div class="ferramenta-item">
-        <div class="ferramenta-item-content">
-          <span class="ferramenta-icon">🎙️</span>
-          <div class="ferramenta-info">
-            <strong>Vitral no Spotify</strong>
-            <span>Podcast da Comunidade Vitral para sua jornada.</span>
-          </div>
-        </div>
-        <a class="ferramenta-link" href="https://open.spotify.com/show/1prjsrcxPho9otrP1VUWT4" target="_blank" rel="noopener noreferrer">Ouvir</a>
-      </div>
+${itens}
     </div>
   </div>
 </div>`;
 }
 
-function renderOuca() {
-  return `
+function renderOuca(passo) {
+  const ouca = passo.ouca || {};
+  if (ouca.tipo !== 'player' || !ouca.src) {
+    return `
 <div class="step-section">
   ${renderSectionHeader('🎧', 'Ouça')}
   <div class="step-section-content">
     <div class="ouca-placeholder"><p>Em breve</p></div>
   </div>
 </div>`;
+  }
+  return `
+<div class="step-section">
+  ${renderSectionHeader('🎧', 'Ouça')}
+  <div class="step-section-content">
+    <div class="aprofunde-list">
+      <div class="aprofunde-item">
+        <div class="aprofunde-item-content">
+          <span class="aprofunde-item-icon">🎧</span>
+          <div class="aprofunde-item-info">
+            <strong>${ouca.titulo || 'Ouça agora'}</strong>
+            <span>${ouca.descricao || ''}</span>
+          </div>
+        </div>
+        <a class="aprofunde-link" href="${ouca.src}" target="_blank" rel="noopener noreferrer">Ouvir</a>
+      </div>
+    </div>
+  </div>
+</div>`;
 }
 
-function renderAprofunde() {
+function renderAprofunde(passo) {
+  const aprofunde = passo.aprofunde || {};
+  const livro = aprofunde.livro || {};
+  const musica = aprofunde.musica || {};
+  const temLivro = livro.titulo;
+  const temMusica = musica.titulo;
+  if (!temLivro && !temMusica) {
+    return `
+<div class="step-section">
+  ${renderSectionHeader('📚', 'Aprofunde')}
+  <div class="step-section-content">
+    <div class="ouca-placeholder"><p>Em breve</p></div>
+  </div>
+</div>`;
+  }
+  let itens = '';
+  if (temLivro) {
+    itens += `
+      <div class="aprofunde-item">
+        <div class="aprofunde-item-content">
+          <span class="aprofunde-item-icon">📖</span>
+          <div class="aprofunde-item-info">
+            <strong>${livro.titulo}</strong>
+            <span>${livro.autor || ''}</span>
+          </div>
+        </div>
+        ${livro.link ? `<a class="aprofunde-link" href="${livro.link}" target="_blank" rel="noopener noreferrer">Abrir</a>` : `<span class="aprofunde-link is-empty">Em breve</span>`}
+      </div>`;
+  }
+  if (temMusica) {
+    itens += `
+      <div class="aprofunde-item">
+        <div class="aprofunde-item-content">
+          <span class="aprofunde-item-icon">🎵</span>
+          <div class="aprofunde-item-info">
+            <strong>${musica.titulo}</strong>
+            <span>${musica.artista || ''}</span>
+          </div>
+        </div>
+        ${musica.link ? `<a class="aprofunde-link" href="${musica.link}" target="_blank" rel="noopener noreferrer">Ouvir</a>` : `<span class="aprofunde-link is-empty">Em breve</span>`}
+      </div>`;
+  }
   return `
 <div class="step-section">
   ${renderSectionHeader('📚', 'Aprofunde')}
   <div class="step-section-content">
     <div class="aprofunde-list">
-      <div class="aprofunde-item">
-        <div class="aprofunde-item-content">
-          <span class="aprofunde-item-icon">📖</span>
-          <div class="aprofunde-item-info">
-            <strong>Livro Sugerido</strong>
-            <span>Em breve</span>
-          </div>
-        </div>
-        <span class="aprofunde-link is-empty">Em breve</span>
-      </div>
-      <div class="aprofunde-item">
-        <div class="aprofunde-item-content">
-          <span class="aprofunde-item-icon">🎵</span>
-          <div class="aprofunde-item-info">
-            <strong>Música Sugerida</strong>
-            <span>Em breve</span>
-          </div>
-        </div>
-        <span class="aprofunde-link is-empty">Em breve</span>
-      </div>
+${itens}
     </div>
   </div>
 </div>`;
@@ -277,11 +313,11 @@ function gerarPagina(passo) {
     <div class="content-container" id="passo-container">
       ${renderParaComecar(passo)}
 
-      ${renderFerramentas()}
+      ${renderFerramentas(passo)}
 
-      ${renderOuca()}
+      ${renderOuca(passo)}
 
-      ${renderAprofunde()}
+      ${renderAprofunde(passo)}
 
       ${renderPratique(passo)}
 

@@ -9,12 +9,37 @@
       "texto": "Antes do encontro, leia o documento \"VITRAL — Quem Somos e Como Caminhamos Juntos\". Ele é a base da nossa conversa de hoje. Nele você vai encontrar nossa história, nossos valores (Simples, Missional e Acolhedor) e entender como caminhamos juntos como comunidade.",
       "pergunta": "O que você leu que mais te marcou?"
     },
-    "ferramentas": [],
+    "ferramentas": [
+      {
+        "icon": "📖",
+        "nome": "Bible App (YouVersion)",
+        "descricao": "A Bíblia no seu bolso. Siga a Comunidade Vitral.",
+        "link": "https://www.bible.com/organizations/79172d03-a943-4051-aebf-285b525546f1",
+        "rotulo": "Baixar"
+      },
+      {
+        "icon": "🙏",
+        "nome": "Lectio 365",
+        "descricao": "Devocional diário em português. Ore com a Bíblia.",
+        "link": "https://lectio365.com/pt-br/o-aplicativo/",
+        "rotulo": "Baixar"
+      },
+      {
+        "icon": "🎙️",
+        "nome": "Vitral no Spotify",
+        "descricao": "Podcast da Comunidade Vitral para sua jornada.",
+        "link": "https://open.spotify.com/show/1prjsrcxPho9otrP1VUWT4",
+        "rotulo": "Ouvir"
+      }
+    ],
     "ouca": {
       "tipo": "placeholder",
       "src": ""
     },
-    "aprofunde": {},
+    "aprofunde": {
+      "livro": {},
+      "musica": {}
+    },
     "pratique": {
       "experimento": "Esta semana, leia o documento \"VITRAL — Quem Somos e Como Caminhamos Juntos\" com calma, como quem toma um café. Sublinhe o que mais te tocou. Leve suas perguntas para o próximo encontro.",
       "pergunta": "O que você descobriu sobre a Vitral que te faz querer continuar?"
@@ -65,12 +90,37 @@
       "texto": "Comece perguntando ao grupo: \"O que você pensa quando ouve que você é amado antes de fazer qualquer coisa?\" A história da salvação tem quatro atos (Criação, Queda, Redenção, Restauração) — e você está no meio dela.",
       "pergunta": "Se você fosse um pedaço de vidro, que cor você teria hoje? Por quê?"
     },
-    "ferramentas": [],
+    "ferramentas": [
+      {
+        "icon": "📖",
+        "nome": "Bible App (YouVersion)",
+        "descricao": "A Bíblia no seu bolso. Siga a Comunidade Vitral.",
+        "link": "https://www.bible.com/organizations/79172d03-a943-4051-aebf-285b525546f1",
+        "rotulo": "Baixar"
+      },
+      {
+        "icon": "🙏",
+        "nome": "Lectio 365",
+        "descricao": "Devocional diário em português. Ore com a Bíblia.",
+        "link": "https://lectio365.com/pt-br/o-aplicativo/",
+        "rotulo": "Baixar"
+      },
+      {
+        "icon": "🎙️",
+        "nome": "Vitral no Spotify",
+        "descricao": "Podcast da Comunidade Vitral para sua jornada.",
+        "link": "https://open.spotify.com/show/1prjsrcxPho9otrP1VUWT4",
+        "rotulo": "Ouvir"
+      }
+    ],
     "ouca": {
       "tipo": "placeholder",
       "src": ""
     },
-    "aprofunde": {},
+    "aprofunde": {
+      "livro": {},
+      "musica": {}
+    },
     "pratique": {
       "experimento": "Olhe para sua história com mais gentileza. Reserve um momento para escrever uma frase sobre algo que você já viveu e que hoje pode ver com mais compaixão. Não precisa compartilhar com ninguém. Só com você e Deus.",
       "pergunta": "Que 'marcas' você carrega na sua história? E como elas podem ser lugar de luz?"
@@ -121,12 +171,37 @@
       "texto": "Comece perguntando: \"O que te faz duvidar da sua fé?\" Valide cada dúvida — elas não são erradas, são humanas. A salvação é um presente (Efésios 2.8-9), não uma conquista. A certeza está na promessa de Deus (João 5.24).",
       "pergunta": "O que você sente ao ouvir que a salvação é um presente — não uma conquista?"
     },
-    "ferramentas": [],
+    "ferramentas": [
+      {
+        "icon": "📖",
+        "nome": "Bible App (YouVersion)",
+        "descricao": "A Bíblia no seu bolso. Siga a Comunidade Vitral.",
+        "link": "https://www.bible.com/organizations/79172d03-a943-4051-aebf-285b525546f1",
+        "rotulo": "Baixar"
+      },
+      {
+        "icon": "🙏",
+        "nome": "Lectio 365",
+        "descricao": "Devocional diário em português. Ore com a Bíblia.",
+        "link": "https://lectio365.com/pt-br/o-aplicativo/",
+        "rotulo": "Baixar"
+      },
+      {
+        "icon": "🎙️",
+        "nome": "Vitral no Spotify",
+        "descricao": "Podcast da Comunidade Vitral para sua jornada.",
+        "link": "https://open.spotify.com/show/1prjsrcxPho9otrP1VUWT4",
+        "rotulo": "Ouvir"
+      }
+    ],
     "ouca": {
       "tipo": "placeholder",
       "src": ""
     },
-    "aprofunde": {},
+    "aprofunde": {
+      "livro": {},
+      "musica": {}
+    },
     "pratique": {
       "experimento": "Leia Mateus 19.16 — a história do jovem rico. Reflita: \"O que me impede de confiar plenamente em Deus?\" Não precisa ter uma resposta pronta. Só se pergunte.",
       "pergunta": "Qual dos 'testes' da fé você sente que mais precisa crescer?"
@@ -177,12 +252,37 @@
       "texto": "Comece perguntando: \"Qual das quatro áreas do C.A.F.É. está mais descuidada em você hoje?\" Apresente cada área: Coração (emoções), Alma (fé), Força (corpo), Entendimento (mente). O C.A.F.É. não é uma lista de tarefas — é um jeito de se perguntar \"Como estou?\"",
       "pergunta": "O que você já faz que ajuda a cuidar de alguma dessas áreas?"
     },
-    "ferramentas": [],
+    "ferramentas": [
+      {
+        "icon": "📖",
+        "nome": "Bible App (YouVersion)",
+        "descricao": "A Bíblia no seu bolso. Siga a Comunidade Vitral.",
+        "link": "https://www.bible.com/organizations/79172d03-a943-4051-aebf-285b525546f1",
+        "rotulo": "Baixar"
+      },
+      {
+        "icon": "🙏",
+        "nome": "Lectio 365",
+        "descricao": "Devocional diário em português. Ore com a Bíblia.",
+        "link": "https://lectio365.com/pt-br/o-aplicativo/",
+        "rotulo": "Baixar"
+      },
+      {
+        "icon": "🎙️",
+        "nome": "Vitral no Spotify",
+        "descricao": "Podcast da Comunidade Vitral para sua jornada.",
+        "link": "https://open.spotify.com/show/1prjsrcxPho9otrP1VUWT4",
+        "rotulo": "Ouvir"
+      }
+    ],
     "ouca": {
       "tipo": "placeholder",
       "src": ""
     },
-    "aprofunde": {},
+    "aprofunde": {
+      "livro": {},
+      "musica": {}
+    },
     "pratique": {
       "experimento": "Escolha UMA das quatro áreas do C.A.F.É. e coloque em prática um pequeno gesto de cuidado esta semana. Crie também uma 'frase de bolso' do G.A.P.I.S. para usar em algum momento do dia — no trânsito, na fila, antes de dormir.",
       "pergunta": "Em qual dos três lugares da fé (Encontro, Casa, PG) você sente que tem mais dificuldade de se conectar?"
@@ -233,12 +333,37 @@
       "texto": "Comece perguntando: \"Qual dos dons que você leu parece mais com você?\" Apresente os dons de Romanos 12 (Percepção, Serviço, Ensino, Encorajamento, Doação, Liderança, Compaixão). Lembre: o objetivo não é ter todos os dons, mas descobrir o seu.",
       "pergunta": "O que os outros já disseram que veem em você?"
     },
-    "ferramentas": [],
+    "ferramentas": [
+      {
+        "icon": "📖",
+        "nome": "Bible App (YouVersion)",
+        "descricao": "A Bíblia no seu bolso. Siga a Comunidade Vitral.",
+        "link": "https://www.bible.com/organizations/79172d03-a943-4051-aebf-285b525546f1",
+        "rotulo": "Baixar"
+      },
+      {
+        "icon": "🙏",
+        "nome": "Lectio 365",
+        "descricao": "Devocional diário em português. Ore com a Bíblia.",
+        "link": "https://lectio365.com/pt-br/o-aplicativo/",
+        "rotulo": "Baixar"
+      },
+      {
+        "icon": "🎙️",
+        "nome": "Vitral no Spotify",
+        "descricao": "Podcast da Comunidade Vitral para sua jornada.",
+        "link": "https://open.spotify.com/show/1prjsrcxPho9otrP1VUWT4",
+        "rotulo": "Ouvir"
+      }
+    ],
     "ouca": {
       "tipo": "placeholder",
       "src": ""
     },
-    "aprofunde": {},
+    "aprofunde": {
+      "livro": {},
+      "musica": {}
+    },
     "pratique": {
       "experimento": "Escolha UM dos dons que você descobriu (ou que outros veem em você) e use-o fora do ambiente da igreja — em casa, no trabalho, na vizinhança. Observe como você se sente. Observe como as pessoas reagem.",
       "pergunta": "O que você gostaria de fazer, mas tem medo de tentar?"
@@ -289,12 +414,37 @@
       "texto": "Comece perguntando: \"O que significa para você ser lembrado por Deus antes mesmo de fazer qualquer coisa?\" Explique que Batismo não salva — quem salva é Jesus. O Batismo é sinal e selo da Aliança. A Ceia é mesa aberta, não prêmio para perfeitos.",
       "pergunta": "Como você se sente em relação ao Batismo de crianças?"
     },
-    "ferramentas": [],
+    "ferramentas": [
+      {
+        "icon": "📖",
+        "nome": "Bible App (YouVersion)",
+        "descricao": "A Bíblia no seu bolso. Siga a Comunidade Vitral.",
+        "link": "https://www.bible.com/organizations/79172d03-a943-4051-aebf-285b525546f1",
+        "rotulo": "Baixar"
+      },
+      {
+        "icon": "🙏",
+        "nome": "Lectio 365",
+        "descricao": "Devocional diário em português. Ore com a Bíblia.",
+        "link": "https://lectio365.com/pt-br/o-aplicativo/",
+        "rotulo": "Baixar"
+      },
+      {
+        "icon": "🎙️",
+        "nome": "Vitral no Spotify",
+        "descricao": "Podcast da Comunidade Vitral para sua jornada.",
+        "link": "https://open.spotify.com/show/1prjsrcxPho9otrP1VUWT4",
+        "rotulo": "Ouvir"
+      }
+    ],
     "ouca": {
       "tipo": "placeholder",
       "src": ""
     },
-    "aprofunde": {},
+    "aprofunde": {
+      "livro": {},
+      "musica": {}
+    },
     "pratique": {
       "experimento": "Se você já foi batizado, lembre-se do que isso significa: você foi marcado por Deus. Se ainda não foi batizado, reflita: o que te impede de dar esse passo?",
       "pergunta": "O que você sente ao saber que a mesa está sempre posta, mesmo quando você não está bem?"
@@ -345,12 +495,37 @@
       "texto": "Comece perguntando: \"O que significa 'pertencer' para você?\" Pertencer não é o mesmo que participar. Você pode participar de muitas coisas sem pertencer. A membresia é um compromisso de amor — não um contrato.",
       "pergunta": "O que te atrai na ideia de fazer parte desta comunidade?"
     },
-    "ferramentas": [],
+    "ferramentas": [
+      {
+        "icon": "📖",
+        "nome": "Bible App (YouVersion)",
+        "descricao": "A Bíblia no seu bolso. Siga a Comunidade Vitral.",
+        "link": "https://www.bible.com/organizations/79172d03-a943-4051-aebf-285b525546f1",
+        "rotulo": "Baixar"
+      },
+      {
+        "icon": "🙏",
+        "nome": "Lectio 365",
+        "descricao": "Devocional diário em português. Ore com a Bíblia.",
+        "link": "https://lectio365.com/pt-br/o-aplicativo/",
+        "rotulo": "Baixar"
+      },
+      {
+        "icon": "🎙️",
+        "nome": "Vitral no Spotify",
+        "descricao": "Podcast da Comunidade Vitral para sua jornada.",
+        "link": "https://open.spotify.com/show/1prjsrcxPho9otrP1VUWT4",
+        "rotulo": "Ouvir"
+      }
+    ],
     "ouca": {
       "tipo": "placeholder",
       "src": ""
     },
-    "aprofunde": {},
+    "aprofunde": {
+      "livro": {},
+      "musica": {}
+    },
     "pratique": {
       "experimento": "Converse com seu acompanhante esta semana. Marque um café e converse sobre o que você está sentindo em relação a se tornar membro. Não precisa decidir nada — só conversar.",
       "pergunta": "Você está pronto para dizer: 'Este é o meu lugar'?"
@@ -401,12 +576,37 @@
       "texto": "Comece convidando cada um a compartilhar: \"O que você leva de mais importante desta caminhada até aqui?\" Ajude o grupo a ver o quanto já caminharam. Cada passo teve um propósito.",
       "pergunta": "O que você descobriu sobre Deus, sobre si mesmo e sobre a comunidade?"
     },
-    "ferramentas": [],
+    "ferramentas": [
+      {
+        "icon": "📖",
+        "nome": "Bible App (YouVersion)",
+        "descricao": "A Bíblia no seu bolso. Siga a Comunidade Vitral.",
+        "link": "https://www.bible.com/organizations/79172d03-a943-4051-aebf-285b525546f1",
+        "rotulo": "Baixar"
+      },
+      {
+        "icon": "🙏",
+        "nome": "Lectio 365",
+        "descricao": "Devocional diário em português. Ore com a Bíblia.",
+        "link": "https://lectio365.com/pt-br/o-aplicativo/",
+        "rotulo": "Baixar"
+      },
+      {
+        "icon": "🎙️",
+        "nome": "Vitral no Spotify",
+        "descricao": "Podcast da Comunidade Vitral para sua jornada.",
+        "link": "https://open.spotify.com/show/1prjsrcxPho9otrP1VUWT4",
+        "rotulo": "Ouvir"
+      }
+    ],
     "ouca": {
       "tipo": "placeholder",
       "src": ""
     },
-    "aprofunde": {},
+    "aprofunde": {
+      "livro": {},
+      "musica": {}
+    },
     "pratique": {
       "experimento": "Converse com seu acompanhante sobre qual será seu próximo passo: qual Pequeno Grupo você vai frequentar? Onde você pode servir? Não precisa decidir sozinho.",
       "pergunta": "Como você se sente em relação ao próximo passo — a Preparação para a Membresia?"
@@ -457,12 +657,37 @@
       "texto": "Este encontro é diferente. Não é sobre um novo passo, mas sobre preparar você para tomar uma decisão consciente. Apresente a história da IPIB (1903, 31 de julho), os 5 Solas da Reforma e o que significa ser Mordomo.",
       "pergunta": "O que você aprendeu sobre a história da IPIB que te surpreendeu?"
     },
-    "ferramentas": [],
+    "ferramentas": [
+      {
+        "icon": "📖",
+        "nome": "Bible App (YouVersion)",
+        "descricao": "A Bíblia no seu bolso. Siga a Comunidade Vitral.",
+        "link": "https://www.bible.com/organizations/79172d03-a943-4051-aebf-285b525546f1",
+        "rotulo": "Baixar"
+      },
+      {
+        "icon": "🙏",
+        "nome": "Lectio 365",
+        "descricao": "Devocional diário em português. Ore com a Bíblia.",
+        "link": "https://lectio365.com/pt-br/o-aplicativo/",
+        "rotulo": "Baixar"
+      },
+      {
+        "icon": "🎙️",
+        "nome": "Vitral no Spotify",
+        "descricao": "Podcast da Comunidade Vitral para sua jornada.",
+        "link": "https://open.spotify.com/show/1prjsrcxPho9otrP1VUWT4",
+        "rotulo": "Ouvir"
+      }
+    ],
     "ouca": {
       "tipo": "placeholder",
       "src": ""
     },
-    "aprofunde": {},
+    "aprofunde": {
+      "livro": {},
+      "musica": {}
+    },
     "pratique": {
       "experimento": "Converse com alguém que já está na Vitral há mais tempo. Pergunte: \"O que você sabe sobre a história da nossa igreja? O que te faz sentir orgulho de fazer parte da IPIB?\"",
       "pergunta": "Você confia que este é o seu lugar?"
