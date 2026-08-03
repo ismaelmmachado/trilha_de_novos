@@ -29,6 +29,7 @@ trilha_de_novos/
 ├── dados/
 │   └── passos.json         # Conteúdo dos 9 passos
 ├── docs/apostilas/         # Apostilas .docx originais (download via GitHub Pages)
+├── docs/ORIENTACAO-AJUSTE-DATA-DRIVEN.md  # Texto reutilizável para normalizar outros sites
 ├── docs/auditoria-2026-07-31.md  # Relatório de auditoria do site (2026-07-31)
 ├── docs/auditoria-2026-08-02.md  # Relatório de auditoria técnica (2026-08-02)
 ├── favicon.svg             # Favicon do site
@@ -97,7 +98,7 @@ Todo o conteúdo dos 9 passos vive em `dados/passos.json`. **Nunca edite `passo-
 
 - **Branch ativa:** `homologacao`
 - **Branch de produção:** `main`
-- **Tags:** v1.0.0 a v2.13.0 (ver [CHANGELOG.md](CHANGELOG.md))
+- **Tags:** v1.0.0 a v2.13.1 (ver [CHANGELOG.md](CHANGELOG.md))
 - **GitHub Pages:** https://ismaelmmachado.github.io/trilha_de_novos
 
 ## Repositório

@@ -1,5 +1,9 @@
 # Changelog
 
+## Tag: v2.13.1-orientacao-data-driven (03/08/2026)
+
+- Adiciona `docs/ORIENTACAO-AJUSTE-DATA-DRIVEN.md` — texto reutilizável para preparar outros sites de trilha para o processo de manutenção de conteúdo data-driven (diagnóstico de cenário A/B/C, Fase 2A tornar gerador data-driven, Fase 2B criar gerador do zero, verificação)
+
 ## Tag: v2.13.0-gerador-data-driven (03/08/2026)
 
 - Torna o gerador `scripts/gerar-passos.js` 100% data-driven: as seções Ferramentas, Ouça e Aprofunde agora são renderizadas a partir de `dados/passos.json` (antes eram fixas no código do gerador)
