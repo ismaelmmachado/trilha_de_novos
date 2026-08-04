@@ -1,5 +1,11 @@
 # Changelog
 
+## Tag: v2.20.0-passo2-sem-secoes (04/08/2026)
+
+- Conceito do passo ajustado no PASSO 2: seções **Ferramentas** e **Ouça** removidas da página (fase de testes)
+- `scripts/gerar-passos.js`: novo helper `deveRenderizar(passo, secao)` — as seções Ferramentas/Ouça só são renderizadas se `passo.ocultar_secoes` não as listar; os demais passos (sem o campo) continuam com as 6 seções
+- `dados/passos.json` (passo 2): `"ocultar_secoes": ["ferramentas", "ouca"]` — dados mantidos no JSON (reversível), apenas ocultos na página
+
 ## Tag: v2.19.0-passo2-substituicao (04/08/2026)
 
 - PASSO 2: **substituição total do conteúdo** (fase de testes do procedimento) — `subtitulo` vira "A sua história — com todas as suas marcas — já é parte da história de Deus."; `para_comecar` reescrito (rótulos → você já é amado) com "Texto Bíblico" (Salmo 139.14, NVT); `pratique` vira a lista de "Gestos para viver sua identidade" (5 itens) + pergunta da semana; `organizese` ganha os 7 dias como ações simples (sem leitura/oração)

@@ -61,6 +61,10 @@ function inlineFormat(texto) {
     .replace(/\n/g, '<br>');
 }
 
+function deveRenderizar(passo, secao) {
+  return !(passo.ocultar_secoes || []).includes(secao);
+}
+
 function sectionIcon(id) {
   const icons = {
     1: '📖',
@@ -322,9 +326,9 @@ function gerarPagina(passo) {
     <div class="content-container" id="passo-container">
       ${renderParaComecar(passo)}
 
-      ${renderFerramentas(passo)}
+      ${deveRenderizar(passo, 'ferramentas') ? renderFerramentas(passo) : ''}
 
-      ${renderOuca(passo)}
+      ${deveRenderizar(passo, 'ouca') ? renderOuca(passo) : ''}
 
       ${renderAprofunde(passo)}
 

@@ -85,6 +85,7 @@
     "titulo": "Quem Somos Diante de Deus",
     "subtitulo": "A sua história — com todas as suas marcas — já é parte da história de Deus.",
     "etapa": 1,
+    "ocultar_secoes": ["ferramentas", "ouca"],
     "resumo": "Depois de conhecer a casa, a gente te convida a olhar para dentro. Neste encontro, vamos descobrir quem você é diante de Deus — sua identidade, suas marcas e o lugar que você ocupa na grande história que Deus está escrevendo.",
     "para_comecar": {
       "texto": "A gente passa tanto tempo tentando caber em rótulos: o que você faz, o que você tem, o que os outros dizem. Mas a fé cristã vira essa lógica de cabeça para baixo. Antes de qualquer rótulo, existe uma verdade: você já é amado.\n\nA pergunta não é \"O que você precisa fazer para ser aceito?\" — porque a resposta já é \"nada\". A pergunta é: o que muda na sua vida quando você descansa nesse amor?\n\n**Texto Bíblico:** \"Graças te dou, de modo assombrosamente maravilhoso me formaste.\" — Salmo 139.14, NVT",
