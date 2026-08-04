@@ -1,5 +1,12 @@
 # Changelog
 
+## Tag: v2.27.0-passo9-conteudo (04/08/2026)
+
+- PASSO 9 "Preparação para a Membresia" (site): **substituição total do conteúdo** — `subtitulo` vira "Entender o que significa fazer parte desta família, para que, se decidir, seja com o coração e a mente alinhados."; `para_comecar` reescrito (decisão consciente e madura, sem pressa) com "Texto Bíblico" (Romanos 12.1, NVT); `pratique` vira os 5 itens para se preparar para a decisão + pergunta da semana; `organizese` ganha os 7 dias (preenche Ter/Qui/Sex que estavam vazios)
+- Mantidos: `ferramentas`/`ouca` (ocultos via `ocultar_secoes`), `aprofunde` (placeholder) e token `pdf` (PASSO 9)
+- Mudança de dados apenas (`dados/passos.json`); renderização via `inlineFormat()` existente
+- Com este passo, **todos os 9 passos** já foram atualizados com o novo conceito
+
 ## Tag: v2.26.0-passo8-conteudo (04/08/2026)
 
 - PASSO 8 "Celebração e Envio" (site): **substituição total do conteúdo** — `subtitulo` vira "Olhar para trás com gratidão. Olhar para frente com esperança."; `para_comecar` reescrito (fim da Trilha = começo da caminhada) com "Texto Bíblico" (Mateus 28.19-20, NVT); `pratique` vira os 5 itens para viver o envio + pergunta da semana; `organizese` ganha os 7 dias (preenche Ter/Qui/Sex que estavam vazios)

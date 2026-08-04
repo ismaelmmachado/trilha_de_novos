@@ -658,13 +658,13 @@
   {
     "id": 9,
     "titulo": "Preparação para a Membresia",
-    "subtitulo": "O que significa, de fato, ser membro da Vitral?",
+    "subtitulo": "Entender o que significa fazer parte desta família, para que, se decidir, seja com o coração e a mente alinhados.",
     "etapa": 1,
     "ocultar_secoes": ["ferramentas", "ouca"],
     "resumo": "Este é o último encontro da Trilha. Nele, você vai entender com profundidade o que significa ser membro da Vitral: a história da nossa família maior (a IPIB), os pilares da nossa fé (os 5 Solas), o que significa ser Mordomo e o compromisso da Aliança.",
     "para_comecar": {
-      "texto": "Este encontro é diferente. Não é sobre um novo passo, mas sobre preparar você para tomar uma decisão consciente. Apresente a história da IPIB (1903, 31 de julho), os 5 Solas da Reforma e o que significa ser Mordomo.",
-      "pergunta": "O que você aprendeu sobre a história da IPIB que te surpreendeu?"
+      "texto": "Você chegou até aqui. Caminhou por oito encontros, conheceu a história da Vitral, descobriu quem é diante de Deus, entendeu a segurança da sua fé, aprendeu ferramentas para viver no dia a dia, encontrou pistas sobre seu lugar na comunidade, conheceu os sinais da caminhada, refletiu sobre o que significa pertencer e celebrou tudo o que descobriu.\n\nAgora, você está diante de um passo importante: decidir se quer se tornar membro da Vitral. Este encontro é diferente dos outros. Ele não é sobre um novo passo, mas sobre preparar você para tomar uma decisão consciente e madura. Não há pressa. Não há pressão. Mas há um convite: que você entenda tudo o que significa fazer parte desta família.\n\n**Texto Bíblico:** \"Portanto, irmãos, rogo-lhes pelas misericórdias de Deus que ofereçam os seus corpos como sacrifício vivo, santo e agradável a Deus; este é o culto racional de vocês.\" — Romanos 12.1, NVT",
+      "pergunta": "Você entende o que significa ser membro da Vitral? Você está pronto para assumir esse compromisso?"
     },
     "ferramentas": [
       {
@@ -698,7 +698,7 @@
       "musica": {}
     },
     "pratique": {
-      "experimento": "Converse com alguém que já está na Vitral há mais tempo. Pergunte: \"O que você sabe sobre a história da nossa igreja? O que te faz sentir orgulho de fazer parte da IPIB?\"",
+      "experimento": "Esta semana, prepare-se para a decisão:\n\nConverse com alguém que já está na Vitral há mais tempo. Pergunte: \"O que você sabe sobre a história da nossa igreja? O que te faz sentir orgulho de fazer parte da IPIB?\"\n\nLeia a Aliança de Mordomia (disponível com seus líderes) e entenda o que você está assumindo.\n\nReflita sobre os cinco pilares da fé Reformada — qual deles mais toca o seu coração?\n\nPergunte a si mesmo: \"Estou pronto para dizer: este é o meu lugar?\"\n\nConverse com seu acompanhante sobre o que você está sentindo em relação à membresia.",
       "pergunta": "Você confia que este é o seu lugar?"
     },
     "organizese": {
@@ -706,31 +706,31 @@
       "dias": [
         {
           "dia": "Seg",
-          "texto": "Leia Mateus 28.19 — o chamado missionário de Jesus."
+          "texto": "Leia Romanos 12.1. Reflita: o que significa oferecer seu corpo como sacrifício vivo?"
         },
         {
           "dia": "Ter",
-          "texto": ""
+          "texto": "Leia 1 Coríntios 12.12. Reflita: o que significa ser parte do corpo de Cristo?"
         },
         {
           "dia": "Qua",
-          "texto": "Leia 1 Coríntios 12.12 — muitos membros, um só corpo."
+          "texto": "Leia Gálatas 6.2. Reflita: como você pode carregar os fardos de outros?"
         },
         {
           "dia": "Qui",
-          "texto": ""
+          "texto": "Pergunte-se: \"O que me atrai na ideia de ser membro?\""
         },
         {
           "dia": "Sex",
-          "texto": ""
+          "texto": "Converse com seu acompanhante sobre a membresia."
         },
         {
           "dia": "Sáb",
-          "texto": "Reflita: o que significa ser Mordomo para você?"
+          "texto": "Leia a Aliança de Mordomia e reflita sobre o compromisso."
         },
         {
           "dia": "Dom",
-          "texto": "Tome sua decisão. A mesa está posta. O vitral tem espaço para você."
+          "texto": "Se você decidiu, celebre. Se ainda tem dúvidas, continue refletindo — sem pressa."
         }
       ]
     },
