@@ -1,5 +1,12 @@
 # Changelog
 
+## Tag: v2.16.6-apostilas-api-fresca (04/08/2026)
+
+- `scripts/apostilas.js`: o botão **sempre consulta a GitHub API** (`docs/apostilas/pdf?ref=main`) a cada carregamento — corrige o "Apostila em breve" que persistia após subir um PDF novo (cache de 6h do navegador ignorava arquivos recém-publicados)
+- O cache em localStorage virou **reserva de emergência** (usado apenas se a API falhar); removido o TTL de 6h; `?refresh=apostilas` deixa de ser necessário
+- README: seção "Atualização na hora" reescrita (reload basta para ver arquivo novo)
+- Inclui o v2.16.5 (normalização das apostilas com `main` — PDF do PASSO 9 + documentação das apostilas)
+
 ## Apostilas — consolidação do fluxo docx/pdf (03/08/2026, commits v2.16.1–v2.16.4)
 
 - v2.16.1: remove as apostilas `.docx` obsoletas (prefixo `doc_*`) de `docs/apostilas/docx` (local + GitHub, branches `homologacao` e `main`)
