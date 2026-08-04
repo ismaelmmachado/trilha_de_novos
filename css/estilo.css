@@ -276,6 +276,10 @@ ul { list-style: none; }
   color: var(--color-text);
 }
 
+.step-section-content p + p {
+  margin-top: var(--space-md);
+}
+
 /* === DOWNLOAD BUTTON (inside Para Começar) === */
 .para-comecar-footer {
   margin-top: var(--space-lg);

@@ -1,5 +1,10 @@
 # Changelog
 
+## Tag: v2.29.0-espaco-pergunta (04/08/2026)
+
+- Espaçamento na seção "Para Começar" de todos os passos: nova regra `.step-section-content p + p` (margin-top `--space-md`, 16px) cria uma linha em branco entre o texto bíblico e a subseção "Pergunta para o diálogo:" — hoje só o Para Começar tem `<p>` consecutivos, então as demais seções não são afetadas
+- `css/estilo.css` + cache-busting: versão dos CSS sobe de `?v=2.10.0` para `?v=2.29.0` nas 9 páginas geradas (garante que os navegadores busquem a nova folha de estilo)
+
 ## Tag: v2.28.0-passo1-conteudo (04/08/2026)
 
 - PASSO 1 (site): **substituição total do conteúdo** — `titulo` vira "Vitral — Quem Somos e Como Caminhamos Juntos" (alinhado ao documento/PDF); `subtitulo` vira "Entender a história, os valores e o jeito de ser da comunidade que você está conhecendo."; `para_comecar` reescrito (jeito Vitral, identidade) com "Texto Bíblico" (João 15.5, NVT); `pratique` vira os 5 itens para viver o jeito Vitral (movimentos da missão, três pilares, PG) + pergunta da semana; `organizese` ganha os 7 dias (preenche os 6 que estavam vazios)

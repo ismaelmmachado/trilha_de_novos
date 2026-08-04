@@ -309,9 +309,9 @@ function gerarPagina(passo) {
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" media="print" onload="this.media='all'" />
   <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" /></noscript>
-  <link rel="stylesheet" href="css/tokens.css?v=2.10.0" />
-  <link rel="stylesheet" href="css/estilo.css?v=2.10.0" />
-  <link rel="stylesheet" href="css/print.css?v=2.10.0" media="print" />
+  <link rel="stylesheet" href="css/tokens.css?v=2.29.0" />
+  <link rel="stylesheet" href="css/estilo.css?v=2.29.0" />
+  <link rel="stylesheet" href="css/print.css?v=2.29.0" media="print" />
 </head>
 <body>
   <a class="skip-link" href="#main">Ir para o conteúdo</a>
