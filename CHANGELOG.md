@@ -1,5 +1,11 @@
 # Changelog
 
+## Tag: v2.21.0-passo3-conteudo (04/08/2026)
+
+- PASSO 3 "A Segurança da Fé" (site): **substituição total do conteúdo** — `subtitulo` vira "A certeza não está em você — está na promessa de Deus."; `para_comecar` reescrito (dúvidas humanas → certeza na promessa) com "Texto Bíblico" (João 5.24, NVT); `pratique` vira o "exame sincero da fé" (5 passos) + pergunta da semana; `organizese` ganha os 7 dias (leitura NVT + ação, sem dias vazios)
+- Mantidos: `ferramentas`/`ouca` (ocultos via `ocultar_secoes`), `aprofunde` (placeholder) e token `pdf` (PASSO 3)
+- Mudança de dados apenas (`dados/passos.json`); renderização via `inlineFormat()` existente
+
 ## Tag: v2.20.1-passo-secoes-todos (04/08/2026)
 
 - Aplica a mesma proposta do passo 2 a **todos** os passos: `ocultar_secoes: ["ferramentas", "ouca"]` adicionado aos passos 1, 3, 4, 5, 6, 7, 8, 9 — nenhuma página exibe mais as seções Ferramentas e Ouça (dados permanecem no JSON, reversível)

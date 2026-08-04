@@ -166,13 +166,13 @@
   {
     "id": 3,
     "titulo": "A Segurança da Fé",
-    "subtitulo": "Como posso ter certeza da minha fé?",
+    "subtitulo": "A certeza não está em você — está na promessa de Deus.",
     "etapa": 1,
     "ocultar_secoes": ["ferramentas", "ouca"],
     "resumo": "Se a fé é um presente, como ter certeza de que ela é verdadeira? Neste encontro, vamos entender que a certeza não está em você — está em Deus. E vamos aprender a descansar na promessa, não no sentimento.",
     "para_comecar": {
-      "texto": "Comece perguntando: \"O que te faz duvidar da sua fé?\" Valide cada dúvida — elas não são erradas, são humanas. A salvação é um presente (Efésios 2.8-9), não uma conquista. A certeza está na promessa de Deus (João 5.24).",
-      "pergunta": "O que você sente ao ouvir que a salvação é um presente — não uma conquista?"
+      "texto": "A fé é uma caminhada, e em toda caminhada surgem perguntas. Talvez você já tenha se perguntado: \"Será que minha fé é verdadeira? Como posso ter certeza de que sou salvo?\"\n\nEssas perguntas não são erradas — são humanas. Mas a resposta que a gente costuma buscar está no lugar errado. A gente olha para dentro, para os sentimentos, para o que faz ou deixa de fazer. Mas a Bíblia aponta para fora — para a promessa de Deus.\n\nA certeza não vem de você. Ela vem d'Ele.\n\n**Texto Bíblico:** \"Eu lhes digo a verdade: quem ouve a minha mensagem e crê naquele que me enviou tem a vida eterna. Jamais será condenado, mas já passou da morte para a vida.\" — João 5.24, NVT",
+      "pergunta": "O que te faz duvidar da sua fé? E o que te dá esperança de que ela é verdadeira?"
     },
     "ferramentas": [
       {
@@ -206,39 +206,39 @@
       "musica": {}
     },
     "pratique": {
-      "experimento": "Leia Mateus 19.16 — a história do jovem rico. Reflita: \"O que me impede de confiar plenamente em Deus?\" Não precisa ter uma resposta pronta. Só se pergunte.",
-      "pergunta": "Qual dos 'testes' da fé você sente que mais precisa crescer?"
+      "experimento": "Esta semana, faça um exame sincero da sua fé:\n\nLeia Mateus 19.16-22 e reflita: o que pode estar ocupando o lugar de Deus no seu coração?\n\nIdentifique uma área da sua vida onde você tem confiado mais em si mesmo do que em Deus.\n\nPratique entregar essa área a Deus em oração — não para se sentir melhor, mas para descansar n'Ele.\n\nConverse com alguém da comunidade sobre o que você está aprendendo sobre a certeza da fé.\n\nPare de se cobrar por sentimentos e comece a confiar na promessa.",
+      "pergunta": "O que você precisa entregar a Deus para descansar na certeza que só Ele pode dar?"
     },
     "organizese": {
       "introducao": "Sugestões para a semana:",
       "dias": [
         {
           "dia": "Seg",
-          "texto": "Leia João 5.24 — a promessa de Deus para você."
+          "texto": "Leia João 5.24. Escreva a frase que mais te impactou."
         },
         {
           "dia": "Ter",
-          "texto": ""
+          "texto": "Leia Efésios 2.8-9. Agradeça por uma salvação que não depende de você."
         },
         {
           "dia": "Qua",
-          "texto": "Leia Romanos 8.38-39 — nada pode te separar do amor de Deus."
+          "texto": "Leia Mateus 19.16-22. Pergunte-se: o que me impede de confiar plenamente?"
         },
         {
           "dia": "Qui",
-          "texto": ""
+          "texto": "Leia Mateus 7.21-23. Reflita: o que significa \"fazer a vontade do Pai\"?"
         },
         {
           "dia": "Sex",
-          "texto": ""
+          "texto": "Leia 1 João 5.13. Anote uma razão para ter certeza da sua fé."
         },
         {
           "dia": "Sáb",
-          "texto": "Anote uma dúvida que você tem e leve para o próximo encontro."
+          "texto": "Leia Romanos 8.1. Descanse na verdade de que não há condenação."
         },
         {
           "dia": "Dom",
-          "texto": "Ore com suas próprias palavras: \"Senhor, eu confio em Ti.\""
+          "texto": "Compartilhe com alguém o que você aprendeu sobre a segurança da fé."
         }
       ]
     },
