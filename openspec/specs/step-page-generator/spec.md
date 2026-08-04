@@ -8,7 +8,7 @@ Gerador de páginas estáticas que lê dados estruturados em JSON e produz arqui
 
 ### Requirement: Dados estruturados em JSON
 
-O sistema SHALL usar um arquivo `dados/passos.json` contendo dados de todos os 9 passos, com campos para título, subtítulo, resumo, seções (`para_comecar`, `ferramentas`, `ouca`, `aprofunde`, `pratique`, `organizese`) e referência ao PDF da apostila.
+O sistema SHALL usar um arquivo `dados/passos.json` contendo dados de todos os 9 passos, com campos para título, subtítulo, resumo, seções (`para_comecar`, `ferramentas`, `ouca`, `aprofunde`, `pratique`, `organizese`) e referência à apostila: o campo `pdf` guarda o **token de busca** do arquivo a baixar (não o caminho fixo).
 
 #### Scenario: Arquivo passos.json válido
 
@@ -89,14 +89,24 @@ Cada página de passo SHALL incluir um breadcrumb com link para "Início" e o no
 - **WHEN** o usuário acessa `passo-{N}.html`
 - **THEN** o breadcrumb contém `<a href="index.html">Início</a>` seguido do separador e do nome do passo
 
-### Requirement: Download de apostila
+### Requirement: Download de apostila (PDF dinâmico)
 
-Cada página de passo SHALL exibir um botão de download que referencie o arquivo .docx da apostila correspondente.
+Cada página de passo SHALL exibir um botão de download de apostila na seção "Para Começar". O botão SHALL carregar o campo `pdf` de `dados/passos.json` como **token de busca** (atributo `data-apostila-token`), e o script compartilhado `scripts/apostilas.js` SHALL resolver o arquivo `.pdf` real em tempo de execução:
 
-#### Scenario: Botão de download
+- Listar a pasta `docs/apostilas/pdf/` via GitHub API (branch `main`).
+- Casar o token com o nome do arquivo (case-insensitive, ignorando acentos, respeitando a fronteira do número — `PASSO 1` não casa `PASSO 10`, tolerando prefixo `doc_<hash>_`).
+- Apontar o href para `docs/apostilas/pdf/{arquivo}.pdf` com o atributo `download` (preserva o nome descritivo no download).
+- Se não houver match (pasta vazia ou nome divergente), deixar o botão não clicável com o label "Apostila em breve".
 
-- **WHEN** o usuário visualiza a seção "Para Começar"
-- **THEN** há um botão com classe `.download-btn` e fundo gradiente apontando para `docs/apostilas/{arquivo}.docx`
+#### Scenario: Botão resolve o PDF da apostila
+
+- **WHEN** `docs/apostilas/pdf/` contém um arquivo cujo nome contém o token do passo (ex.: `ESTAÇÃO 1 - PASSO 8 — CELEBRAÇÃO E ENVIO.pdf` para o token `PASSO 8`)
+- **THEN** o botão `.download-btn` aponta para `docs/apostilas/pdf/{arquivo}.pdf` com atributo `download`
+
+#### Scenario: Nenhuma apostila encontrada
+
+- **WHEN** não há arquivo cujo nome contenha o token do passo (pasta vazia ou nome divergente)
+- **THEN** o botão fica não clicável (classe `.is-unavailable`) e exibe "Apostila em breve"
 
 ### Requirement: Grid semanal (Organize-se)
 

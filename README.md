@@ -88,6 +88,19 @@ sem precisar mexer no HTML.
 - Para atualizar, basta **sobrescrever o arquivo** nas pastas em `main` — o site passa
   a baixar a versão nova automaticamente.
 
+### Fluxo de atualização das apostilas
+
+1. **Suba os arquivos novos em `main`** (via GitHub web ou git): `.docx` em
+   `docs/apostilas/docx/` e `.pdf` em `docs/apostilas/pdf/`.
+2. **Avisa** (na sessão do OpenCode) que subiu → a cópia local/VPS é **sincronizada
+   com `main`** (arquivos baixados e organizados nas pastas) e a branch `homologacao`
+   é atualizada para ficar **igual a `main`** em `docs/apostilas`.
+3. **Validação automática:** cada passo baixa o PDF cujo nome contém o token dele.
+   Se algum passo ficar sem PDF correspondente, o botão mostra "Apostila em breve".
+
+> Os `.docx` não são baixados pelo site — são apenas a fonte de edição. O download
+> dos passos é sempre a versão **PDF**.
+
 ### Como o botão encontra o arquivo (sem link fixo)
 
 1. `scripts/apostilas.js` (carregado em cada `passo-N.html`) consulta a **GitHub API**:
@@ -95,7 +108,8 @@ sem precisar mexer no HTML.
    → lista os arquivos da pasta (o repo é público, funciona sem login).
 2. Para cada botão, o script casa o **token** do passo com o nome do arquivo
    (case-insensitive, ignora acentos, respeita a fronteira do número — "PASSO 1" não
-   pega "PASSO 10/11/12", tolera o prefixo `doc_<hash>_`).
+   pega "PASSO 10/11/12"; tolera prefixos antigos do tipo `doc_<hash>_`, mas os
+   arquivos atuais usam nomes descritivos limpos).
 3. Se achar, aponta o botão para `docs/apostilas/pdf/<arquivo>.pdf` com o atributo
    `download` — **o nome descritivo do arquivo é preservado** no download do usuário.
 
@@ -167,7 +181,7 @@ Todo o conteúdo dos 9 passos vive em `dados/passos.json`. **Nunca edite `passo-
 
 - **Branch ativa:** `homologacao`
 - **Branch de produção:** `main`
-- **Tags:** v1.0.0 a v2.15.0 (ver [CHANGELOG.md](CHANGELOG.md))
+- **Tags:** v1.0.0 a v2.16.x (ver [CHANGELOG.md](CHANGELOG.md))
 - **GitHub Pages:** https://ismaelmmachado.github.io/trilha_de_novos
 
 ## Repositório

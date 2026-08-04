@@ -28,7 +28,7 @@ Onde tudo mora:
 | Landing / cards dos passos | `index.html` | carrega via `fetch('dados/passos.json')` — não editar à mão |
 | Mapa do facilitador | `mapa.html` | estático — editar direto |
 | Material complementar | `complementar.html` | estático — editar direto |
-| Apostilas | `docs/apostilas/*.docx` | substituir arquivo |
+| Apostilas | `docs/apostilas/docx/` (fonte da verdade) e `docs/apostilas/pdf/` (baixadas pelo site) | substituir arquivo em `main` → sincronizar `homologacao` (ver seção 3, Etapa 2A) |
 | Estilos | `css/tokens.css`, `estilo.css`, `mapa.css`, `complementar.css`, `print.css` | editar direto + subir `?v=` |
 | Gerador | `scripts/gerar-passos.js` | editar direto (gera as passos) |
 
@@ -52,6 +52,17 @@ Leia antes de mexer em qualquer arquivo:
 3. Confira as citações bíblicas: **todas na NVT** (Nova Versão Transformadora).
 4. Lembre do placeholder "Em breve": seções vazias (Ferramentas, Ouça, Aprofunde,
    dias de Organize-se) exibem placeholder — não deixe conteúdo órfão.
+
+### Etapa 2A — Apostilas (docx/pdf)
+
+1. Suba os novos arquivos em **`main`**:
+   - `.docx` → `docs/apostilas/docx/` (fonte da verdade)
+   - `.pdf` → `docs/apostilas/pdf/` (baixadas pelo site)
+2. Sincronize a cópia local/VPS com `main` e atualize a branch `homologacao` para
+   ficar **igual a `main`** em `docs/apostilas`.
+3. Valide os tokens de busca do campo `pdf` em `dados/passos.json` (ver
+   `docs/MANUTENCAO.md`, seção 7): todo PDF baixável precisa ter o nome contendo o
+   token do passo (ex.: `PASSO 8`). Se faltar, o botão mostra "Apostila em breve".
 
 ### Etapa 3 — Código (correções pendentes da auditoria)
 
@@ -109,6 +120,7 @@ Antes de finalizar qualquer atualização geral:
 | HTML | `passo-N.html` válido, sem conteúdo perdido nas 9 páginas |
 | Landing | `index.html` carrega os passos via JSON (cards corretos) |
 | Cache-busting | `?v=` subiu se houve mudança de CSS (todas as páginas + gerador) |
+| Apostilas | PDFs baixáveis de todos os passos em `docs/apostilas/pdf/`, nomes contêm o token; `docs/apostilas` de `homologacao` igual a `main` |
 | Auditoria | Itens I2–I5 e M1–M8 aplicados ou conscientemente adiados |
 | Versionamento | CHANGELOG atualizado; tag criada; `homologacao` e `main` sincronizados |
 

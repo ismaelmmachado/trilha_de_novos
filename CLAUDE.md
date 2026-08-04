@@ -191,6 +191,24 @@ Quando o usuário pedir para **salvar** (ou "salva aí", "salvar tudo", etc.), v
 
 Esta regra não pode ser violada. Sempre que o usuário disser "salvar", execute este fluxo.
 
+---
+
+### 12. APOSTILAS — DOWNLOAD E ATUALIZAÇÃO
+
+Estrutura (a partir da v2.16.x):
+
+- `docs/apostilas/docx/` → versões **.docx** (fonte da verdade, para edição — não são baixadas pelo site).
+- `docs/apostilas/pdf/` → versões **.pdf** (é daqui que o site baixa o botão "Baixar Apostila").
+
+Regras:
+
+1. **Versão oficial = o que está em `main`.** Para atualizar, sobrescrever o arquivo em `main`.
+2. O botão de cada passo baixa **só o PDF**, encontrado dinamicamente por `scripts/apostilas.js` (lista `docs/apostilas/pdf/` via GitHub API, branch `main`).
+3. **Tokens de busca** ficam no campo `pdf` de `dados/passos.json`: passos 2–9 usam `PASSO N`; o passo 1 usa `Quem Somos e Como Caminhamos`.
+4. O nome do PDF **precisa conter o token** do passo (ex.: `ESTAÇÃO 1 - PASSO 8 — CELEBRAÇÃO E ENVIO.pdf` contém `PASSO 8`). Se não contiver, o botão mostra "Apostila em breve".
+5. **Fluxo de atualização:** usuário sobe os novos `.docx`/`.pdf` em `main` → avisa → sincronizo a cópia local/VPS com `main` e atualizo `homologacao` para ficar **igual a `main`** em `docs/apostilas` (valido os tokens).
+6. **Não alterar o token** sem necessidade — ele é o contrato entre o botão e o nome do arquivo.
+
 ## OpenSpec Workflow
 
 Este projeto usa OpenSpec para spec-driven development. Os comandos são **globais** (instalados em `/root/.opencode/commands/`, disponíveis em todos os projetos via OpenCode):
