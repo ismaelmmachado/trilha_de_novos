@@ -136,11 +136,14 @@ sem precisar mexer no HTML.
 | Apostila em breve | cinza (não clicável) | Pasta vazia ou nenhum arquivo casa com o token |
 | Não foi possível carregar | cinza | GitHub API fora do ar / erro inesperado |
 
-### Dica: ver a atualização na hora
+### Atualização na hora (sem cache antigo)
 
-Os arquivos listados são **cacheados no navegador por 6h** (localStorage) para não
-estourar a cota da GitHub API. Acabou de subir um PDF e quer ver na hora? Abra a
-página com `?refresh=apostilas` (ex.: `passo-2.html?refresh=apostilas`) — ignora o cache.
+O botão **sempre consulta a GitHub API** a cada carregamento de página (sem cache de
+longa duração). Ou seja: subiu um PDF novo em `main`? Basta dar **reload** na página
+que o botão já resolve para a versão nova — não precisa de nenhum parâmetro extra.
+
+> O script mantém uma cópia em localStorage apenas como **reserva de emergência**:
+> se a GitHub API estiver fora do ar, ele usa a última lista salva em vez de quebrar.
 
 ## Manutenção de conteúdo dos passos
 
