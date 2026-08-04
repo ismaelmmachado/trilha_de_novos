@@ -1,5 +1,13 @@
 # Changelog
 
+## Apostilas — consolidação do fluxo docx/pdf (03/08/2026, commits v2.16.1–v2.16.4)
+
+- v2.16.1: remove as apostilas `.docx` obsoletas (prefixo `doc_*`) de `docs/apostilas/docx` (local + GitHub, branches `homologacao` e `main`)
+- v2.16.2: move `docs/VITRAL — Quem Somos e Como Caminhamos Juntos • v2.2.docx` para `docs/apostilas/docx/`
+- v2.16.3: move `docs/apostilas/VITRAL — Quem Somos e Como Caminhamos Juntos • v2.2.pdf` para `docs/apostilas/pdf/`
+- v2.16.4: sincroniza `docs/apostilas` (docx + pdf) de `homologacao` com `main` — pasta fica idêntica nas duas branches
+- **Documentação:** README ganha o "Fluxo de atualização das apostilas" (subir em `main` → avisar → sincronizar `homologacao`); `docs/MANUTENCAO.md` documenta a manutenção das apostilas (token + regra de nomeação); `docs/ATUALIZACAO-GERAL.md` atualiza inventário e checklist; `CLAUDE.md` ganha a seção 12 "Apostilas — Download e Atualização"; spec `step-page-generator` do `openspec` passa a descrever o download dinâmico de PDF por token
+
 ## Tag: v2.16.0-apostilas-pdf (03/08/2026)
 
 - Download de apostilas deixa de usar link fixo `.docx`: cada passo baixa a versão **PDF** via busca dinâmica por token

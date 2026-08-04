@@ -35,6 +35,7 @@ Cada seção de um passo no site corresponde a um campo em `dados/passos.json`.
 | Aprofunde | `aprofunde` | `{ livro: { titulo, autor, link }, musica: { titulo, artista, link } }` | "Em breve" |
 | Pratique | `pratique` | `{ experimento, pergunta }` | — |
 | Organize-se | `organizese` | `{ introducao, dias: [{ dia, texto }] }` | dias sem texto → "Em breve" |
+| Apostila | `pdf` | `"<token de busca>"` (ex.: `"PASSO 8"`, `"Quem Somos e Como Caminhamos"`) | botão "Apostila em breve" |
 
 Regras do mapeamento:
 
@@ -178,3 +179,43 @@ PASSO 5 — Seção: ## Aprofunde — Ação: REMOVER
 Após aplicar a manutenção, salvar seguindo a [REGRA DE SALVAMENTO](CLAUDE.md):
 commit + tag na branch `homologacao` e, quando for para produção, sincronizar
 `main`. O conteúdo e o HTML gerado devem ir juntos no mesmo commit.
+
+---
+
+## 7. Manutenção das apostilas (docx/pdf)
+
+As apostilas **não fazem parte do gerador** — são arquivos substituídos nas pastas
+de `docs/apostilas/`. Trocar uma apostila **não exige rodar** `gerar-passos.js`.
+
+### Fonte da verdade
+
+| Pasta | Função | Quem baixa |
+|---|---|---|
+| `docs/apostilas/docx/` | `.docx` — fonte para edição | ninguém (material interno) |
+| `docs/apostilas/pdf/` | `.pdf` — versão baixada pelo site | o botão "Baixar Apostila" de cada passo |
+
+> **Regra de ouro:** o que for subido em `main` é a versão oficial. Para atualizar,
+> sobrescreva o arquivo em `main` — o site passa a baixar a nova versão sozinho.
+
+### Fluxo de atualização
+
+1. Suba os novos `.docx` em `docs/apostilas/docx/` e os `.pdf` em
+   `docs/apostilas/pdf/` em **`main`**.
+2. Avisar na sessão → sincronizar a cópia local/VPS com `main` e atualizar a branch
+   `homologacao` para ficar **igual a `main`** em `docs/apostilas`.
+3. Validar que cada passo tem PDF correspondente (ver token abaixo).
+
+### Token no campo `pdf` (`dados/passos.json`)
+
+O campo `pdf` do passo é o **token de busca** do PDF. O script `scripts/apostilas.js`
+lista `docs/apostilas/pdf/` via GitHub API e casa o token com o nome do arquivo.
+
+- **Regra de nomeação:** o nome do PDF **precisa conter o token** do passo
+  (ex.: `ESTAÇÃO 1 - PASSO 8 — CELEBRAÇÃO E ENVIO.pdf` contém `PASSO 8`).
+- Passos 2–9 usam `PASSO N`; o passo 1 usa `Quem Somos e Como Caminhamos` (o arquivo
+  do VITRAL não contém "PASSO 1" no nome).
+- Se o token não for encontrado, o botão mostra **"Apostila em breve"**.
+
+> **Não altere o token em `passos.json` sem necessidade:** ele é o contrato entre o
+> botão e o nome do arquivo. Se trocar o token, os PDFs existentes podem parar de
+> ser encontrados.
