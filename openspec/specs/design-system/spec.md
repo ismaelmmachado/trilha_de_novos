@@ -54,4 +54,4 @@ O arquivo `css/estilo.css` SHALL definir estilos para: header desktop, mobile he
 #### Scenario: Estilos de impressão
 
 - **WHEN** o usuário imprime uma página do site
-- **THEN** `css/print.css` está carregado e aplica regras de impressão para os componentes (seções de passo, cards, ferramentas, complementar)
+- **THEN** `css/print.css` está carregado e aplica regras de impressão para os componentes (seções de passo, cards, ferramentas, material de apoio)

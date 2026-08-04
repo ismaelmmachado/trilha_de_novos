@@ -6,7 +6,7 @@ Site estático da Trilha de Novos, o programa de discipulado da [Comunidade Vitr
 
 - **HTML semântico** + **CSS puro** (sem frameworks, sem build)
 - **Design tokens** via CSS custom properties (`css/tokens.css`) — etapa 1 amarelo
-- **Componentes** em `css/estilo.css`, `css/mapa.css`, `css/complementar.css`, `css/print.css`
+- **Componentes** em `css/estilo.css`, `css/mapa.css`, `css/material-de-apoio.css`, `css/print.css`
 - **Gerador Node.js** (`scripts/gerar-passos.js`) 100% data-driven — lê `dados/passos.json` e gera as 9 páginas de passo; as seções (Para Começar, Ferramentas, Ouça, Aprofunde, Pratique, Organize-se) são renderizadas a partir do JSON, com controle **condicional** por passo via `ocultar_secoes` (hoje Ferramentas e Ouça estão ocultas em todos os passos); textos suportam formatação leve (`**negrito**`, `*itálico*`, quebras de linha) via `inlineFormat()`
 - **Zero dependências** — site 100% offline, servido via GitHub Pages
 
@@ -16,13 +16,13 @@ Site estático da Trilha de Novos, o programa de discipulado da [Comunidade Vitr
 trilha_de_novos/
 ├── index.html              # Landing page com hero + grid dos 9 passos
 ├── mapa.html               # Orientação para facilitadores (10 seções)
-├── complementar.html       # Material complementar (6 seções)
+├── material-de-apoio.html  # Material de Apoio (6 seções)
 ├── passo-1.html … passo-9.html  # Páginas dos 9 encontros
 ├── css/
 │   ├── tokens.css          # Design tokens (cores, fontes, espaçamentos)
 │   ├── estilo.css          # Componentes globais
 │   ├── mapa.css            # Classes .mapa-* (facilitador)
-│   ├── complementar.css    # Classes do material complementar
+│   ├── material-de-apoio.css # Classes do material de apoio
 │   └── print.css           # Estilos de impressão
 ├── scripts/
 │   ├── gerar-passos.js     # Gerador das páginas de passo
@@ -53,7 +53,7 @@ trilha_de_novos/
 |---|---|
 | `index.html` | Hero, grid com os 9 passos (montado via `fetch('dados/passos.json')`), CTA para o Mapa |
 | `mapa.html` | Orientação para facilitadores: Seu Papel, Antes do Encontro, Estrutura, Roteiro, Perguntas, Validação, Situações, Cuidado, Checklist, Dica final |
-| `complementar.html` | 6 seções: App da Bíblia, Lectio 365, Devocionais, Podcasts, Playlists, OneYouVersion |
+| `material-de-apoio.html` | 6 seções: App da Bíblia, Lectio 365, Devocionais, Podcasts, Playlists, OneYouVersion |
 | `404.html` | Página de erro personalizada com link de volta ao início |
 | `passo-1` a `passo-9` | Cada passo com 4 seções exibidas: Para Começar (com Texto Bíblico e pergunta), Aprofunde, Pratique, Organize-se — Ferramentas e Ouça estão **ocultas via `ocultar_secoes`** (dados permanecem no JSON, reversível) |
 
@@ -62,7 +62,7 @@ trilha_de_novos/
 - **Etapa:** 1 (amarelo)
 - **Fontes:** Playfair Display (títulos) + Inter (corpo)
 - **Design de referência:** BluePrint "Praticando o Caminho"
-- **Navegação:** Header fixo com logo + nav (Início, Mapa, Material Complementar); breadcrumb + step-nav (anterior/início/próximo) nas páginas de passo
+- **Navegação:** Header fixo com logo + nav (Início, Mapa, Material de Apoio); breadcrumb + step-nav (anterior/início/próximo) nas páginas de passo
 - **Footer:** "Feito com carinho pela Comunidade Vitral"
 
 ## Como gerar as páginas de passo
@@ -186,8 +186,8 @@ Todo o conteúdo dos 9 passos vive em `dados/passos.json`. **Nunca edite `passo-
 > **Cache-busting:** todas as folhas de estilo são carregadas com `?v=<versão>`
 > (ex.: `css/estilo.css?v=2.29.0`) para forçar o navegador a baixar o CSS atualizado.
 > Ao alterar qualquer CSS (mudança em `tokens.css`, `estilo.css`, `mapa.css`,
-> `complementar.css` ou `print.css`), **suba o `?v=`** para a nova versão em todas as
-> páginas (`index`, `mapa`, `complementar`, `404`) e no `scripts/gerar-passos.js`,
+> `material-de-apoio.css` ou `print.css`), **suba o `?v=`** para a nova versão em todas as
+> páginas (`index`, `mapa`, `material-de-apoio`, `404`) e no `scripts/gerar-passos.js`,
 > depois regenere as passos. Tags de documentação pura não exigem bump.
 > GitHub Pages não permite cabeçalhos `Cache-Control` personalizados — a query string é o mecanismo.
 
