@@ -1,5 +1,12 @@
 # Changelog
 
+## Tag: v2.28.0-passo1-conteudo (04/08/2026)
+
+- PASSO 1 (site): **substituição total do conteúdo** — `titulo` vira "Vitral — Quem Somos e Como Caminhamos Juntos" (alinhado ao documento/PDF); `subtitulo` vira "Entender a história, os valores e o jeito de ser da comunidade que você está conhecendo."; `para_comecar` reescrito (jeito Vitral, identidade) com "Texto Bíblico" (João 15.5, NVT); `pratique` vira os 5 itens para viver o jeito Vitral (movimentos da missão, três pilares, PG) + pergunta da semana; `organizese` ganha os 7 dias (preenche os 6 que estavam vazios)
+- Mantidos: `ferramentas`/`ouca` (ocultos via `ocultar_secoes`), `aprofunde` (placeholder) e token `pdf` (`Quem Somos e Como Caminhamos` — inalterado, o botão continua encontrando o PDF)
+- O novo título propaga automaticamente para os cards da `index.html` (fonte: `passos.json`)
+- Com este passo, os **9 passos** + o documento VITRAL foram atualizados com o novo conceito
+
 ## Tag: v2.27.0-passo9-conteudo (04/08/2026)
 
 - PASSO 9 "Preparação para a Membresia" (site): **substituição total do conteúdo** — `subtitulo` vira "Entender o que significa fazer parte desta família, para que, se decidir, seja com o coração e a mente alinhados."; `para_comecar` reescrito (decisão consciente e madura, sem pressa) com "Texto Bíblico" (Romanos 12.1, NVT); `pratique` vira os 5 itens para se preparar para a decisão + pergunta da semana; `organizese` ganha os 7 dias (preenche Ter/Qui/Sex que estavam vazios)
