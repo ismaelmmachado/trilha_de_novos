@@ -1,5 +1,11 @@
 # Changelog
 
+## Tag: v2.22.0-passo4-conteudo (04/08/2026)
+
+- PASSO 4 "O Ritmo da Vida com Deus" (site): **substituição total do conteúdo** — `subtitulo` vira "Cuidar de si para cuidar do outro — um ritmo que cabe no seu dia a dia."; `para_comecar` reescrito (fé sustentável, metáfora do café) com "Texto Bíblico" (1 Coríntios 6.19, NVT); `pratique` vira o "gesto simples" de cuidado do C.A.F.É. (5 itens) + pergunta da semana; `organizese` ganha os 7 dias (cuidado integral, sem dias vazios)
+- Mantidos: `ferramentas`/`ouca` (ocultos via `ocultar_secoes`), `aprofunde` (placeholder) e token `pdf` (PASSO 4)
+- Mudança de dados apenas (`dados/passos.json`); renderização via `inlineFormat()` existente
+
 ## Tag: v2.21.0-passo3-conteudo (04/08/2026)
 
 - PASSO 3 "A Segurança da Fé" (site): **substituição total do conteúdo** — `subtitulo` vira "A certeza não está em você — está na promessa de Deus."; `para_comecar` reescrito (dúvidas humanas → certeza na promessa) com "Texto Bíblico" (João 5.24, NVT); `pratique` vira o "exame sincero da fé" (5 passos) + pergunta da semana; `organizese` ganha os 7 dias (leitura NVT + ação, sem dias vazios)

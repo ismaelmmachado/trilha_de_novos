@@ -248,13 +248,13 @@
   {
     "id": 4,
     "titulo": "O Ritmo da Vida com Deus",
-    "subtitulo": "Como viver a fé no dia a dia?",
+    "subtitulo": "Cuidar de si para cuidar do outro — um ritmo que cabe no seu dia a dia.",
     "etapa": 1,
     "ocultar_secoes": ["ferramentas", "ouca"],
     "resumo": "A vida é corrida, e a fé muitas vezes fica guardada para o domingo. Neste encontro, vamos aprender ferramentas simples para viver a fé no dia a dia — o C.A.F.É. (cuidado integral) e o G.A.P.I.S. (oração que cabe no trânsito).",
     "para_comecar": {
-      "texto": "Comece perguntando: \"Qual das quatro áreas do C.A.F.É. está mais descuidada em você hoje?\" Apresente cada área: Coração (emoções), Alma (fé), Força (corpo), Entendimento (mente). O C.A.F.É. não é uma lista de tarefas — é um jeito de se perguntar \"Como estou?\"",
-      "pergunta": "O que você já faz que ajuda a cuidar de alguma dessas áreas?"
+      "texto": "A vida não para. O trabalho, a família, o trânsito, o cansaço — tudo isso continua. E muitas vezes a fé parece algo que fica guardado para o domingo. A gente sabe que não é o ideal, mas a correria pesa.\n\nA proposta deste passo não é te dar mais uma lista de coisas para fazer. É te mostrar que a fé pode ser vivida de um jeito sustentável — um ritmo que cabe na sua rotina, que não te esgota, que te alimenta. Como um café: não se toma de uma vez. Toma-se um gole de cada vez.\n\n**Texto Bíblico:** \"Acaso não sabem que o corpo de vocês é santuário do Espírito Santo, que habita em vocês?\" — 1 Coríntios 6.19, NVT",
+      "pergunta": "Qual das quatro áreas do C.A.F.É. (Coração, Alma, Força, Entendimento) está mais descuidada em você hoje?"
     },
     "ferramentas": [
       {
@@ -288,39 +288,39 @@
       "musica": {}
     },
     "pratique": {
-      "experimento": "Escolha UMA das quatro áreas do C.A.F.É. e coloque em prática um pequeno gesto de cuidado esta semana. Crie também uma 'frase de bolso' do G.A.P.I.S. para usar em algum momento do dia — no trânsito, na fila, antes de dormir.",
-      "pergunta": "Em qual dos três lugares da fé (Encontro, Casa, PG) você sente que tem mais dificuldade de se conectar?"
+      "experimento": "Esta semana, escolha uma área do C.A.F.É. para cuidar com um gesto simples:\n\nSepare um momento para escrever como você está se sentindo — sem filtrar, sem julgar.\n\nReserve 10 minutos de silêncio para ouvir sua própria respiração e lembrar que Deus está ali.\n\nDurma uma hora mais cedo em um dia desta semana — sem culpa.\n\nDesligue as notificações do celular por uma hora e leia algo que alimente sua mente.\n\nPergunte a alguém de confiança: \"Como você tem cuidado de você?\" — e escute.",
+      "pergunta": "Se você pudesse começar hoje com um único gesto de cuidado, qual seria?"
     },
     "organizese": {
       "introducao": "Sugestões para a semana:",
       "dias": [
         {
           "dia": "Seg",
-          "texto": "Pela manhã, ore: \"Obrigado por este dia, Senhor.\""
+          "texto": "Pare por 5 minutos e pergunte: \"Como está meu coração hoje?\""
         },
         {
           "dia": "Ter",
-          "texto": "Cuide do seu Corpo: descanse 7-8 horas hoje."
+          "texto": "Feche os olhos por um instante e respire fundo. Deus está presente."
         },
         {
           "dia": "Qua",
-          "texto": "No trânsito, ore em gratidão por algo simples."
+          "texto": "Troque 15 minutos de tela por 15 minutos de silêncio."
         },
         {
           "dia": "Qui",
-          "texto": ""
+          "texto": "Pergunte a alguém: \"Como posso orar por você hoje?\""
         },
         {
           "dia": "Sex",
-          "texto": "Cuide da sua Mente: 10 minutos de silêncio, sem telas."
+          "texto": "Anote três coisas que você agradece neste dia."
         },
         {
           "dia": "Sáb",
-          "texto": "Leia Salmo 42.1 — \"Como a corça anseia pelas correntes de água...\""
+          "texto": "Faça algo que restaure sua energia — sem culpa."
         },
         {
           "dia": "Dom",
-          "texto": "Participe do Encontro e ore por alguém."
+          "texto": "Ao chegar em casa, respire e agradeça pelo dia que passou."
         }
       ]
     },
