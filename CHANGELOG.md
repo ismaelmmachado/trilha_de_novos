@@ -1,5 +1,10 @@
 # Changelog
 
+## Tag: v2.18.1-passo2-organizese (04/08/2026)
+
+- Organize-se do PASSO 2: cada um dos 7 dias vira 2 linhas — leitura (NVT) + "Ação:" em linha própria; bloco "Ore:" removido dos dias
+- Mudança de dados apenas (`dados/passos.json`); o gerador usa o `\n` já tratado por `inlineFormat()` para produzir o `<br>`
+
 ## Tag: v2.18.0-passo2-conteudo (04/08/2026)
 
 - PASSO 2 "Quem Somos Diante de Deus" (site): aplica o novo conteúdo — `para_comecar` vira âncora de abertura com citação NVT (Salmo 139.14), `pratique` ganha o experimento da semana + os "Três gestos" (interno/relacional/missional), `organizese` preenche todos os 7 dias (antes Ter/Qui/Sex vazios) com leitura NVT + oração + ação
