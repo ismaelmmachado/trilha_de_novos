@@ -1,5 +1,11 @@
 # Changelog
 
+## Tag: v2.19.0-passo2-substituicao (04/08/2026)
+
+- PASSO 2: **substituição total do conteúdo** (fase de testes do procedimento) — `subtitulo` vira "A sua história — com todas as suas marcas — já é parte da história de Deus."; `para_comecar` reescrito (rótulos → você já é amado) com "Texto Bíblico" (Salmo 139.14, NVT); `pratique` vira a lista de "Gestos para viver sua identidade" (5 itens) + pergunta da semana; `organizese` ganha os 7 dias como ações simples (sem leitura/oração)
+- Mantidos: `ferramentas` (3 genéricas), `ouca` e `aprofunde` (placeholders — conteúdo narrativo fica para a apostila)
+- Mudança de dados apenas (`dados/passos.json`); renderização via `inlineFormat()` existente
+
 ## Tag: v2.18.2-passo2-pratique (04/08/2026)
 
 - Pratique do PASSO 2: remove o bloco "Três gestos" (interno/relacional/missional); a seção fica apenas com o experimento da semana + pergunta da semana
