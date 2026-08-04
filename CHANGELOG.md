@@ -1,5 +1,10 @@
 # Changelog
 
+## Tag: v2.20.1-passo-secoes-todos (04/08/2026)
+
+- Aplica a mesma proposta do passo 2 a **todos** os passos: `ocultar_secoes: ["ferramentas", "ouca"]` adicionado aos passos 1, 3, 4, 5, 6, 7, 8, 9 — nenhuma página exibe mais as seções Ferramentas e Ouça (dados permanecem no JSON, reversível)
+- `docs/MANUTENCAO.md`: documenta o campo `ocultar_secoes` na tabela de mapeamento (seção 2), ajusta a regra de REMOVER na seção 4 e o passo 5 do fluxo de execução para considerar seções ocultas
+
 ## Tag: v2.20.0-passo2-sem-secoes (04/08/2026)
 
 - Conceito do passo ajustado no PASSO 2: seções **Ferramentas** e **Ouça** removidas da página (fase de testes)

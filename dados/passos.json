@@ -4,6 +4,7 @@
     "titulo": "Acolhimento e Identidade da Casa",
     "subtitulo": "O que é essa comunidade e por que ela existe?",
     "etapa": 1,
+    "ocultar_secoes": ["ferramentas", "ouca"],
     "resumo": "Neste primeiro encontro, você conhece a história da Comunidade Vitral: quem somos, como surgimos, qual é o nosso propósito e o nosso jeito de viver e receber as pessoas.",
     "para_comecar": {
       "texto": "Antes do encontro, leia o documento \"VITRAL — Quem Somos e Como Caminhamos Juntos\". Ele é a base da nossa conversa de hoje. Nele você vai encontrar nossa história, nossos valores (Simples, Missional e Acolhedor) e entender como caminhamos juntos como comunidade.",
@@ -167,6 +168,7 @@
     "titulo": "A Segurança da Fé",
     "subtitulo": "Como posso ter certeza da minha fé?",
     "etapa": 1,
+    "ocultar_secoes": ["ferramentas", "ouca"],
     "resumo": "Se a fé é um presente, como ter certeza de que ela é verdadeira? Neste encontro, vamos entender que a certeza não está em você — está em Deus. E vamos aprender a descansar na promessa, não no sentimento.",
     "para_comecar": {
       "texto": "Comece perguntando: \"O que te faz duvidar da sua fé?\" Valide cada dúvida — elas não são erradas, são humanas. A salvação é um presente (Efésios 2.8-9), não uma conquista. A certeza está na promessa de Deus (João 5.24).",
@@ -248,6 +250,7 @@
     "titulo": "O Ritmo da Vida com Deus",
     "subtitulo": "Como viver a fé no dia a dia?",
     "etapa": 1,
+    "ocultar_secoes": ["ferramentas", "ouca"],
     "resumo": "A vida é corrida, e a fé muitas vezes fica guardada para o domingo. Neste encontro, vamos aprender ferramentas simples para viver a fé no dia a dia — o C.A.F.É. (cuidado integral) e o G.A.P.I.S. (oração que cabe no trânsito).",
     "para_comecar": {
       "texto": "Comece perguntando: \"Qual das quatro áreas do C.A.F.É. está mais descuidada em você hoje?\" Apresente cada área: Coração (emoções), Alma (fé), Força (corpo), Entendimento (mente). O C.A.F.É. não é uma lista de tarefas — é um jeito de se perguntar \"Como estou?\"",
@@ -329,6 +332,7 @@
     "titulo": "Seu Lugar no Vitral",
     "subtitulo": "Qual é o meu lugar na comunidade?",
     "etapa": 1,
+    "ocultar_secoes": ["ferramentas", "ouca"],
     "resumo": "Cada pessoa tem uma cor única no vitral. Neste encontro, vamos descobrir seus dons, seus limites e como você pode servir sem se perder. Afinal, servir não é sobre fazer tudo — é sobre fazer a sua parte, com alegria e no seu ritmo.",
     "para_comecar": {
       "texto": "Comece perguntando: \"Qual dos dons que você leu parece mais com você?\" Apresente os dons de Romanos 12 (Percepção, Serviço, Ensino, Encorajamento, Doação, Liderança, Compaixão). Lembre: o objetivo não é ter todos os dons, mas descobrir o seu.",
@@ -410,6 +414,7 @@
     "titulo": "Os Sinais da Caminhada",
     "subtitulo": "O que significam o Batismo e a Ceia?",
     "etapa": 1,
+    "ocultar_secoes": ["ferramentas", "ouca"],
     "resumo": "Batismo e Ceia não são regras complicadas — são presentes. São sinais visíveis de uma realidade invisível. O Batismo é o abraço de Deus antes do pedido. A Ceia é a mesa que continua posta, sempre aberta para quem tem fome de graça.",
     "para_comecar": {
       "texto": "Comece perguntando: \"O que significa para você ser lembrado por Deus antes mesmo de fazer qualquer coisa?\" Explique que Batismo não salva — quem salva é Jesus. O Batismo é sinal e selo da Aliança. A Ceia é mesa aberta, não prêmio para perfeitos.",
@@ -491,6 +496,7 @@
     "titulo": "Fazer Parte da Família",
     "subtitulo": "O que significa ser membro da Vitral?",
     "etapa": 1,
+    "ocultar_secoes": ["ferramentas", "ouca"],
     "resumo": "Chega um momento em que a pergunta muda: 'Será que este é o meu lugar?' Pertencer não é só participar — é escolher caminhar junto. Neste encontro, vamos refletir sobre o que significa fazer parte da família Vitral.",
     "para_comecar": {
       "texto": "Comece perguntando: \"O que significa 'pertencer' para você?\" Pertencer não é o mesmo que participar. Você pode participar de muitas coisas sem pertencer. A membresia é um compromisso de amor — não um contrato.",
@@ -572,6 +578,7 @@
     "titulo": "Celebração e Envio",
     "subtitulo": "O que fica comigo? Para onde vou?",
     "etapa": 1,
+    "ocultar_secoes": ["ferramentas", "ouca"],
     "resumo": "Você caminhou por 7 encontros. Agora é hora de olhar para trás com gratidão e para frente com esperança. Este encontro celebra tudo o que você descobriu e prepara o coração para o passo final — a preparação para a membresia.",
     "para_comecar": {
       "texto": "Comece convidando cada um a compartilhar: \"O que você leva de mais importante desta caminhada até aqui?\" Ajude o grupo a ver o quanto já caminharam. Cada passo teve um propósito.",
@@ -653,6 +660,7 @@
     "titulo": "Preparação para a Membresia",
     "subtitulo": "O que significa, de fato, ser membro da Vitral?",
     "etapa": 1,
+    "ocultar_secoes": ["ferramentas", "ouca"],
     "resumo": "Este é o último encontro da Trilha. Nele, você vai entender com profundidade o que significa ser membro da Vitral: a história da nossa família maior (a IPIB), os pilares da nossa fé (os 5 Solas), o que significa ser Mordomo e o compromisso da Aliança.",
     "para_comecar": {
       "texto": "Este encontro é diferente. Não é sobre um novo passo, mas sobre preparar você para tomar uma decisão consciente. Apresente a história da IPIB (1903, 31 de julho), os 5 Solas da Reforma e o que significa ser Mordomo.",
