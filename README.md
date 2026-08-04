@@ -7,7 +7,7 @@ Site estático da Trilha de Novos, o programa de discipulado da [Comunidade Vitr
 - **HTML semântico** + **CSS puro** (sem frameworks, sem build)
 - **Design tokens** via CSS custom properties (`css/tokens.css`) — etapa 1 amarelo
 - **Componentes** em `css/estilo.css`, `css/mapa.css`, `css/complementar.css`, `css/print.css`
-- **Gerador Node.js** (`scripts/gerar-passos.js`) 100% data-driven — lê `dados/passos.json` e gera as 9 páginas de passo; todas as 6 seções (Para Começar, Ferramentas, Ouça, Aprofunde, Pratique, Organize-se) são renderizadas a partir do JSON
+- **Gerador Node.js** (`scripts/gerar-passos.js`) 100% data-driven — lê `dados/passos.json` e gera as 9 páginas de passo; as seções (Para Começar, Ferramentas, Ouça, Aprofunde, Pratique, Organize-se) são renderizadas a partir do JSON, com controle **condicional** por passo via `ocultar_secoes` (hoje Ferramentas e Ouça estão ocultas em todos os passos); textos suportam formatação leve (`**negrito**`, `*itálico*`, quebras de linha) via `inlineFormat()`
 - **Zero dependências** — site 100% offline, servido via GitHub Pages
 
 ## Estrutura
@@ -55,7 +55,7 @@ trilha_de_novos/
 | `mapa.html` | Orientação para facilitadores: Seu Papel, Antes do Encontro, Estrutura, Roteiro, Perguntas, Validação, Situações, Cuidado, Checklist, Dica final |
 | `complementar.html` | 6 seções: App da Bíblia, Lectio 365, Devocionais, Podcasts, Playlists, OneYouVersion |
 | `404.html` | Página de erro personalizada com link de volta ao início |
-| `passo-1` a `passo-9` | Cada passo com 6 seções: Para Começar, Ferramentas, Ouça, Aprofunde, Pratique, Organize-se |
+| `passo-1` a `passo-9` | Cada passo com 4 seções exibidas: Para Começar (com Texto Bíblico e pergunta), Aprofunde, Pratique, Organize-se — Ferramentas e Ouça estão **ocultas via `ocultar_secoes`** (dados permanecem no JSON, reversível) |
 
 ## Design System
 
@@ -72,6 +72,16 @@ node scripts/gerar-passos.js
 ```
 
 Gera os arquivos `passo-1.html` a `passo-9.html` a partir de `dados/passos.json`.
+
+O gerador também:
+
+- **`ocultar_secoes`:** campo opcional por passo — lista de seções que **não** devem
+  aparecer na página (ex.: `["ferramentas", "ouca"]`). Se ausente, todas as seções
+  são exibidas. Usado para remover Ferramentas e Ouça de todos os passos.
+- **`inlineFormat()`:** converte a formatação leve dos textos — `**negrito**` →
+  `<strong>`, `*itálico*` → `<em>`, `###` no início de linha → `<strong>`, e quebras
+  de linha (`\n`) → `<br>`. Vale para `para_comecar`, `pratique`, `organizese` e
+  descrições.
 
 ## Apostilas (download pelos passos)
 
@@ -164,16 +174,17 @@ Todo o conteúdo dos 9 passos vive em `dados/passos.json`. **Nunca edite `passo-
 
 | Seção | Campo no JSON | Estrutura |
 |---|---|---|
-| Para Começar | `para_comecar` | `{ texto, pergunta }` |
-| Ferramentas | `ferramentas` | `[{ icon, nome, descricao, link, rotulo }]` — vazio → "Em breve" |
-| Ouça | `ouca` | `{ tipo: "placeholder" \| "player", src, titulo, descricao }` — `tipo` ≠ `player` → "Em breve" |
+| Para Começar | `para_comecar` | `{ texto, pergunta }` — `texto` pode incluir `**Texto Bíblico:**` e `**Reflita:**` |
+| Ferramentas | `ferramentas` | `[{ icon, nome, descricao, link, rotulo }]` — vazio → "Em breve" (atualmente oculto via `ocultar_secoes`) |
+| Ouça | `ouca` | `{ tipo: "placeholder" \| "player", src, titulo, descricao }` — `tipo` ≠ `player` → "Em breve" (atualmente oculto via `ocultar_secoes`) |
 | Aprofunde | `aprofunde` | `{ livro: { titulo, autor, link }, musica: { titulo, artista, link } }` — vazio → "Em breve" |
 | Pratique | `pratique` | `{ experimento, pergunta }` |
 | Organize-se | `organizese` | `{ introducao, dias: [{ dia, texto }] }` — 7 dias, dias sem texto → "Em breve" |
 | Apostila | `pdf` | Token de busca do PDF na pasta `docs/apostilas/pdf/` (ver seção "Apostilas") |
+| (Controle de exibição) | `ocultar_secoes` | Array opcional de seções a não renderizar (ex.: `["ferramentas", "ouca"]`) |
 
 > **Cache-busting:** todas as folhas de estilo são carregadas com `?v=<versão>`
-> (ex.: `css/estilo.css?v=2.10.0`) para forçar o navegador a baixar o CSS atualizado.
+> (ex.: `css/estilo.css?v=2.29.0`) para forçar o navegador a baixar o CSS atualizado.
 > Ao alterar qualquer CSS (mudança em `tokens.css`, `estilo.css`, `mapa.css`,
 > `complementar.css` ou `print.css`), **suba o `?v=`** para a nova versão em todas as
 > páginas (`index`, `mapa`, `complementar`, `404`) e no `scripts/gerar-passos.js`,
@@ -184,7 +195,7 @@ Todo o conteúdo dos 9 passos vive em `dados/passos.json`. **Nunca edite `passo-
 
 - **Branch ativa:** `homologacao`
 - **Branch de produção:** `main`
-- **Tags:** v1.0.0 a v2.16.x (ver [CHANGELOG.md](CHANGELOG.md))
+- **Tags:** v1.0.0 a v2.29.x (ver [CHANGELOG.md](CHANGELOG.md))
 - **GitHub Pages:** https://ismaelmmachado.github.io/trilha_de_novos
 
 ## Repositório

@@ -67,22 +67,22 @@ Você envia o passo inteiro em Markdown, no mesmo espelho da página, e eu aplic
 **apenas o que mudou** em relação ao JSON atual.
 
 ```markdown
-PASSO: 1 — ACOLHIMENTO E IDENTIDADE DA CASA
+PASSO: 1 — VITRAL — QUEM SOMOS E COMO CAMINHAMOS JUNTOS
 
-# Acolhimento e Identidade da Casa
+# Vitral — Quem Somos e Como Caminhamos Juntos
 
-O que é essa comunidade e por que ela existe?
+Entender a história, os valores e o jeito de ser da comunidade que você está conhecendo.
 
 📖
 ## Para Começar
 
-[conteúdo]
+[conteúdo — pode incluir `**Texto Bíblico:**` e `**Reflita:**`]
 Pergunta: [pergunta]
 
 🛠️
 ## Ferramentas
 
-[nova lista de ferramentas]
+[nova lista de ferramentas — se a seção estiver oculta via `ocultar_secoes`, nada aparece]
 
 🎧
 ## Ouça
@@ -116,6 +116,11 @@ Regras para o formato completo:
 - `Pergunta:` → campo `pergunta` (Para Começar). `Pergunta da semana:` →
   campo `pergunta` (Pratique). `Dia: Seg — ...` → campo do dia correspondente
   (Organize-se).
+- **Formatação leve (opcional):** o texto pode usar `**negrito**`, `*itálico*` e
+  quebras de linha — o gerador converte automaticamente via `inlineFormat()`.
+  Na seção Para Começar, o padrão atual é: parágrafos de abertura + uma linha
+  `**Texto Bíblico:** "<citação>" — Referência, NVT` + uma linha
+  `**Reflita:** <pergunta>` (a pergunta também pode ir no campo `pergunta`).
 
 ### Formato 2 — Instrução em linha (atalho para mudanças pontuais)
 

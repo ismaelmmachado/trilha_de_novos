@@ -1,5 +1,14 @@
 # Changelog
 
+## Tag: v2.30.0-docs-readme (04/08/2026)
+
+- **README.md** atualizado: gerador com seções condicionais (`ocultar_secoes`) e `inlineFormat()`; passos com 4 seções exibidas (Ferramentas/Ouça ocultas); tabela de campos ganha `ocultar_secoes` e o padrão **Texto Bíblico**/**Reflita**; cache-busting `?v=2.29.0`; tags até v2.29.x
+- **docs/MANUTENCAO.md**: exemplo do Formato 1 atualizado para o PASSO 1 novo ("Vitral — Quem Somos e Como Caminhamos Juntos") + nota de formatação leve e do padrão Texto Bíblico/Reflita
+- **docs/ATUALIZACAO-GERAL.md**: placeholder e `ocultar_secoes` refletidos no fluxo e no checklist
+- **docs/TEMPLO-PASSO-PAGINA.md**: Ferramentas/Ouça marcadas como ocultas via `ocultar_secoes`; mapeamento JSON ganha o campo
+- **docs/ORIENTACAO-BOOTSTRAP-CONTRATO.md**: dica de portabilidade do `ocultar_secoes`
+- Documentação apenas — nenhuma mudança em código, JSON ou HTML
+
 ## Tag: v2.29.0-espaco-pergunta (04/08/2026)
 
 - Espaçamento na seção "Para Começar" de todos os passos: nova regra `.step-section-content p + p` (margin-top `--space-md`, 16px) cria uma linha em branco entre o texto bíblico e a subseção "Pergunta para o diálogo:" — hoje só o Para Começar tem `<p>` consecutivos, então as demais seções não são afetadas
