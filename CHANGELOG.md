@@ -1,5 +1,10 @@
 # Changelog
 
+## Tag: v2.18.2-passo2-pratique (04/08/2026)
+
+- Pratique do PASSO 2: remove o bloco "Três gestos" (interno/relacional/missional); a seção fica apenas com o experimento da semana + pergunta da semana
+- Mudança de dados apenas (`dados/passos.json`)
+
 ## Tag: v2.18.1-passo2-organizese (04/08/2026)
 
 - Organize-se do PASSO 2: cada um dos 7 dias vira 2 linhas — leitura (NVT) + "Ação:" em linha própria; bloco "Ore:" removido dos dias
