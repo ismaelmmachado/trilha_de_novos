@@ -576,13 +576,13 @@
   {
     "id": 8,
     "titulo": "Celebração e Envio",
-    "subtitulo": "O que fica comigo? Para onde vou?",
+    "subtitulo": "Olhar para trás com gratidão. Olhar para frente com esperança.",
     "etapa": 1,
     "ocultar_secoes": ["ferramentas", "ouca"],
     "resumo": "Você caminhou por 7 encontros. Agora é hora de olhar para trás com gratidão e para frente com esperança. Este encontro celebra tudo o que você descobriu e prepara o coração para o passo final — a preparação para a membresia.",
     "para_comecar": {
-      "texto": "Comece convidando cada um a compartilhar: \"O que você leva de mais importante desta caminhada até aqui?\" Ajude o grupo a ver o quanto já caminharam. Cada passo teve um propósito.",
-      "pergunta": "O que você descobriu sobre Deus, sobre si mesmo e sobre a comunidade?"
+      "texto": "Você chegou até aqui. Foi um caminho com muitos passos. Alguns mais fáceis, outros mais difíceis. Alguns que fizeram sentido na hora, outros que levaram tempo para serem compreendidos.\n\nAgora você está perto do fim da Trilha. Mas isso não significa que sua caminhada termina aqui. Pelo contrário — ela está apenas começando. Este encontro é sobre olhar para trás com gratidão e olhar para frente com esperança. É sobre celebrar o que você descobriu e se preparar para o que vem a seguir.\n\n**Texto Bíblico:** \"Portanto, vão e façam discípulos de todas as nações, batizando-os em nome do Pai, do Filho e do Espírito Santo, ensinando-os a obedecer a tudo o que eu lhes ordenei. E eu estarei com vocês todos os dias, até o fim dos tempos.\" — Mateus 28.19-20, NVT",
+      "pergunta": "O que você leva de mais importante desta caminhada até aqui?"
     },
     "ferramentas": [
       {
@@ -616,39 +616,39 @@
       "musica": {}
     },
     "pratique": {
-      "experimento": "Converse com seu acompanhante sobre qual será seu próximo passo: qual Pequeno Grupo você vai frequentar? Onde você pode servir? Não precisa decidir sozinho.",
-      "pergunta": "Como você se sente em relação ao próximo passo — a Preparação para a Membresia?"
+      "experimento": "Esta semana, viva o envio:\n\nConverse com seu acompanhante sobre qual será seu próximo passo: qual PG você vai frequentar? Onde você pode servir?\n\nEscolha um lugar onde você já está (casa, trabalho, vizinhança) e pergunte: \"Como posso servir aqui?\"\n\nPratique um gesto intencional de cuidado com alguém que não faz parte da igreja.\n\nAnote três coisas que você descobriu sobre si mesmo durante a Trilha.\n\nCompartilhe com alguém o que você aprendeu — pode ser uma conversa simples.",
+      "pergunta": "O que você está levando desta caminhada? E para onde você está sendo enviado?"
     },
     "organizese": {
       "introducao": "Sugestões para a semana:",
       "dias": [
         {
           "dia": "Seg",
-          "texto": "Leia Mateus 28.19-20 — a Grande Comissão."
+          "texto": "Leia Mateus 28.19-20. Reflita: o que significa \"vão\" para você hoje?"
         },
         {
           "dia": "Ter",
-          "texto": ""
+          "texto": "Leia Atos 1.8. Reflita: onde está o seu \"Jerusalém\" — seu lugar de envio?"
         },
         {
           "dia": "Qua",
-          "texto": "Anote: o que você leva de mais importante desta caminhada?"
+          "texto": "Leia 1 Coríntios 3.6. Reflita: Deus faz crescer. Você só precisa plantar."
         },
         {
           "dia": "Qui",
-          "texto": ""
+          "texto": "Pergunte-se: \"O que eu levo de mais importante da Trilha?\""
         },
         {
           "dia": "Sex",
-          "texto": ""
+          "texto": "Converse com seu acompanhante sobre os próximos passos."
         },
         {
           "dia": "Sáb",
-          "texto": "Ore: \"Senhor, para onde Tu estás me enviando?\""
+          "texto": "Anote onde você quer servir ou crescer depois da Trilha."
         },
         {
           "dia": "Dom",
-          "texto": "Participe do Encontro e converse com seu acompanhante."
+          "texto": "Celebre o caminho percorrido — e agradeça por quem te acompanhou."
         }
       ]
     },

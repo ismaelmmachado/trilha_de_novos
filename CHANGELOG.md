@@ -1,5 +1,11 @@
 # Changelog
 
+## Tag: v2.26.0-passo8-conteudo (04/08/2026)
+
+- PASSO 8 "Celebração e Envio" (site): **substituição total do conteúdo** — `subtitulo` vira "Olhar para trás com gratidão. Olhar para frente com esperança."; `para_comecar` reescrito (fim da Trilha = começo da caminhada) com "Texto Bíblico" (Mateus 28.19-20, NVT); `pratique` vira os 5 itens para viver o envio + pergunta da semana; `organizese` ganha os 7 dias (preenche Ter/Qui/Sex que estavam vazios)
+- Mantidos: `ferramentas`/`ouca` (ocultos via `ocultar_secoes`), `aprofunde` (placeholder) e token `pdf` (PASSO 8)
+- Mudança de dados apenas (`dados/passos.json`); renderização via `inlineFormat()` existente
+
 ## Tag: v2.25.0-passo7-conteudo (04/08/2026)
 
 - PASSO 7 "Fazer Parte da Família" (site): **substituição total do conteúdo** — `subtitulo` vira "Pertencer não é sobre ser perfeito. É sobre escolher caminhar junto."; `para_comecar` reescrito (participar ≠ pertencer; "Este é o meu lugar") com "Texto Bíblico" (Efésios 2.19, NVT); `pratique` vira os 5 passos rumo ao pertencimento + pergunta da semana; `organizese` ganha os 7 dias (preenche Ter/Qui/Sex que estavam vazios)
