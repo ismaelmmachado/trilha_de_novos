@@ -1,5 +1,11 @@
 # Changelog
 
+## Tag: v2.18.0-passo2-conteudo (04/08/2026)
+
+- PASSO 2 "Quem Somos Diante de Deus" (site): aplica o novo conteúdo — `para_comecar` vira âncora de abertura com citação NVT (Salmo 139.14), `pratique` ganha o experimento da semana + os "Três gestos" (interno/relacional/missional), `organizese` preenche todos os 7 dias (antes Ter/Qui/Sex vazios) com leitura NVT + oração + ação
+- `scripts/gerar-passos.js`: novo helper `inlineFormat()` — converte `###`, `**negrito**`, `*itálico*` e quebras de linha em HTML nos textos renderizados; os demais passos ficam inalterados (nenhum usava marcadores)
+- Sem mudança em `ferramentas` (mantém as 3 genéricas), `ouca` e `aprofunde` (placeholders); alinhado ao TEMPLO-PASSO-PAGINA (não repete a apostila)
+
 ## Tag: v2.17.0-templates-tipos-conteudo (04/08/2026)
 
 - Cria `docs/TEMPLO-APOSTILA-TIPOS.md` — define **que tipo de conteúdo** entra em cada seção do template da apostila (espinha dorsal fixa + bloco ANEXO), com regras transversais (NVT, 1 pergunta por tema, ordem fixa) e template markdown de manutenção compatível com `docs/MANUTENCAO.md`
