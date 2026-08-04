@@ -50,8 +50,11 @@ Leia antes de mexer em qualquer arquivo:
    - Formato 1 (arquivo Markdown completo) ou Formato 2 (instrução em linha)
    - Ações: `INCLUIR`, `SUBSTITUIR`, `REMOVER`
 3. Confira as citações bíblicas: **todas na NVT** (Nova Versão Transformadora).
-4. Lembre do placeholder "Em breve": seções vazias (Ferramentas, Ouça, Aprofunde,
-   dias de Organize-se) exibem placeholder — não deixe conteúdo órfão.
+4. Lembre do placeholder "Em breve": seções vazias (Aprofunde, dias de
+   Organize-se) exibem placeholder — não deixe conteúdo órfão.
+5. Lembre do controle de exibição `ocultar_secoes` (ver `docs/MANUTENCAO.md`,
+   seção 2): hoje Ferramentas e Ouça estão ocultas em todos os passos — dados
+   permanecem no JSON (reversível), mas não são renderizados.
 
 ### Etapa 2A — Apostilas (docx/pdf)
 
@@ -116,7 +119,7 @@ Antes de finalizar qualquer atualização geral:
 |---|---|
 | Regra de Ouro | Simples, missional, acolhedor; sem jargões; coerente com o Playbook |
 | NVT | Todas as citações bíblicas na Nova Versão Transformadora |
-| Placeholders | Seções vazias mostram "Em breve", não quebram o layout |
+| Placeholders | Seções vazias mostram "Em breve", não quebram o layout; seções em `ocultar_secoes` não aparecem |
 | HTML | `passo-N.html` válido, sem conteúdo perdido nas 9 páginas |
 | Landing | `index.html` carrega os passos via JSON (cards corretos) |
 | Cache-busting | `?v=` subiu se houve mudança de CSS (todas as páginas + gerador) |

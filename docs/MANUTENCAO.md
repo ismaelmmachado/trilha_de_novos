@@ -30,8 +30,8 @@ Cada seção de um passo no site corresponde a um campo em `dados/passos.json`.
 | Seção (HTML) | Campo no JSON | Estrutura | Vazio = |
 |---|---|---|---|
 | Para Começar | `para_comecar` | `{ texto, pergunta }` | — |
-| Ferramentas | `ferramentas` | `[{ icon, nome, descricao, link, rotulo }]` | "Em breve" |
-| Ouça | `ouca` | `{ tipo: "placeholder" \| "player", src, titulo, descricao }` | "Em breve" |
+| Ferramentas | `ferramentas` | `[{ icon, nome, descricao, link, rotulo }]` | "Em breve" (se não ocultada) |
+| Ouça | `ouca` | `{ tipo: "placeholder" \| "player", src, titulo, descricao }` | "Em breve" (se não ocultada) |
 | Aprofunde | `aprofunde` | `{ livro: { titulo, autor, link }, musica: { titulo, artista, link } }` | "Em breve" |
 | Pratique | `pratique` | `{ experimento, pergunta }` | — |
 | Organize-se | `organizese` | `{ introducao, dias: [{ dia, texto }] }` | dias sem texto → "Em breve" |
@@ -49,6 +49,11 @@ Regras do mapeamento:
 - **`aprofunde`:** preencha `livro.titulo` (e `autor`, `link`) para exibir o card
   de livro; preencha `musica.titulo` (e `artista`, `link`) para exibir o card de
   música. Deixe `{}` nos sub-objetos para esvaziar.
+- **`ocultar_secoes` (controle de exibição):** campo **opcional** por passo —
+  lista de seções que **não** devem aparecer na página (ex.: `["ferramentas",
+  "ouca"]`). Se ausente, todas as 6 seções são exibidas. Os dados da seção ocultada
+  permanecem no JSON (reversível) — só deixam de ser renderizados. É o mecanismo
+  usado para remover Ferramentas e Ouça de todos os passos.
 
 ---
 
@@ -62,22 +67,22 @@ Você envia o passo inteiro em Markdown, no mesmo espelho da página, e eu aplic
 **apenas o que mudou** em relação ao JSON atual.
 
 ```markdown
-PASSO: 1 — ACOLHIMENTO E IDENTIDADE DA CASA
+PASSO: 1 — VITRAL — QUEM SOMOS E COMO CAMINHAMOS JUNTOS
 
-# Acolhimento e Identidade da Casa
+# Vitral — Quem Somos e Como Caminhamos Juntos
 
-O que é essa comunidade e por que ela existe?
+Entender a história, os valores e o jeito de ser da comunidade que você está conhecendo.
 
 📖
 ## Para Começar
 
-[conteúdo]
+[conteúdo — pode incluir `**Texto Bíblico:**` e `**Reflita:**`]
 Pergunta: [pergunta]
 
 🛠️
 ## Ferramentas
 
-[nova lista de ferramentas]
+[nova lista de ferramentas — se a seção estiver oculta via `ocultar_secoes`, nada aparece]
 
 🎧
 ## Ouça
@@ -111,6 +116,11 @@ Regras para o formato completo:
 - `Pergunta:` → campo `pergunta` (Para Começar). `Pergunta da semana:` →
   campo `pergunta` (Pratique). `Dia: Seg — ...` → campo do dia correspondente
   (Organize-se).
+- **Formatação leve (opcional):** o texto pode usar `**negrito**`, `*itálico*` e
+  quebras de linha — o gerador converte automaticamente via `inlineFormat()`.
+  Na seção Para Começar, o padrão atual é: parágrafos de abertura + uma linha
+  `**Texto Bíblico:** "<citação>" — Referência, NVT` + uma linha
+  `**Reflita:** <pergunta>` (a pergunta também pode ir no campo `pergunta`).
 
 ### Formato 2 — Instrução em linha (atalho para mudanças pontuais)
 
@@ -149,7 +159,8 @@ PASSO 5 — Seção: ## Aprofunde — Ação: REMOVER
 - Ao **INCLUIR**: o novo conteúdo vai para o fim do conteúdo existente da seção.
 - Ao **SUBSTITUIR**: todo o conteúdo atual da seção é descartado.
 - Ao **REMOVER**: a seção é eliminada do JSON; no site, seções obrigatórias voltam
-  a exibir o placeholder "Em breve" (as 6 seções sempre existem na página).
+  a exibir o placeholder "Em breve" — **exceto** se a seção estiver em
+  `ocultar_secoes` do passo (ver seção 2), caso em que não aparece nada.
 
 ---
 
@@ -159,7 +170,8 @@ PASSO 5 — Seção: ## Aprofunde — Ação: REMOVER
 2. **Comparar** o conteúdo enviado com o JSON atual antes de qualquer edição.
 3. **Aplicar** apenas as seções indicadas, conforme a ação e o formato (seção 4).
 4. **Rodar** `node scripts/gerar-passos.js`.
-5. **Verificar** que nada foi perdido e que os placeholders estão corretos.
+5. **Verificar** que nada foi perdido, que os placeholders estão corretos e que as
+   seções em `ocultar_secoes` não aparecem indevidamente.
 6. **Reportar** o resumo: por passo, o que foi `INCLUÍDO`, `SUBSTITUÍDO` ou `REMOVIDO`.
 
 ### Regras de segurança

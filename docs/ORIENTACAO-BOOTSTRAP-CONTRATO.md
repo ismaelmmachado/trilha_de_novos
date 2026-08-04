@@ -42,14 +42,20 @@ As seções do site são **semelhantes** às 6 seções de referência abaixo �
 | Seção (HTML) | Campo no JSON | Estrutura | Vazio = |
 |---|---|---|---|
 | Para Começar | `para_comecar` | `{ texto, pergunta }` | — |
-| Ferramentas | `ferramentas` | `[{ icon, nome, descricao, link, rotulo }]` | "Em breve" |
-| Ouça | `ouca` | `{ tipo: "placeholder" \| "player", src, titulo, descricao }` | "Em breve" |
+| Ferramentas | `ferramentas` | `[{ icon, nome, descricao, link, rotulo }]` | "Em breve" (ou oculta via `ocultar_secoes`) |
+| Ouça | `ouca` | `{ tipo: "placeholder" \| "player", src, titulo, descricao }` | "Em breve" (ou oculta via `ocultar_secoes`) |
 | Aprofunde | `aprofunde` | `{ livro: { titulo, autor, link }, musica: { titulo, artista, link } }` | "Em breve" |
 | Pratique | `pratique` | `{ experimento, pergunta }` | — |
 | Organize-se | `organizese` | `{ introducao, dias: [{ dia, texto }] }` | dias vazios → "Em breve" |
+| (Controle de exibição) | `ocultar_secoes` | array opcional de seções a não renderizar por passo (ex.: `["ferramentas", "ouca"]`) | — |
 
 > Ajuste nomes, ordem e estruturas conforme a realidade deste site. O importante é
 > que o mapeamento seja **verdadeiro** para este projeto.
+>
+> 💡 **Dica de portabilidade:** se o novo site não quiser exibir alguma seção em
+> certos passos (ou em todos), pode usar o campo `ocultar_secoes` — os dados da
+> seção permanecem no JSON (reversível), apenas deixam de ser renderizados. No
+> projeto Trilha, Ferramentas e Ouça são ocultas em todos os passos dessa forma.
 
 ### Fase 2 — Criar o contrato de manutenção
 

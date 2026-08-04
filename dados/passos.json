@@ -1,13 +1,14 @@
 [
   {
     "id": 1,
-    "titulo": "Acolhimento e Identidade da Casa",
-    "subtitulo": "O que é essa comunidade e por que ela existe?",
+    "titulo": "Vitral — Quem Somos e Como Caminhamos Juntos",
+    "subtitulo": "Entender a história, os valores e o jeito de ser da comunidade que você está conhecendo.",
     "etapa": 1,
+    "ocultar_secoes": ["ferramentas", "ouca"],
     "resumo": "Neste primeiro encontro, você conhece a história da Comunidade Vitral: quem somos, como surgimos, qual é o nosso propósito e o nosso jeito de viver e receber as pessoas.",
     "para_comecar": {
-      "texto": "Antes do encontro, leia o documento \"VITRAL — Quem Somos e Como Caminhamos Juntos\". Ele é a base da nossa conversa de hoje. Nele você vai encontrar nossa história, nossos valores (Simples, Missional e Acolhedor) e entender como caminhamos juntos como comunidade.",
-      "pergunta": "O que você leu que mais te marcou?"
+      "texto": "Você já percorreu um caminho até aqui. Conheceu a história da Vitral, descobriu quem é diante de Deus, entendeu a segurança da sua fé, aprendeu ferramentas para viver no dia a dia, encontrou pistas sobre seu lugar na comunidade, conheceu os sinais da caminhada e refletiu sobre o que significa pertencer.\n\nAgora, este material te convida a ir mais fundo: entender quem somos como comunidade, o que nos move, o que nos guia e para onde estamos indo. Não é sobre regras — é sobre identidade. É sobre entender o vitral do qual você faz parte.\n\n**Texto Bíblico:** \"Eu sou a videira; vocês são os ramos. Quem permanece em mim, e eu nele, esse dá muito fruto; pois sem mim vocês não podem fazer coisa alguma.\" — João 15.5, NVT",
+      "pergunta": "O que significa para você fazer parte de uma comunidade que se entende como um vitral — cada pessoa com sua cor, sua forma, sua história?"
     },
     "ferramentas": [
       {
@@ -41,39 +42,39 @@
       "musica": {}
     },
     "pratique": {
-      "experimento": "Esta semana, leia o documento \"VITRAL — Quem Somos e Como Caminhamos Juntos\" com calma, como quem toma um café. Sublinhe o que mais te tocou. Leve suas perguntas para o próximo encontro.",
-      "pergunta": "O que você descobriu sobre a Vitral que te faz querer continuar?"
+      "experimento": "Esta semana, viva o jeito Vitral:\n\nLeia João 15.5 e reflita: o que significa \"permanecer em Jesus\" no seu dia a dia?\n\nIdentifique em qual dos quatro movimentos da missão (Acolher, Formar, Enraizar, Enviar) você está hoje.\n\nConverse com alguém sobre como os três pilares (Encontro, Casa, PG) têm sustentado sua fé.\n\nPergunte a si mesmo: \"O que significa 'venha como você está' para mim?\"\n\nSe você ainda não está em um Pequeno Grupo, converse com seu acompanhante sobre como começar.",
+      "pergunta": "O que significa para você fazer parte de uma comunidade que não exige perfeição, mas caminha junto?"
     },
     "organizese": {
       "introducao": "Sugestões para a semana:",
       "dias": [
         {
           "dia": "Seg",
-          "texto": ""
+          "texto": "Leia João 15.5. Reflita: você é ramo da videira — a vida flui de Jesus."
         },
         {
           "dia": "Ter",
-          "texto": ""
+          "texto": "Leia Mateus 22.37-40. Reflita: amar a Deus e ao próximo é o centro de tudo."
         },
         {
           "dia": "Qua",
-          "texto": ""
+          "texto": "Leia Efésios 4.16. Reflita: cada parte do corpo tem sua função."
         },
         {
           "dia": "Qui",
-          "texto": ""
+          "texto": "Pergunte-se: \"O que significa 'venha como você está' para mim?\""
         },
         {
           "dia": "Sex",
-          "texto": ""
+          "texto": "Converse com alguém sobre o que significa pertencer a uma comunidade."
         },
         {
           "dia": "Sáb",
-          "texto": ""
+          "texto": "Anote uma coisa que você descobriu sobre o jeito Vitral de ser igreja."
         },
         {
           "dia": "Dom",
-          "texto": "Leia o documento \"VITRAL — Quem Somos e Como Caminhamos Juntos\""
+          "texto": "No Encontro, olhe ao redor e veja o vitral — cada cor, cada pessoa, cada história."
         }
       ]
     },
@@ -83,12 +84,13 @@
   {
     "id": 2,
     "titulo": "Quem Somos Diante de Deus",
-    "subtitulo": "Quem sou eu diante de Deus?",
+    "subtitulo": "A sua história — com todas as suas marcas — já é parte da história de Deus.",
     "etapa": 1,
+    "ocultar_secoes": ["ferramentas", "ouca"],
     "resumo": "Depois de conhecer a casa, a gente te convida a olhar para dentro. Neste encontro, vamos descobrir quem você é diante de Deus — sua identidade, suas marcas e o lugar que você ocupa na grande história que Deus está escrevendo.",
     "para_comecar": {
-      "texto": "Comece perguntando ao grupo: \"O que você pensa quando ouve que você é amado antes de fazer qualquer coisa?\" A história da salvação tem quatro atos (Criação, Queda, Redenção, Restauração) — e você está no meio dela.",
-      "pergunta": "Se você fosse um pedaço de vidro, que cor você teria hoje? Por quê?"
+      "texto": "A gente passa tanto tempo tentando caber em rótulos: o que você faz, o que você tem, o que os outros dizem. Mas a fé cristã vira essa lógica de cabeça para baixo. Antes de qualquer rótulo, existe uma verdade: você já é amado.\n\nA pergunta não é \"O que você precisa fazer para ser aceito?\" — porque a resposta já é \"nada\". A pergunta é: o que muda na sua vida quando você descansa nesse amor?\n\n**Texto Bíblico:** \"Graças te dou, de modo assombrosamente maravilhoso me formaste.\" — Salmo 139.14, NVT",
+      "pergunta": "Se o seu valor não está no que você faz, mas no que Deus diz sobre você, o que você precisa parar de carregar?"
     },
     "ferramentas": [
       {
@@ -122,39 +124,39 @@
       "musica": {}
     },
     "pratique": {
-      "experimento": "Olhe para sua história com mais gentileza. Reserve um momento para escrever uma frase sobre algo que você já viveu e que hoje pode ver com mais compaixão. Não precisa compartilhar com ninguém. Só com você e Deus.",
-      "pergunta": "Que 'marcas' você carrega na sua história? E como elas podem ser lugar de luz?"
+      "experimento": "Gestos para viver sua identidade esta semana:\n\nReserve 15 minutos para escrever uma coisa que você já viveu e que hoje pode ver com mais compaixão.\n\nPergunte a alguém da comunidade: \"O que você vê em mim que eu talvez não veja?\"\n\nCompartilhe com uma pessoa esta semana: \"Você não precisa ser perfeito para ser amado.\"\n\nOlhe para suas marcas e agradeça — elas são lugar de luz.\n\nPare de carregar algo que já foi perdoado.",
+      "pergunta": "Que \"marcas\" você carrega na sua história? E como elas podem ser lugar de luz para outras pessoas?"
     },
     "organizese": {
-      "introducao": "Sugestões para a semana:",
+      "introducao": "Sugestões para te acompanhar durante a semana, para que a identidade não fique só no encontro:",
       "dias": [
         {
           "dia": "Seg",
-          "texto": "Leia Salmo 139 e reflita: você foi criado com propósito."
+          "texto": "Anote uma coisa que Deus sabe sobre você e que te traz paz."
         },
         {
           "dia": "Ter",
-          "texto": ""
+          "texto": "Lembre-se de um momento em que você sentiu a presença de Deus."
         },
         {
           "dia": "Qua",
-          "texto": "Pergunte a alguém próximo: \"O que você vê em mim que eu talvez não veja?\""
+          "texto": "Escreva uma frase sobre algo em você que você está aprendendo a ver com mais compaixão."
         },
         {
           "dia": "Qui",
-          "texto": ""
+          "texto": "Identifique algo que você precisa parar de carregar."
         },
         {
           "dia": "Sex",
-          "texto": ""
+          "texto": "Mande uma mensagem para alguém da comunidade dizendo que você está grato por ela."
         },
         {
           "dia": "Sáb",
-          "texto": "Anote uma marca sua que você está aprendendo a ver com mais gentileza."
+          "texto": "Anote algo que já é novo em você."
         },
         {
           "dia": "Dom",
-          "texto": "Leia 1 Pedro 2.9-10 — \"agora são povo de Deus\""
+          "texto": "Compartilhe com alguém o que você aprendeu sobre quem você é esta semana."
         }
       ]
     },
@@ -164,12 +166,13 @@
   {
     "id": 3,
     "titulo": "A Segurança da Fé",
-    "subtitulo": "Como posso ter certeza da minha fé?",
+    "subtitulo": "A certeza não está em você — está na promessa de Deus.",
     "etapa": 1,
+    "ocultar_secoes": ["ferramentas", "ouca"],
     "resumo": "Se a fé é um presente, como ter certeza de que ela é verdadeira? Neste encontro, vamos entender que a certeza não está em você — está em Deus. E vamos aprender a descansar na promessa, não no sentimento.",
     "para_comecar": {
-      "texto": "Comece perguntando: \"O que te faz duvidar da sua fé?\" Valide cada dúvida — elas não são erradas, são humanas. A salvação é um presente (Efésios 2.8-9), não uma conquista. A certeza está na promessa de Deus (João 5.24).",
-      "pergunta": "O que você sente ao ouvir que a salvação é um presente — não uma conquista?"
+      "texto": "A fé é uma caminhada, e em toda caminhada surgem perguntas. Talvez você já tenha se perguntado: \"Será que minha fé é verdadeira? Como posso ter certeza de que sou salvo?\"\n\nEssas perguntas não são erradas — são humanas. Mas a resposta que a gente costuma buscar está no lugar errado. A gente olha para dentro, para os sentimentos, para o que faz ou deixa de fazer. Mas a Bíblia aponta para fora — para a promessa de Deus.\n\nA certeza não vem de você. Ela vem d'Ele.\n\n**Texto Bíblico:** \"Eu lhes digo a verdade: quem ouve a minha mensagem e crê naquele que me enviou tem a vida eterna. Jamais será condenado, mas já passou da morte para a vida.\" — João 5.24, NVT",
+      "pergunta": "O que te faz duvidar da sua fé? E o que te dá esperança de que ela é verdadeira?"
     },
     "ferramentas": [
       {
@@ -203,39 +206,39 @@
       "musica": {}
     },
     "pratique": {
-      "experimento": "Leia Mateus 19.16 — a história do jovem rico. Reflita: \"O que me impede de confiar plenamente em Deus?\" Não precisa ter uma resposta pronta. Só se pergunte.",
-      "pergunta": "Qual dos 'testes' da fé você sente que mais precisa crescer?"
+      "experimento": "Esta semana, faça um exame sincero da sua fé:\n\nLeia Mateus 19.16-22 e reflita: o que pode estar ocupando o lugar de Deus no seu coração?\n\nIdentifique uma área da sua vida onde você tem confiado mais em si mesmo do que em Deus.\n\nPratique entregar essa área a Deus em oração — não para se sentir melhor, mas para descansar n'Ele.\n\nConverse com alguém da comunidade sobre o que você está aprendendo sobre a certeza da fé.\n\nPare de se cobrar por sentimentos e comece a confiar na promessa.",
+      "pergunta": "O que você precisa entregar a Deus para descansar na certeza que só Ele pode dar?"
     },
     "organizese": {
       "introducao": "Sugestões para a semana:",
       "dias": [
         {
           "dia": "Seg",
-          "texto": "Leia João 5.24 — a promessa de Deus para você."
+          "texto": "Leia João 5.24. Escreva a frase que mais te impactou."
         },
         {
           "dia": "Ter",
-          "texto": ""
+          "texto": "Leia Efésios 2.8-9. Agradeça por uma salvação que não depende de você."
         },
         {
           "dia": "Qua",
-          "texto": "Leia Romanos 8.38-39 — nada pode te separar do amor de Deus."
+          "texto": "Leia Mateus 19.16-22. Pergunte-se: o que me impede de confiar plenamente?"
         },
         {
           "dia": "Qui",
-          "texto": ""
+          "texto": "Leia Mateus 7.21-23. Reflita: o que significa \"fazer a vontade do Pai\"?"
         },
         {
           "dia": "Sex",
-          "texto": ""
+          "texto": "Leia 1 João 5.13. Anote uma razão para ter certeza da sua fé."
         },
         {
           "dia": "Sáb",
-          "texto": "Anote uma dúvida que você tem e leve para o próximo encontro."
+          "texto": "Leia Romanos 8.1. Descanse na verdade de que não há condenação."
         },
         {
           "dia": "Dom",
-          "texto": "Ore com suas próprias palavras: \"Senhor, eu confio em Ti.\""
+          "texto": "Compartilhe com alguém o que você aprendeu sobre a segurança da fé."
         }
       ]
     },
@@ -245,12 +248,13 @@
   {
     "id": 4,
     "titulo": "O Ritmo da Vida com Deus",
-    "subtitulo": "Como viver a fé no dia a dia?",
+    "subtitulo": "Cuidar de si para cuidar do outro — um ritmo que cabe no seu dia a dia.",
     "etapa": 1,
+    "ocultar_secoes": ["ferramentas", "ouca"],
     "resumo": "A vida é corrida, e a fé muitas vezes fica guardada para o domingo. Neste encontro, vamos aprender ferramentas simples para viver a fé no dia a dia — o C.A.F.É. (cuidado integral) e o G.A.P.I.S. (oração que cabe no trânsito).",
     "para_comecar": {
-      "texto": "Comece perguntando: \"Qual das quatro áreas do C.A.F.É. está mais descuidada em você hoje?\" Apresente cada área: Coração (emoções), Alma (fé), Força (corpo), Entendimento (mente). O C.A.F.É. não é uma lista de tarefas — é um jeito de se perguntar \"Como estou?\"",
-      "pergunta": "O que você já faz que ajuda a cuidar de alguma dessas áreas?"
+      "texto": "A vida não para. O trabalho, a família, o trânsito, o cansaço — tudo isso continua. E muitas vezes a fé parece algo que fica guardado para o domingo. A gente sabe que não é o ideal, mas a correria pesa.\n\nA proposta deste passo não é te dar mais uma lista de coisas para fazer. É te mostrar que a fé pode ser vivida de um jeito sustentável — um ritmo que cabe na sua rotina, que não te esgota, que te alimenta. Como um café: não se toma de uma vez. Toma-se um gole de cada vez.\n\n**Texto Bíblico:** \"Acaso não sabem que o corpo de vocês é santuário do Espírito Santo, que habita em vocês?\" — 1 Coríntios 6.19, NVT",
+      "pergunta": "Qual das quatro áreas do C.A.F.É. (Coração, Alma, Força, Entendimento) está mais descuidada em você hoje?"
     },
     "ferramentas": [
       {
@@ -284,39 +288,39 @@
       "musica": {}
     },
     "pratique": {
-      "experimento": "Escolha UMA das quatro áreas do C.A.F.É. e coloque em prática um pequeno gesto de cuidado esta semana. Crie também uma 'frase de bolso' do G.A.P.I.S. para usar em algum momento do dia — no trânsito, na fila, antes de dormir.",
-      "pergunta": "Em qual dos três lugares da fé (Encontro, Casa, PG) você sente que tem mais dificuldade de se conectar?"
+      "experimento": "Esta semana, escolha uma área do C.A.F.É. para cuidar com um gesto simples:\n\nSepare um momento para escrever como você está se sentindo — sem filtrar, sem julgar.\n\nReserve 10 minutos de silêncio para ouvir sua própria respiração e lembrar que Deus está ali.\n\nDurma uma hora mais cedo em um dia desta semana — sem culpa.\n\nDesligue as notificações do celular por uma hora e leia algo que alimente sua mente.\n\nPergunte a alguém de confiança: \"Como você tem cuidado de você?\" — e escute.",
+      "pergunta": "Se você pudesse começar hoje com um único gesto de cuidado, qual seria?"
     },
     "organizese": {
       "introducao": "Sugestões para a semana:",
       "dias": [
         {
           "dia": "Seg",
-          "texto": "Pela manhã, ore: \"Obrigado por este dia, Senhor.\""
+          "texto": "Pare por 5 minutos e pergunte: \"Como está meu coração hoje?\""
         },
         {
           "dia": "Ter",
-          "texto": "Cuide do seu Corpo: descanse 7-8 horas hoje."
+          "texto": "Feche os olhos por um instante e respire fundo. Deus está presente."
         },
         {
           "dia": "Qua",
-          "texto": "No trânsito, ore em gratidão por algo simples."
+          "texto": "Troque 15 minutos de tela por 15 minutos de silêncio."
         },
         {
           "dia": "Qui",
-          "texto": ""
+          "texto": "Pergunte a alguém: \"Como posso orar por você hoje?\""
         },
         {
           "dia": "Sex",
-          "texto": "Cuide da sua Mente: 10 minutos de silêncio, sem telas."
+          "texto": "Anote três coisas que você agradece neste dia."
         },
         {
           "dia": "Sáb",
-          "texto": "Leia Salmo 42.1 — \"Como a corça anseia pelas correntes de água...\""
+          "texto": "Faça algo que restaure sua energia — sem culpa."
         },
         {
           "dia": "Dom",
-          "texto": "Participe do Encontro e ore por alguém."
+          "texto": "Ao chegar em casa, respire e agradeça pelo dia que passou."
         }
       ]
     },
@@ -326,12 +330,13 @@
   {
     "id": 5,
     "titulo": "Seu Lugar no Vitral",
-    "subtitulo": "Qual é o meu lugar na comunidade?",
+    "subtitulo": "Cada um de nós tem uma cor que ninguém mais tem — e no vitral, cada cor importa.",
     "etapa": 1,
+    "ocultar_secoes": ["ferramentas", "ouca"],
     "resumo": "Cada pessoa tem uma cor única no vitral. Neste encontro, vamos descobrir seus dons, seus limites e como você pode servir sem se perder. Afinal, servir não é sobre fazer tudo — é sobre fazer a sua parte, com alegria e no seu ritmo.",
     "para_comecar": {
-      "texto": "Comece perguntando: \"Qual dos dons que você leu parece mais com você?\" Apresente os dons de Romanos 12 (Percepção, Serviço, Ensino, Encorajamento, Doação, Liderança, Compaixão). Lembre: o objetivo não é ter todos os dons, mas descobrir o seu.",
-      "pergunta": "O que os outros já disseram que veem em você?"
+      "texto": "A gente não foi feito para ficar parado. Não foi feito para ser só espectador. Cada um de nós tem algo para oferecer — um jeito único de servir, de cuidar, de fazer parte.\n\nPode ser que você já saiba o que é. Pode ser que nunca tenha parado para pensar nisso. Pode ser que ache que não tem nada de especial para oferecer. A verdade é que Deus colocou em você uma cor que ninguém mais tem. E no vitral, cada cor importa.\n\n**Texto Bíblico:** \"Cada um exerça o dom que recebeu para servir os outros, administrando fielmente a graça de Deus em suas múltiplas formas.\" — 1 Pedro 4.10, NVT",
+      "pergunta": "Qual dos dons que você leu parece mais com você? O que os outros já disseram que veem em você?"
     },
     "ferramentas": [
       {
@@ -365,39 +370,39 @@
       "musica": {}
     },
     "pratique": {
-      "experimento": "Escolha UM dos dons que você descobriu (ou que outros veem em você) e use-o fora do ambiente da igreja — em casa, no trabalho, na vizinhança. Observe como você se sente. Observe como as pessoas reagem.",
-      "pergunta": "O que você gostaria de fazer, mas tem medo de tentar?"
+      "experimento": "Esta semana, dê um passo para descobrir seu lugar:\n\nPergunte a duas pessoas próximas: \"O que você vê em mim que eu talvez não veja?\"\n\nLeia Romanos 12.4-8 e identifique qual dos dons listados mais combina com você.\n\nExperimente um gesto de serviço fora da igreja — em casa, no trabalho ou na vizinhança.\n\nEscolha um dos quatro times da Vitral (Acolhimento, Logística, Experiência, Ensino) e observe como ele funciona.\n\nConverse com alguém que já serve em algum time e pergunte como é a experiência.",
+      "pergunta": "Que cor você está descobrindo que tem? Como ela pode brilhar no vitral?"
     },
     "organizese": {
       "introducao": "Sugestões para a semana:",
       "dias": [
         {
           "dia": "Seg",
-          "texto": "Leia Romanos 12.4-8 — os dons que Deus distribui."
+          "texto": "Leia Romanos 12.4-8. Anote o dom que mais chamou sua atenção."
         },
         {
           "dia": "Ter",
-          "texto": ""
+          "texto": "Pergunte a alguém de confiança: \"O que você vê em mim?\""
         },
         {
           "dia": "Qua",
-          "texto": "Use um dos seus dons hoje no trabalho ou em casa."
+          "texto": "Observe os times da Vitral — qual deles te atrai mais?"
         },
         {
           "dia": "Qui",
-          "texto": ""
+          "texto": "Faça um gesto simples de serviço em casa ou no trabalho."
         },
         {
           "dia": "Sex",
-          "texto": ""
+          "texto": "Converse com alguém que serve em um time e ouça sua história."
         },
         {
           "dia": "Sáb",
-          "texto": "Pergunte a alguém: \"O que você acha que eu faço bem?\""
+          "texto": "Anote o que você descobriu sobre si mesmo esta semana."
         },
         {
           "dia": "Dom",
-          "texto": "Identifique seu limite: o que você NÃO pode fazer agora? E está tudo bem."
+          "texto": "Ao chegar no Encontro, observe quem está servindo e agradeça por eles."
         }
       ]
     },
@@ -407,12 +412,13 @@
   {
     "id": 6,
     "titulo": "Os Sinais da Caminhada",
-    "subtitulo": "O que significam o Batismo e a Ceia?",
+    "subtitulo": "O Batismo é o abraço que vem antes. A Ceia é a mesa que continua posta.",
     "etapa": 1,
+    "ocultar_secoes": ["ferramentas", "ouca"],
     "resumo": "Batismo e Ceia não são regras complicadas — são presentes. São sinais visíveis de uma realidade invisível. O Batismo é o abraço de Deus antes do pedido. A Ceia é a mesa que continua posta, sempre aberta para quem tem fome de graça.",
     "para_comecar": {
-      "texto": "Comece perguntando: \"O que significa para você ser lembrado por Deus antes mesmo de fazer qualquer coisa?\" Explique que Batismo não salva — quem salva é Jesus. O Batismo é sinal e selo da Aliança. A Ceia é mesa aberta, não prêmio para perfeitos.",
-      "pergunta": "Como você se sente em relação ao Batismo de crianças?"
+      "texto": "Você já caminhou um longo trecho. Agora, a gente quer te convidar a conhecer dois presentes que Deus nos deu para nos lembrar da Sua graça: o Batismo e a Ceia.\n\nEles não são regras complicadas. Não são \"tarefas\" que você precisa cumprir para ser aceito. São sinais — gestos visíveis de uma realidade invisível. Como um abraço que a gente dá antes de falar qualquer coisa.\n\n**Texto Bíblico:** \"Todas as vezes que comerem deste pão e beberem deste cálice, anunciam a morte do Senhor até que ele venha.\" — 1 Coríntios 11.26, NVT",
+      "pergunta": "O que significa para você ser lembrado — mesmo antes de fazer qualquer coisa?"
     },
     "ferramentas": [
       {
@@ -446,39 +452,39 @@
       "musica": {}
     },
     "pratique": {
-      "experimento": "Se você já foi batizado, lembre-se do que isso significa: você foi marcado por Deus. Se ainda não foi batizado, reflita: o que te impede de dar esse passo?",
-      "pergunta": "O que você sente ao saber que a mesa está sempre posta, mesmo quando você não está bem?"
+      "experimento": "Esta semana, viva os sinais da caminhada:\n\nSe você já foi batizado, lembre-se do que isso significa: você foi marcado por Deus, inserido na família da fé, e a Aliança de Deus é sua.\n\nSe você ainda não foi batizado, reflita: o que te impede de dar esse passo? Converse com seu acompanhante sobre isso.\n\nNa próxima Ceia, sente-se à mesa com um coração aberto — não para se examinar com culpa, mas para receber graça.\n\nPergunte a alguém da comunidade como foi a experiência do Batismo ou da Ceia para ela.\n\nAnote uma verdade sobre o Batismo ou a Ceia que você quer lembrar sempre.",
+      "pergunta": "O que significa para você saber que há sempre um lugar na mesa de Deus, mesmo quando você não está bem?"
     },
     "organizese": {
       "introducao": "Sugestões para a semana:",
       "dias": [
         {
           "dia": "Seg",
-          "texto": "Leia Mateus 28.19 — o chamado para batizar."
+          "texto": "Leia Mateus 28.19. Reflita: o Batismo é um convite de Jesus."
         },
         {
           "dia": "Ter",
-          "texto": ""
+          "texto": "Leia Romanos 6.3-4. Reflita: o Batismo nos identifica com Cristo."
         },
         {
           "dia": "Qua",
-          "texto": "Leia 1 Coríntios 11.26 — a Ceia que anuncia a morte de Jesus."
+          "texto": "Leia 1 Coríntios 11.23-26. Reflita: a Ceia nos lembra o que Jesus fez."
         },
         {
           "dia": "Qui",
-          "texto": ""
+          "texto": "Pergunte-se: \"O que significa ser parte da família de Deus?\""
         },
         {
           "dia": "Sex",
-          "texto": ""
+          "texto": "Converse com alguém sobre o significado do Batismo ou da Ceia."
         },
         {
           "dia": "Sáb",
-          "texto": "Reflita: o Batismo é um abraço antes do pedido. O que isso significa para você?"
+          "texto": "Anote uma verdade sobre os sinais da caminhada que você quer lembrar."
         },
         {
           "dia": "Dom",
-          "texto": "Na Ceia, receba o pão e o vinho como presente, não como obrigação."
+          "texto": "Na Ceia, receba o pão e o cálice como um presente — não como um prêmio."
         }
       ]
     },
@@ -488,12 +494,13 @@
   {
     "id": 7,
     "titulo": "Fazer Parte da Família",
-    "subtitulo": "O que significa ser membro da Vitral?",
+    "subtitulo": "Pertencer não é sobre ser perfeito. É sobre escolher caminhar junto.",
     "etapa": 1,
+    "ocultar_secoes": ["ferramentas", "ouca"],
     "resumo": "Chega um momento em que a pergunta muda: 'Será que este é o meu lugar?' Pertencer não é só participar — é escolher caminhar junto. Neste encontro, vamos refletir sobre o que significa fazer parte da família Vitral.",
     "para_comecar": {
-      "texto": "Comece perguntando: \"O que significa 'pertencer' para você?\" Pertencer não é o mesmo que participar. Você pode participar de muitas coisas sem pertencer. A membresia é um compromisso de amor — não um contrato.",
-      "pergunta": "O que te atrai na ideia de fazer parte desta comunidade?"
+      "texto": "Até aqui, você tem sido convidado, acolhido, cuidado. Mas chega um momento em que a pergunta muda: será que este é o meu lugar? Será que eu quero fazer parte dessa família?\n\nPertencer não é a mesma coisa que \"participar\". Você pode participar de muitas coisas sem realmente pertencer. Pertencer é quando você olha ao redor e pensa: \"Este é o meu lugar.\" Não é uma pergunta para ser respondida com pressa. É uma pergunta para ser respondida com o coração.\n\n**Texto Bíblico:** \"Portanto, vocês já não são estrangeiros nem forasteiros, mas concidadãos dos santos e membros da família de Deus.\" — Efésios 2.19, NVT",
+      "pergunta": "O que significa \"pertencer\" para você? O que te atrai na ideia de fazer parte desta comunidade?"
     },
     "ferramentas": [
       {
@@ -527,39 +534,39 @@
       "musica": {}
     },
     "pratique": {
-      "experimento": "Converse com seu acompanhante esta semana. Marque um café e converse sobre o que você está sentindo em relação a se tornar membro. Não precisa decidir nada — só conversar.",
-      "pergunta": "Você está pronto para dizer: 'Este é o meu lugar'?"
+      "experimento": "Esta semana, dê um passo em direção ao pertencimento:\n\nMarque um café com seu acompanhante e converse sobre o que você está sentindo em relação a se tornar membro.\n\nLeia Efésios 2.19 e reflita: você já se sente em casa na Vitral?\n\nObserve a comunidade com outros olhos — não como visitante, mas como alguém que pode pertencer.\n\nPergunte a alguém que já é membro: \"O que mudou para você quando decidiu fazer parte?\"\n\nSe você já se sente em casa, converse com seu acompanhante sobre os próximos passos para a membresia.",
+      "pergunta": "Você está pronto para dizer: \"Este é o meu lugar\"?"
     },
     "organizese": {
       "introducao": "Sugestões para a semana:",
       "dias": [
         {
           "dia": "Seg",
-          "texto": "Leia Efésios 2.19 — \"Vocês já não são estranhos e forasteiros, mas concidadãos do povo santo e membros da família de Deus.\""
+          "texto": "Leia Efésios 2.19. Reflita: você se sente parte da família de Deus?"
         },
         {
           "dia": "Ter",
-          "texto": ""
+          "texto": "Leia Gálatas 6.2. Reflita: como você pode carregar o peso de alguém?"
         },
         {
           "dia": "Qua",
-          "texto": "Reflita: o que significa 'pertencer' para você?"
+          "texto": "Leia Atos 2.42. Reflita: o que te atrai na vida comunitária?"
         },
         {
           "dia": "Qui",
-          "texto": ""
+          "texto": "Pergunte a si mesmo: \"O que significa pertencer para mim?\""
         },
         {
           "dia": "Sex",
-          "texto": ""
+          "texto": "Converse com seu acompanhante sobre o que você está sentindo."
         },
         {
           "dia": "Sáb",
-          "texto": "Anote os motivos que te fazem querer fazer parte da Vitral."
+          "texto": "Anote o que você descobriu sobre pertencimento esta semana."
         },
         {
           "dia": "Dom",
-          "texto": "Converse com seu acompanhante sobre o que está sentindo."
+          "texto": "Olhe ao redor no Encontro e pergunte: \"Este é o meu lugar?\""
         }
       ]
     },
@@ -569,12 +576,13 @@
   {
     "id": 8,
     "titulo": "Celebração e Envio",
-    "subtitulo": "O que fica comigo? Para onde vou?",
+    "subtitulo": "Olhar para trás com gratidão. Olhar para frente com esperança.",
     "etapa": 1,
+    "ocultar_secoes": ["ferramentas", "ouca"],
     "resumo": "Você caminhou por 7 encontros. Agora é hora de olhar para trás com gratidão e para frente com esperança. Este encontro celebra tudo o que você descobriu e prepara o coração para o passo final — a preparação para a membresia.",
     "para_comecar": {
-      "texto": "Comece convidando cada um a compartilhar: \"O que você leva de mais importante desta caminhada até aqui?\" Ajude o grupo a ver o quanto já caminharam. Cada passo teve um propósito.",
-      "pergunta": "O que você descobriu sobre Deus, sobre si mesmo e sobre a comunidade?"
+      "texto": "Você chegou até aqui. Foi um caminho com muitos passos. Alguns mais fáceis, outros mais difíceis. Alguns que fizeram sentido na hora, outros que levaram tempo para serem compreendidos.\n\nAgora você está perto do fim da Trilha. Mas isso não significa que sua caminhada termina aqui. Pelo contrário — ela está apenas começando. Este encontro é sobre olhar para trás com gratidão e olhar para frente com esperança. É sobre celebrar o que você descobriu e se preparar para o que vem a seguir.\n\n**Texto Bíblico:** \"Portanto, vão e façam discípulos de todas as nações, batizando-os em nome do Pai, do Filho e do Espírito Santo, ensinando-os a obedecer a tudo o que eu lhes ordenei. E eu estarei com vocês todos os dias, até o fim dos tempos.\" — Mateus 28.19-20, NVT",
+      "pergunta": "O que você leva de mais importante desta caminhada até aqui?"
     },
     "ferramentas": [
       {
@@ -608,39 +616,39 @@
       "musica": {}
     },
     "pratique": {
-      "experimento": "Converse com seu acompanhante sobre qual será seu próximo passo: qual Pequeno Grupo você vai frequentar? Onde você pode servir? Não precisa decidir sozinho.",
-      "pergunta": "Como você se sente em relação ao próximo passo — a Preparação para a Membresia?"
+      "experimento": "Esta semana, viva o envio:\n\nConverse com seu acompanhante sobre qual será seu próximo passo: qual PG você vai frequentar? Onde você pode servir?\n\nEscolha um lugar onde você já está (casa, trabalho, vizinhança) e pergunte: \"Como posso servir aqui?\"\n\nPratique um gesto intencional de cuidado com alguém que não faz parte da igreja.\n\nAnote três coisas que você descobriu sobre si mesmo durante a Trilha.\n\nCompartilhe com alguém o que você aprendeu — pode ser uma conversa simples.",
+      "pergunta": "O que você está levando desta caminhada? E para onde você está sendo enviado?"
     },
     "organizese": {
       "introducao": "Sugestões para a semana:",
       "dias": [
         {
           "dia": "Seg",
-          "texto": "Leia Mateus 28.19-20 — a Grande Comissão."
+          "texto": "Leia Mateus 28.19-20. Reflita: o que significa \"vão\" para você hoje?"
         },
         {
           "dia": "Ter",
-          "texto": ""
+          "texto": "Leia Atos 1.8. Reflita: onde está o seu \"Jerusalém\" — seu lugar de envio?"
         },
         {
           "dia": "Qua",
-          "texto": "Anote: o que você leva de mais importante desta caminhada?"
+          "texto": "Leia 1 Coríntios 3.6. Reflita: Deus faz crescer. Você só precisa plantar."
         },
         {
           "dia": "Qui",
-          "texto": ""
+          "texto": "Pergunte-se: \"O que eu levo de mais importante da Trilha?\""
         },
         {
           "dia": "Sex",
-          "texto": ""
+          "texto": "Converse com seu acompanhante sobre os próximos passos."
         },
         {
           "dia": "Sáb",
-          "texto": "Ore: \"Senhor, para onde Tu estás me enviando?\""
+          "texto": "Anote onde você quer servir ou crescer depois da Trilha."
         },
         {
           "dia": "Dom",
-          "texto": "Participe do Encontro e converse com seu acompanhante."
+          "texto": "Celebre o caminho percorrido — e agradeça por quem te acompanhou."
         }
       ]
     },
@@ -650,12 +658,13 @@
   {
     "id": 9,
     "titulo": "Preparação para a Membresia",
-    "subtitulo": "O que significa, de fato, ser membro da Vitral?",
+    "subtitulo": "Entender o que significa fazer parte desta família, para que, se decidir, seja com o coração e a mente alinhados.",
     "etapa": 1,
+    "ocultar_secoes": ["ferramentas", "ouca"],
     "resumo": "Este é o último encontro da Trilha. Nele, você vai entender com profundidade o que significa ser membro da Vitral: a história da nossa família maior (a IPIB), os pilares da nossa fé (os 5 Solas), o que significa ser Mordomo e o compromisso da Aliança.",
     "para_comecar": {
-      "texto": "Este encontro é diferente. Não é sobre um novo passo, mas sobre preparar você para tomar uma decisão consciente. Apresente a história da IPIB (1903, 31 de julho), os 5 Solas da Reforma e o que significa ser Mordomo.",
-      "pergunta": "O que você aprendeu sobre a história da IPIB que te surpreendeu?"
+      "texto": "Você chegou até aqui. Caminhou por oito encontros, conheceu a história da Vitral, descobriu quem é diante de Deus, entendeu a segurança da sua fé, aprendeu ferramentas para viver no dia a dia, encontrou pistas sobre seu lugar na comunidade, conheceu os sinais da caminhada, refletiu sobre o que significa pertencer e celebrou tudo o que descobriu.\n\nAgora, você está diante de um passo importante: decidir se quer se tornar membro da Vitral. Este encontro é diferente dos outros. Ele não é sobre um novo passo, mas sobre preparar você para tomar uma decisão consciente e madura. Não há pressa. Não há pressão. Mas há um convite: que você entenda tudo o que significa fazer parte desta família.\n\n**Texto Bíblico:** \"Portanto, irmãos, rogo-lhes pelas misericórdias de Deus que ofereçam os seus corpos como sacrifício vivo, santo e agradável a Deus; este é o culto racional de vocês.\" — Romanos 12.1, NVT",
+      "pergunta": "Você entende o que significa ser membro da Vitral? Você está pronto para assumir esse compromisso?"
     },
     "ferramentas": [
       {
@@ -689,7 +698,7 @@
       "musica": {}
     },
     "pratique": {
-      "experimento": "Converse com alguém que já está na Vitral há mais tempo. Pergunte: \"O que você sabe sobre a história da nossa igreja? O que te faz sentir orgulho de fazer parte da IPIB?\"",
+      "experimento": "Esta semana, prepare-se para a decisão:\n\nConverse com alguém que já está na Vitral há mais tempo. Pergunte: \"O que você sabe sobre a história da nossa igreja? O que te faz sentir orgulho de fazer parte da IPIB?\"\n\nLeia a Aliança de Mordomia (disponível com seus líderes) e entenda o que você está assumindo.\n\nReflita sobre os cinco pilares da fé Reformada — qual deles mais toca o seu coração?\n\nPergunte a si mesmo: \"Estou pronto para dizer: este é o meu lugar?\"\n\nConverse com seu acompanhante sobre o que você está sentindo em relação à membresia.",
       "pergunta": "Você confia que este é o seu lugar?"
     },
     "organizese": {
@@ -697,31 +706,31 @@
       "dias": [
         {
           "dia": "Seg",
-          "texto": "Leia Mateus 28.19 — o chamado missionário de Jesus."
+          "texto": "Leia Romanos 12.1. Reflita: o que significa oferecer seu corpo como sacrifício vivo?"
         },
         {
           "dia": "Ter",
-          "texto": ""
+          "texto": "Leia 1 Coríntios 12.12. Reflita: o que significa ser parte do corpo de Cristo?"
         },
         {
           "dia": "Qua",
-          "texto": "Leia 1 Coríntios 12.12 — muitos membros, um só corpo."
+          "texto": "Leia Gálatas 6.2. Reflita: como você pode carregar os fardos de outros?"
         },
         {
           "dia": "Qui",
-          "texto": ""
+          "texto": "Pergunte-se: \"O que me atrai na ideia de ser membro?\""
         },
         {
           "dia": "Sex",
-          "texto": ""
+          "texto": "Converse com seu acompanhante sobre a membresia."
         },
         {
           "dia": "Sáb",
-          "texto": "Reflita: o que significa ser Mordomo para você?"
+          "texto": "Leia a Aliança de Mordomia e reflita sobre o compromisso."
         },
         {
           "dia": "Dom",
-          "texto": "Tome sua decisão. A mesa está posta. O vitral tem espaço para você."
+          "texto": "Se você decidiu, celebre. Se ainda tem dúvidas, continue refletindo — sem pressa."
         }
       ]
     },

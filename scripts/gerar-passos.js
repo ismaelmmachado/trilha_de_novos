@@ -52,6 +52,19 @@ function renderPageHeader(passo) {
 </div>`;
 }
 
+function inlineFormat(texto) {
+  if (!texto) return texto;
+  return String(texto)
+    .replace(/### (.+)/g, '<strong>$1</strong>')
+    .replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>')
+    .replace(/\*(.+?)\*/g, '<em>$1</em>')
+    .replace(/\n/g, '<br>');
+}
+
+function deveRenderizar(passo, secao) {
+  return !(passo.ocultar_secoes || []).includes(secao);
+}
+
 function sectionIcon(id) {
   const icons = {
     1: '📖',
@@ -77,8 +90,8 @@ function renderParaComecar(passo) {
 <div class="step-section">
   ${renderSectionHeader('📖', 'Para Começar')}
   <div class="step-section-content">
-    <p>${passo.para_comecar.texto}</p>
-    <p><strong>Pergunta para o diálogo:</strong> ${passo.para_comecar.pergunta}</p>
+    <p>${inlineFormat(passo.para_comecar.texto)}</p>
+    <p><strong>Pergunta para o diálogo:</strong> ${inlineFormat(passo.para_comecar.pergunta)}</p>
     <div class="para-comecar-footer">
       <a href="#" class="download-btn apostila-btn" data-apostila-token="${passo.pdf}" aria-busy="true">
         <span class="download-icon">↓</span>
@@ -106,7 +119,7 @@ function renderFerramentas(passo) {
           <span class="ferramenta-icon">${f.icon || '🛠️'}</span>
           <div class="ferramenta-info">
             <strong>${f.nome}</strong>
-            <span>${f.descricao || ''}</span>
+            <span>${inlineFormat(f.descricao) || ''}</span>
           </div>
         </div>
         <a class="ferramenta-link" href="${f.link}" target="_blank" rel="noopener noreferrer">${f.rotulo || 'Abrir'}</a>
@@ -145,7 +158,7 @@ function renderOuca(passo) {
           <span class="aprofunde-item-icon">🎧</span>
           <div class="aprofunde-item-info">
             <strong>${ouca.titulo || 'Ouça agora'}</strong>
-            <span>${ouca.descricao || ''}</span>
+            <span>${inlineFormat(ouca.descricao) || ''}</span>
           </div>
         </div>
         <a class="aprofunde-link" href="${ouca.src}" target="_blank" rel="noopener noreferrer">Ouvir</a>
@@ -178,7 +191,7 @@ function renderAprofunde(passo) {
           <span class="aprofunde-item-icon">📖</span>
           <div class="aprofunde-item-info">
             <strong>${livro.titulo}</strong>
-            <span>${livro.autor || ''}</span>
+            <span>${inlineFormat(livro.autor) || ''}</span>
           </div>
         </div>
         ${livro.link ? `<a class="aprofunde-link" href="${livro.link}" target="_blank" rel="noopener noreferrer">Abrir</a>` : `<span class="aprofunde-link is-empty">Em breve</span>`}
@@ -191,7 +204,7 @@ function renderAprofunde(passo) {
           <span class="aprofunde-item-icon">🎵</span>
           <div class="aprofunde-item-info">
             <strong>${musica.titulo}</strong>
-            <span>${musica.artista || ''}</span>
+            <span>${inlineFormat(musica.artista) || ''}</span>
           </div>
         </div>
         ${musica.link ? `<a class="aprofunde-link" href="${musica.link}" target="_blank" rel="noopener noreferrer">Ouvir</a>` : `<span class="aprofunde-link is-empty">Em breve</span>`}
@@ -215,11 +228,11 @@ function renderPratique(passo) {
   <div class="step-section-content">
     <div class="pratique-experimento">
       <strong class="pratique-label">Praticar</strong>
-      <p>${passo.pratique.experimento}</p>
+      <p>${inlineFormat(passo.pratique.experimento)}</p>
     </div>
     <div class="pratique-pergunta">
       <strong>Pergunta da semana</strong>
-      <p>${passo.pratique.pergunta}</p>
+      <p>${inlineFormat(passo.pratique.pergunta)}</p>
     </div>
   </div>
 </div>`;
@@ -231,7 +244,7 @@ function renderOrganizese(passo) {
 <div class="step-section">
   ${renderSectionHeader('📋', 'Organize-se')}
   <div class="step-section-content">
-    <p>${passo.organizese.introducao}</p>
+    <p>${inlineFormat(passo.organizese.introducao)}</p>
     <div class="week-plan-grid">`;
 
   for (const dia of passo.organizese.dias) {
@@ -240,7 +253,7 @@ function renderOrganizese(passo) {
       <div class="week-day-card">
         <strong>${nomeCompleto}</strong>`;
     if (dia.texto) {
-      html += `\n        <span>${dia.texto}</span>`;
+      html += `\n        <span>${inlineFormat(dia.texto)}</span>`;
     } else {
       html += `\n        <span class="day-empty">Em breve</span>`;
     }
@@ -296,9 +309,9 @@ function gerarPagina(passo) {
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" media="print" onload="this.media='all'" />
   <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" /></noscript>
-  <link rel="stylesheet" href="css/tokens.css?v=2.10.0" />
-  <link rel="stylesheet" href="css/estilo.css?v=2.10.0" />
-  <link rel="stylesheet" href="css/print.css?v=2.10.0" media="print" />
+  <link rel="stylesheet" href="css/tokens.css?v=2.29.0" />
+  <link rel="stylesheet" href="css/estilo.css?v=2.29.0" />
+  <link rel="stylesheet" href="css/print.css?v=2.29.0" media="print" />
 </head>
 <body>
   <a class="skip-link" href="#main">Ir para o conteúdo</a>
@@ -313,9 +326,9 @@ function gerarPagina(passo) {
     <div class="content-container" id="passo-container">
       ${renderParaComecar(passo)}
 
-      ${renderFerramentas(passo)}
+      ${deveRenderizar(passo, 'ferramentas') ? renderFerramentas(passo) : ''}
 
-      ${renderOuca(passo)}
+      ${deveRenderizar(passo, 'ouca') ? renderOuca(passo) : ''}
 
       ${renderAprofunde(passo)}
 
