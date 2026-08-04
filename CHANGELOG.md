@@ -1,5 +1,11 @@
 # Changelog
 
+## Tag: v2.17.0-templates-tipos-conteudo (04/08/2026)
+
+- Cria `docs/TEMPLO-APOSTILA-TIPOS.md` — define **que tipo de conteúdo** entra em cada seção do template da apostila (espinha dorsal fixa + bloco ANEXO), com regras transversais (NVT, 1 pergunta por tema, ordem fixa) e template markdown de manutenção compatível com `docs/MANUTENCAO.md`
+- Cria `docs/TEMPLO-PASSO-PAGINA.md` — define **que tipo de conteúdo complementar** entra em cada seção da página do passo no site (Para Começar, Ferramentas, Ouça, Aprofunde, Pratique, Organize-se, Apostila), com a regra central de "não repetir a apostila", mapeamento JSON ↔ campo e impacto de implementação
+- Ambos alinhados à REGRA DE OURO (`CLAUDE.md`); documentação apenas — nenhuma mudança em código, JSON ou páginas HTML
+
 ## Tag: v2.16.6-apostilas-api-fresca (04/08/2026)
 
 - `scripts/apostilas.js`: o botão **sempre consulta a GitHub API** (`docs/apostilas/pdf?ref=main`) a cada carregamento — corrige o "Apostila em breve" que persistia após subir um PDF novo (cache de 6h do navegador ignorava arquivos recém-publicados)
