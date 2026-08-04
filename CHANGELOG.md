@@ -1,5 +1,15 @@
 # Changelog
 
+## Tag: v2.16.0-apostilas-pdf (03/08/2026)
+
+- Download de apostilas deixa de usar link fixo `.docx`: cada passo baixa a versão **PDF** via busca dinâmica por token
+- Cria `docs/apostilas/docx/` (fonte da verdade — upload manual) e `docs/apostilas/pdf/` (baixadas pelo site); os 11 `.docx` existentes foram movidos para `docx/`
+- `dados/passos.json`: campo `pdf` vira **token de busca** (passo 1 = `Quem Somos e Como Caminhamos`; passos 2–9 = `PASSO N`)
+- Novo `scripts/apostilas.js`: consulta a GitHub API (`contents/docs/apostilas/pdf?ref=main`), cacheia em localStorage (TTL 6h), casa o token no nome do arquivo (case-insensitive, com fronteira de dígito e tolerância ao prefixo `doc_<hash>_`) e aponta o botão com `download` preservando o nome descritivo; estados: Carregando… / Baixar Apostila / Apostila em breve; `?refresh=apostilas` ignora o cache
+- `scripts/gerar-passos.js`: botão gerado com `data-apostila-token` + inclui `scripts/apostilas.js`; páginas `passo-1.html` a `passo-9.html` regeneradas
+- `css/estilo.css`: estilo `.is-unavailable` para o estado "Apostila em breve"
+- README: nova seção "Apostilas (download pelos passos)" documentando a regra de ouro, os tokens, os estados do botão e o fluxo de atualização
+
 ## Tag: v2.15.0-runbook-atualizacao-geral (03/08/2026)
 
 - Cria `docs/ATUALIZACAO-GERAL.md` — runbook de atualização geral do projeto: inventário de conteúdo, workflow em 6 etapas (contexto, conteúdo, código, regeneração, verificação, versionamento), checklist de verificação e controle de pendências da auditoria

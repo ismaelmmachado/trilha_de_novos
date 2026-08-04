@@ -306,6 +306,19 @@ ul { list-style: none; }
 
 .download-icon { font-size: 1.1rem; font-weight: 700; }
 
+.download-btn.is-unavailable {
+  background: var(--color-border);
+  color: var(--color-muted);
+  box-shadow: none;
+  cursor: default;
+}
+
+.download-btn.is-unavailable:hover {
+  transform: none;
+  box-shadow: none;
+  color: var(--color-muted);
+}
+
 /* === FERRAMENTAS LIST === */
 .ferramentas-intro {
   margin-bottom: var(--space-md);

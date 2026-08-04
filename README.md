@@ -25,10 +25,13 @@ trilha_de_novos/
 │   ├── complementar.css    # Classes do material complementar
 │   └── print.css           # Estilos de impressão
 ├── scripts/
-│   └── gerar-passos.js     # Gerador das páginas de passo
+│   ├── gerar-passos.js     # Gerador das páginas de passo
+│   └── apostilas.js        # Resolve o download das apostilas via GitHub API
 ├── dados/
-│   └── passos.json         # Conteúdo dos 9 passos
-├── docs/apostilas/         # Apostilas .docx originais (download via GitHub Pages)
+│   └── passos.json         # Conteúdo dos 9 passos (+ token da apostila no campo `pdf`)
+├── docs/apostilas/
+│   ├── docx/               # Versões .docx — fonte da verdade (upload manual)
+│   └── pdf/                # Versões .pdf — baixadas pelo site (upload manual)
 ├── docs/MANUTENCAO.md      # Contrato de manutenção de conteúdo dos passos
 ├── docs/ATUALIZACAO-GERAL.md  # Runbook de atualização geral do projeto (ponto de entrada)
 ├── docs/ORIENTACAO-AJUSTE-DATA-DRIVEN.md  # Texto reutilizável para normalizar outros sites
@@ -70,6 +73,61 @@ node scripts/gerar-passos.js
 
 Gera os arquivos `passo-1.html` a `passo-9.html` a partir de `dados/passos.json`.
 
+## Apostilas (download pelos passos)
+
+O botão **"Baixar Apostila"** de cada passo baixa a versão em **PDF** da apostila. O
+fluxo foi desenhado para que **a versão subida no GitHub seja sempre a oficial** —
+sem precisar mexer no HTML.
+
+### Regra de ouro das apostilas
+
+> **O que for subido em `docs/apostilas/` na branch `main` é a versão oficial.**
+
+- `docs/apostilas/docx/` → suba os `.docx` (fonte da verdade, para edição).
+- `docs/apostilas/pdf/` → suba os `.pdf` (é daqui que o site baixa).
+- Para atualizar, basta **sobrescrever o arquivo** nas pastas em `main` — o site passa
+  a baixar a versão nova automaticamente.
+
+### Como o botão encontra o arquivo (sem link fixo)
+
+1. `scripts/apostilas.js` (carregado em cada `passo-N.html`) consulta a **GitHub API**:
+   `api.github.com/repos/ismaelmmachado/trilha_de_novos/contents/docs/apostilas/pdf?ref=main`
+   → lista os arquivos da pasta (o repo é público, funciona sem login).
+2. Para cada botão, o script casa o **token** do passo com o nome do arquivo
+   (case-insensitive, ignora acentos, respeita a fronteira do número — "PASSO 1" não
+   pega "PASSO 10/11/12", tolera o prefixo `doc_<hash>_`).
+3. Se achar, aponta o botão para `docs/apostilas/pdf/<arquivo>.pdf` com o atributo
+   `download` — **o nome descritivo do arquivo é preservado** no download do usuário.
+
+**Tokens por passo** (campo `pdf` em `dados/passos.json`):
+
+| Página | Token no nome do PDF |
+|---|---|
+| `passo-1.html` | `Quem Somos e Como Caminhamos` |
+| `passo-2.html` … `passo-9.html` | `PASSO 2` … `PASSO 9` |
+
+> ⚠️ **Regra de nomeação:** o nome do PDF que você subir **precisa conter o token**
+> do passo (ex.: `ESTAÇÃO 1 - PASSO 8 — CELEBRAÇÃO E ENVIO.pdf` contém `PASSO 8`).
+> O restante do nome pode ser qualquer coisa (versão, data, etc.). Se o token não
+> for encontrado, o botão mostra **"Apostila em breve"**.
+> O passo 1 usa o trecho `Quem Somos e Como Caminhamos` (o arquivo `VITRAL — Quem
+> Somos e Como Caminhamos Juntos` não contém "PASSO 1" no nome).
+
+### Estados do botão
+
+| Estado | Aparência | Quando |
+|---|---|---|
+| Carregando… | amarelo | Enquanto a GitHub API responde |
+| Baixar Apostila | amarelo | Arquivo encontrado na pasta `pdf/` |
+| Apostila em breve | cinza (não clicável) | Pasta vazia ou nenhum arquivo casa com o token |
+| Não foi possível carregar | cinza | GitHub API fora do ar / erro inesperado |
+
+### Dica: ver a atualização na hora
+
+Os arquivos listados são **cacheados no navegador por 6h** (localStorage) para não
+estourar a cota da GitHub API. Acabou de subir um PDF e quer ver na hora? Abra a
+página com `?refresh=apostilas` (ex.: `passo-2.html?refresh=apostilas`) — ignora o cache.
+
 ## Manutenção de conteúdo dos passos
 
 Todo o conteúdo dos 9 passos vive em `dados/passos.json`. **Nunca edite `passo-N.html` na mão** — essas páginas são geradas. Para atualizar o conteúdo de um passo:
@@ -95,6 +153,7 @@ Todo o conteúdo dos 9 passos vive em `dados/passos.json`. **Nunca edite `passo-
 | Aprofunde | `aprofunde` | `{ livro: { titulo, autor, link }, musica: { titulo, artista, link } }` — vazio → "Em breve" |
 | Pratique | `pratique` | `{ experimento, pergunta }` |
 | Organize-se | `organizese` | `{ introducao, dias: [{ dia, texto }] }` — 7 dias, dias sem texto → "Em breve" |
+| Apostila | `pdf` | Token de busca do PDF na pasta `docs/apostilas/pdf/` (ver seção "Apostilas") |
 
 > **Cache-busting:** todas as folhas de estilo são carregadas com `?v=<versão>`
 > (ex.: `css/estilo.css?v=2.10.0`) para forçar o navegador a baixar o CSS atualizado.

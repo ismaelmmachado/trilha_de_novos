@@ -80,9 +80,9 @@ function renderParaComecar(passo) {
     <p>${passo.para_comecar.texto}</p>
     <p><strong>Pergunta para o diálogo:</strong> ${passo.para_comecar.pergunta}</p>
     <div class="para-comecar-footer">
-      <a href="${passo.pdf}" class="download-btn" download>
+      <a href="#" class="download-btn apostila-btn" data-apostila-token="${passo.pdf}" aria-busy="true">
         <span class="download-icon">↓</span>
-        Baixar Apostila
+        <span class="download-label">Carregando apostila…</span>
       </a>
     </div>
   </div>
@@ -328,6 +328,8 @@ function gerarPagina(passo) {
   </main>
 
   ${renderFooter()}
+
+  <script src="scripts/apostilas.js"></script>
 </body>
 </html>`;
 
