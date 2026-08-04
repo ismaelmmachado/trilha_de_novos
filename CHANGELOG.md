@@ -1,5 +1,11 @@
 # Changelog
 
+## Tag: v2.23.0-passo5-conteudo (04/08/2026)
+
+- PASSO 5 "Seu Lugar no Vitral" (site): **substituição total do conteúdo** — `subtitulo` vira "Cada um de nós tem uma cor que ninguém mais tem — e no vitral, cada cor importa."; `para_comecar` reescrito (não somos espectadores; cor única no vitral) com "Texto Bíblico" (1 Pedro 4.10, NVT); `pratique` vira os 5 passos para descobrir o lugar (dons, times da Vitral, serviço) + pergunta da semana; `organizese` ganha os 7 dias (preenche Ter/Qui/Sex que estavam vazios)
+- Mantidos: `ferramentas`/`ouca` (ocultos via `ocultar_secoes`), `aprofunde` (placeholder) e token `pdf` (PASSO 5)
+- Mudança de dados apenas (`dados/passos.json`); renderização via `inlineFormat()` existente
+
 ## Tag: v2.22.0-passo4-conteudo (04/08/2026)
 
 - PASSO 4 "O Ritmo da Vida com Deus" (site): **substituição total do conteúdo** — `subtitulo` vira "Cuidar de si para cuidar do outro — um ritmo que cabe no seu dia a dia."; `para_comecar` reescrito (fé sustentável, metáfora do café) com "Texto Bíblico" (1 Coríntios 6.19, NVT); `pratique` vira o "gesto simples" de cuidado do C.A.F.É. (5 itens) + pergunta da semana; `organizese` ganha os 7 dias (cuidado integral, sem dias vazios)
