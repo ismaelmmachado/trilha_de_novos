@@ -26,12 +26,12 @@ A página inicial SHALL exibir cards para cada um dos 9 passos, cada um com tít
 
 ### Requirement: Navegação principal
 
-A página inicial SHALL incluir navegação para as páginas Mapa e Material Complementar, tanto em desktop quanto mobile.
+A página inicial SHALL incluir navegação para as páginas Mapa e Material de Apoio, tanto em desktop quanto mobile.
 
 #### Scenario: Navegação completa
 
 - **WHEN** o usuário acessa a página inicial
-- **THEN** o header contém links para "Início" (ativo), "Mapa" e "Material Complementar"
+- **THEN** o header contém links para "Início" (ativo), "Mapa" e "Material de Apoio"
 
 #### Scenario: Navegação mobile responsiva
 
@@ -49,7 +49,7 @@ A página SHALL incluir um skip link como primeiro elemento do `<body>` para nav
 
 ### Requirement: aria-label do logo
 
-A página inicial SHALL usar o `aria-label` "Trilha de Novos — Página inicial" no logo. Nas demais páginas (mapa, complementar, 404 e passos), o logo usa "Trilha de Novos — Voltar ao início", pois nelas ele é um atalho de navegação para a home.
+A página inicial SHALL usar o `aria-label` "Trilha de Novos — Página inicial" no logo. Nas demais páginas (mapa, material de apoio, 404 e passos), o logo usa "Trilha de Novos — Voltar ao início", pois nelas ele é um atalho de navegação para a home.
 
 #### Scenario: Label da home
 
@@ -58,5 +58,5 @@ A página inicial SHALL usar o `aria-label` "Trilha de Novos — Página inicial
 
 #### Scenario: Label nas subpáginas
 
-- **WHEN** o usuário inspeciona o logo de `mapa.html`, `complementar.html`, `404.html` ou `passo-{N}.html`
+- **WHEN** o usuário inspeciona o logo de `mapa.html`, `material-de-apoio.html`, `404.html` ou `passo-{N}.html`
 - **THEN** o `aria-label` é "Trilha de Novos — Voltar ao início"

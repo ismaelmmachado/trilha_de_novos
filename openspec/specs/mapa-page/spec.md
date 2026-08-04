@@ -22,5 +22,5 @@ A página SHALL incluir o mesmo header, navegação e breadcrumb das demais pág
 #### Scenario: Navegação consistente
 
 - **WHEN** o usuário acessa `mapa.html`
-- **THEN** o header tem links para Início (ativo), Mapa (destacado como página atual) e Material Complementar
+- **THEN** o header tem links para Início (ativo), Mapa (destacado como página atual) e Material de Apoio
 - **AND** o breadcrumb mostra "Início / Mapa"

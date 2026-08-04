@@ -27,9 +27,9 @@ Onde tudo mora:
 | Páginas dos passos | `passo-1.html` … `passo-9.html` | **geradas** — não editar |
 | Landing / cards dos passos | `index.html` | carrega via `fetch('dados/passos.json')` — não editar à mão |
 | Mapa do facilitador | `mapa.html` | estático — editar direto |
-| Material complementar | `complementar.html` | estático — editar direto |
+| Material de Apoio | `material-de-apoio.html` | estático — editar direto |
 | Apostilas | `docs/apostilas/docx/` (fonte da verdade) e `docs/apostilas/pdf/` (baixadas pelo site) | substituir arquivo em `main` → sincronizar `homologacao` (ver seção 3, Etapa 2A) |
-| Estilos | `css/tokens.css`, `estilo.css`, `mapa.css`, `complementar.css`, `print.css` | editar direto + subir `?v=` |
+| Estilos | `css/tokens.css`, `estilo.css`, `mapa.css`, `material-de-apoio.css`, `print.css` | editar direto + subir `?v=` |
 | Gerador | `scripts/gerar-passos.js` | editar direto (gera as passos) |
 
 ---

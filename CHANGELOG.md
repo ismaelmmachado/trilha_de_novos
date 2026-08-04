@@ -1,5 +1,15 @@
 # Changelog
 
+## Tag: v2.31.0-material-de-apoio (04/08/2026)
+
+- Página "Material Complementar" renomeada para **"Material de Apoio"** (rename completo):
+  - Arquivos: `complementar.html` → `material-de-apoio.html`; `css/complementar.css` → `css/material-de-apoio.css` (via `git mv`, histórico preservado)
+  - Classes CSS renomeadas com prefixo `.apoio-*` (`.complementar-*`/`.comp-*` → `.apoio-*`) em `css/material-de-apoio.css`, `css/print.css` e no HTML da página (`.podcast-*` mantido)
+  - Navegação (label + `href`) atualizada em `index.html`, `mapa.html`, `404.html` e `scripts/gerar-passos.js` (+ 9 passos regenerados)
+  - `<title>`, `og:*`, breadcrumb e `<h1>` da página; meta description → "Materiais de apoio…"; link do CSS com `?v=2.31.0`
+- Docs e specs atuais: `README.md`, `docs/ATUALIZACAO-GERAL.md`, `openspec/specs/` (landing-page, mapa-page, design-system) e diretório da spec `complementar-page` → `material-de-apoio-page`
+- Fora do escopo (registros históricos): CHANGELOG antigo, `docs/auditoria-*.md`, `openspec/changes/archive/**`; "Anexos complementares" do `mapa.html` e "conteúdo complementar" dos templates são conceitos distintos — mantidos
+
 ## Tag: v2.30.0-docs-readme (04/08/2026)
 
 - **README.md** atualizado: gerador com seções condicionais (`ocultar_secoes`) e `inlineFormat()`; passos com 4 seções exibidas (Ferramentas/Ouça ocultas); tabela de campos ganha `ocultar_secoes` e o padrão **Texto Bíblico**/**Reflita**; cache-busting `?v=2.29.0`; tags até v2.29.x
