@@ -1,5 +1,11 @@
 # Changelog
 
+## Tag: v2.24.0-passo6-conteudo (04/08/2026)
+
+- PASSO 6 "Os Sinais da Caminhada" (site): **substituição total do conteúdo** — `subtitulo` vira "O Batismo é o abraço que vem antes. A Ceia é a mesa que continua posta."; `para_comecar` reescrito (batismo e ceia como presentes/sinais) com "Texto Bíblico" (1 Coríntios 11.26, NVT); `pratique` vira os 5 itens para viver os sinais (batizado/não batizado, Ceia, testemunhos) + pergunta da semana; `organizese` ganha os 7 dias (preenche Ter/Qui/Sex que estavam vazios)
+- Mantidos: `ferramentas`/`ouca` (ocultos via `ocultar_secoes`), `aprofunde` (placeholder) e token `pdf` (PASSO 6)
+- Mudança de dados apenas (`dados/passos.json`); renderização via `inlineFormat()` existente
+
 ## Tag: v2.23.0-passo5-conteudo (04/08/2026)
 
 - PASSO 5 "Seu Lugar no Vitral" (site): **substituição total do conteúdo** — `subtitulo` vira "Cada um de nós tem uma cor que ninguém mais tem — e no vitral, cada cor importa."; `para_comecar` reescrito (não somos espectadores; cor única no vitral) com "Texto Bíblico" (1 Pedro 4.10, NVT); `pratique` vira os 5 passos para descobrir o lugar (dons, times da Vitral, serviço) + pergunta da semana; `organizese` ganha os 7 dias (preenche Ter/Qui/Sex que estavam vazios)

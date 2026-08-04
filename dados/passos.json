@@ -412,13 +412,13 @@
   {
     "id": 6,
     "titulo": "Os Sinais da Caminhada",
-    "subtitulo": "O que significam o Batismo e a Ceia?",
+    "subtitulo": "O Batismo é o abraço que vem antes. A Ceia é a mesa que continua posta.",
     "etapa": 1,
     "ocultar_secoes": ["ferramentas", "ouca"],
     "resumo": "Batismo e Ceia não são regras complicadas — são presentes. São sinais visíveis de uma realidade invisível. O Batismo é o abraço de Deus antes do pedido. A Ceia é a mesa que continua posta, sempre aberta para quem tem fome de graça.",
     "para_comecar": {
-      "texto": "Comece perguntando: \"O que significa para você ser lembrado por Deus antes mesmo de fazer qualquer coisa?\" Explique que Batismo não salva — quem salva é Jesus. O Batismo é sinal e selo da Aliança. A Ceia é mesa aberta, não prêmio para perfeitos.",
-      "pergunta": "Como você se sente em relação ao Batismo de crianças?"
+      "texto": "Você já caminhou um longo trecho. Agora, a gente quer te convidar a conhecer dois presentes que Deus nos deu para nos lembrar da Sua graça: o Batismo e a Ceia.\n\nEles não são regras complicadas. Não são \"tarefas\" que você precisa cumprir para ser aceito. São sinais — gestos visíveis de uma realidade invisível. Como um abraço que a gente dá antes de falar qualquer coisa.\n\n**Texto Bíblico:** \"Todas as vezes que comerem deste pão e beberem deste cálice, anunciam a morte do Senhor até que ele venha.\" — 1 Coríntios 11.26, NVT",
+      "pergunta": "O que significa para você ser lembrado — mesmo antes de fazer qualquer coisa?"
     },
     "ferramentas": [
       {
@@ -452,39 +452,39 @@
       "musica": {}
     },
     "pratique": {
-      "experimento": "Se você já foi batizado, lembre-se do que isso significa: você foi marcado por Deus. Se ainda não foi batizado, reflita: o que te impede de dar esse passo?",
-      "pergunta": "O que você sente ao saber que a mesa está sempre posta, mesmo quando você não está bem?"
+      "experimento": "Esta semana, viva os sinais da caminhada:\n\nSe você já foi batizado, lembre-se do que isso significa: você foi marcado por Deus, inserido na família da fé, e a Aliança de Deus é sua.\n\nSe você ainda não foi batizado, reflita: o que te impede de dar esse passo? Converse com seu acompanhante sobre isso.\n\nNa próxima Ceia, sente-se à mesa com um coração aberto — não para se examinar com culpa, mas para receber graça.\n\nPergunte a alguém da comunidade como foi a experiência do Batismo ou da Ceia para ela.\n\nAnote uma verdade sobre o Batismo ou a Ceia que você quer lembrar sempre.",
+      "pergunta": "O que significa para você saber que há sempre um lugar na mesa de Deus, mesmo quando você não está bem?"
     },
     "organizese": {
       "introducao": "Sugestões para a semana:",
       "dias": [
         {
           "dia": "Seg",
-          "texto": "Leia Mateus 28.19 — o chamado para batizar."
+          "texto": "Leia Mateus 28.19. Reflita: o Batismo é um convite de Jesus."
         },
         {
           "dia": "Ter",
-          "texto": ""
+          "texto": "Leia Romanos 6.3-4. Reflita: o Batismo nos identifica com Cristo."
         },
         {
           "dia": "Qua",
-          "texto": "Leia 1 Coríntios 11.26 — a Ceia que anuncia a morte de Jesus."
+          "texto": "Leia 1 Coríntios 11.23-26. Reflita: a Ceia nos lembra o que Jesus fez."
         },
         {
           "dia": "Qui",
-          "texto": ""
+          "texto": "Pergunte-se: \"O que significa ser parte da família de Deus?\""
         },
         {
           "dia": "Sex",
-          "texto": ""
+          "texto": "Converse com alguém sobre o significado do Batismo ou da Ceia."
         },
         {
           "dia": "Sáb",
-          "texto": "Reflita: o Batismo é um abraço antes do pedido. O que isso significa para você?"
+          "texto": "Anote uma verdade sobre os sinais da caminhada que você quer lembrar."
         },
         {
           "dia": "Dom",
-          "texto": "Na Ceia, receba o pão e o vinho como presente, não como obrigação."
+          "texto": "Na Ceia, receba o pão e o cálice como um presente — não como um prêmio."
         }
       ]
     },
