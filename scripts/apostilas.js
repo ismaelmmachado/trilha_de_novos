@@ -5,8 +5,7 @@
     repo: 'ismaelmmachado/trilha_de_novos',
     branch: 'main',
     pasta: 'docs/apostilas/pdf',
-    cacheKey: 'apostilas_pdf_list_v1',
-    cacheTTL: 6 * 60 * 60 * 1000
+    cacheKey: 'apostilas_pdf_list_v1'
   };
 
   function normalize(texto) {
@@ -32,8 +31,7 @@
       var bruto = localStorage.getItem(CONFIG.cacheKey);
       if (!bruto) return null;
       var dado = JSON.parse(bruto);
-      if (!dado || !dado.ts || !dado.arquivos) return null;
-      if (Date.now() - dado.ts > CONFIG.cacheTTL) return null;
+      if (!dado || !dado.arquivos) return null;
       return dado.arquivos;
     } catch (e) {
       return null;
@@ -49,10 +47,6 @@
   }
 
   function listarArquivos() {
-    if (location.search.indexOf('refresh=apostilas') === -1) {
-      var cache = carregarDoCache();
-      if (cache) return Promise.resolve(cache);
-    }
     var url = 'https://api.github.com/repos/' + CONFIG.repo + '/contents/' + CONFIG.pasta + '?ref=' + CONFIG.branch;
     return fetch(url)
       .then(function (resposta) {
@@ -69,6 +63,11 @@
         });
         salvarNoCache(arquivos);
         return arquivos;
+      })
+      .catch(function () {
+        var cache = carregarDoCache();
+        if (cache) return cache;
+        throw new Error('sem cache e sem rede');
       });
   }
 
