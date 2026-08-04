@@ -494,13 +494,13 @@
   {
     "id": 7,
     "titulo": "Fazer Parte da Família",
-    "subtitulo": "O que significa ser membro da Vitral?",
+    "subtitulo": "Pertencer não é sobre ser perfeito. É sobre escolher caminhar junto.",
     "etapa": 1,
     "ocultar_secoes": ["ferramentas", "ouca"],
     "resumo": "Chega um momento em que a pergunta muda: 'Será que este é o meu lugar?' Pertencer não é só participar — é escolher caminhar junto. Neste encontro, vamos refletir sobre o que significa fazer parte da família Vitral.",
     "para_comecar": {
-      "texto": "Comece perguntando: \"O que significa 'pertencer' para você?\" Pertencer não é o mesmo que participar. Você pode participar de muitas coisas sem pertencer. A membresia é um compromisso de amor — não um contrato.",
-      "pergunta": "O que te atrai na ideia de fazer parte desta comunidade?"
+      "texto": "Até aqui, você tem sido convidado, acolhido, cuidado. Mas chega um momento em que a pergunta muda: será que este é o meu lugar? Será que eu quero fazer parte dessa família?\n\nPertencer não é a mesma coisa que \"participar\". Você pode participar de muitas coisas sem realmente pertencer. Pertencer é quando você olha ao redor e pensa: \"Este é o meu lugar.\" Não é uma pergunta para ser respondida com pressa. É uma pergunta para ser respondida com o coração.\n\n**Texto Bíblico:** \"Portanto, vocês já não são estrangeiros nem forasteiros, mas concidadãos dos santos e membros da família de Deus.\" — Efésios 2.19, NVT",
+      "pergunta": "O que significa \"pertencer\" para você? O que te atrai na ideia de fazer parte desta comunidade?"
     },
     "ferramentas": [
       {
@@ -534,39 +534,39 @@
       "musica": {}
     },
     "pratique": {
-      "experimento": "Converse com seu acompanhante esta semana. Marque um café e converse sobre o que você está sentindo em relação a se tornar membro. Não precisa decidir nada — só conversar.",
-      "pergunta": "Você está pronto para dizer: 'Este é o meu lugar'?"
+      "experimento": "Esta semana, dê um passo em direção ao pertencimento:\n\nMarque um café com seu acompanhante e converse sobre o que você está sentindo em relação a se tornar membro.\n\nLeia Efésios 2.19 e reflita: você já se sente em casa na Vitral?\n\nObserve a comunidade com outros olhos — não como visitante, mas como alguém que pode pertencer.\n\nPergunte a alguém que já é membro: \"O que mudou para você quando decidiu fazer parte?\"\n\nSe você já se sente em casa, converse com seu acompanhante sobre os próximos passos para a membresia.",
+      "pergunta": "Você está pronto para dizer: \"Este é o meu lugar\"?"
     },
     "organizese": {
       "introducao": "Sugestões para a semana:",
       "dias": [
         {
           "dia": "Seg",
-          "texto": "Leia Efésios 2.19 — \"Vocês já não são estranhos e forasteiros, mas concidadãos do povo santo e membros da família de Deus.\""
+          "texto": "Leia Efésios 2.19. Reflita: você se sente parte da família de Deus?"
         },
         {
           "dia": "Ter",
-          "texto": ""
+          "texto": "Leia Gálatas 6.2. Reflita: como você pode carregar o peso de alguém?"
         },
         {
           "dia": "Qua",
-          "texto": "Reflita: o que significa 'pertencer' para você?"
+          "texto": "Leia Atos 2.42. Reflita: o que te atrai na vida comunitária?"
         },
         {
           "dia": "Qui",
-          "texto": ""
+          "texto": "Pergunte a si mesmo: \"O que significa pertencer para mim?\""
         },
         {
           "dia": "Sex",
-          "texto": ""
+          "texto": "Converse com seu acompanhante sobre o que você está sentindo."
         },
         {
           "dia": "Sáb",
-          "texto": "Anote os motivos que te fazem querer fazer parte da Vitral."
+          "texto": "Anote o que você descobriu sobre pertencimento esta semana."
         },
         {
           "dia": "Dom",
-          "texto": "Converse com seu acompanhante sobre o que está sentindo."
+          "texto": "Olhe ao redor no Encontro e pergunte: \"Este é o meu lugar?\""
         }
       ]
     },
