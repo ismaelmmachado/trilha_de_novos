@@ -1,5 +1,13 @@
 # Changelog
 
+## Tag: v2.33.0-podcast-ferramenta (12/08/2026)
+
+- **`material-de-apoio.html`**: seção **"🎙️ Podcast da Comunidade Vitral"** removida — o canal do Spotify da Vitral passa a ser tratado como uma ferramenta da caminhada
+- Novo item **"Canal Spotify da Comunidade Vitral"** adicionado à lista **📱 Ferramentas para o Caminho**, no mesmo formato visual dos demais (`apoio-item`), com descrição curta e link "Baixar" → `https://www.spotify.com/download/`
+- **`css/material-de-apoio.css`**: removidas as regras órfãs do card antigo (`.podcast-card`, `.podcast-card-content`, `.podcast-convite`, `.podcast-card-actions`, `.podcast-link`)
+- Cache-busting do CSS na página: `?v=2.31.0` → `?v=2.33.0`
+- Registro via CHANGELOG + tag (sem change OpenSpec — mudança só de conteúdo, specs inalteradas)
+
 ## Tag: v2.31.0-material-de-apoio (04/08/2026)
 
 - Página "Material Complementar" renomeada para **"Material de Apoio"** (rename completo):
