@@ -1,5 +1,15 @@
 # Changelog
 
+## Tag: v2.34.0-box-ferramentas-home (12/08/2026)
+
+- **`index.html`**: novo Box Rico **"Ferramentas para o Caminho"** adicionado à home, entre a grid "Os 9 Passos" e a seção CTA "Pronto para começar?"
+- Objetivo: orientar e incentivar o novo — se desejar — a usar as ferramentas da caminhada, com os mesmos links da seção 📱 da página de Material de Apoio
+- Card `.ferramentas-box-card` com 3 itens: 📖 **Bible App (YouVersion)** e 🙏 **Lectio 365** (link "Baixar" cada) e 🎙️ **Vitral no Spotify** com 2 links — "Ouvir" (direto ao show em `open.spotify.com`) e "Baixar" (`spotify.com/download/`)
+- **`css/estilo.css`**: estilos novos do box na seção INDEX (`.ferramentas-box-*`), com variante secundária para o link "Baixar" do Spotify; responsivo mobile empilha itens e alarga links
+- Cache-busting do CSS na home: `?v=2.10.0` → `?v=2.34.0`
+- Estático no HTML (sem JS/fetch novo); registro via CHANGELOG + tag (sem change OpenSpec — alteração de conteúdo/estilo)
+- Mantido em `homologacao` (sem merge em `main`)
+
 ## Tag: v2.33.0-podcast-ferramenta (12/08/2026)
 
 - **`material-de-apoio.html`**: seção **"🎙️ Podcast da Comunidade Vitral"** removida — o canal do Spotify da Vitral passa a ser tratado como uma ferramenta da caminhada

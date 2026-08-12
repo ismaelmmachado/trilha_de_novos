@@ -698,6 +698,97 @@ ul { list-style: none; }
   margin: 0 auto var(--space-lg);
 }
 
+/* === INDEX — FERRAMENTAS PARA O CAMINHO (box rico) === */
+.ferramentas-box-card {
+  background: var(--color-surface);
+  border: 1px solid var(--accent-border);
+  border-radius: var(--radius-xl);
+  padding: var(--space-xl);
+  box-shadow: var(--shadow-md);
+}
+
+.ferramentas-box-list {
+  display: grid;
+  gap: 12px;
+}
+
+.ferramentas-box-item {
+  display: flex;
+  align-items: center;
+  gap: var(--space-md);
+  padding: var(--space-md);
+  border-radius: var(--radius-lg);
+  background: var(--color-bg);
+  border: 1px solid var(--color-border);
+}
+
+.ferramentas-box-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--accent-soft);
+  border: 1px solid var(--accent-border);
+  flex-shrink: 0;
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
+  font-size: 1.2rem;
+}
+
+.ferramentas-box-info {
+  flex: 1;
+  min-width: 0;
+}
+
+.ferramentas-box-info strong {
+  display: block;
+  font-size: 0.9375rem;
+  margin-bottom: 2px;
+  color: var(--color-text);
+}
+
+.ferramentas-box-info span {
+  display: block;
+  font-size: 0.85rem;
+  color: var(--color-muted);
+  line-height: 1.6;
+}
+
+.ferramentas-box-link {
+  min-height: 36px;
+  padding: 0 16px;
+  border-radius: 999px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  white-space: nowrap;
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: var(--accent-text);
+  background: var(--accent-soft);
+  border: 1px solid var(--accent-border);
+  flex-shrink: 0;
+  transition: .2s ease;
+}
+
+.ferramentas-box-link:hover { background: var(--accent-hover); }
+
+.ferramentas-box-link.is-secondary {
+  background: transparent;
+  color: var(--color-muted);
+}
+
+.ferramentas-box-link.is-secondary:hover {
+  background: var(--accent-soft);
+  color: var(--accent-text);
+}
+
+.ferramentas-box-actions {
+  display: flex;
+  gap: var(--space-sm);
+  flex-wrap: wrap;
+}
+
 /* === PÁGINA 404 === */
 .error-page {
   display: flex;
@@ -757,6 +848,14 @@ ul { list-style: none; }
   .step-nav-link { justify-content: center; }
   .week-plan-grid { grid-template-columns: 1fr; }
   .hero { padding: var(--space-2xl) 0 var(--space-xl); }
+  .ferramentas-box-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .ferramentas-box-link,
+  .ferramentas-box-actions .ferramentas-box-link {
+    width: 100%;
+  }
 }
 
 @media (max-width: 480px) {
