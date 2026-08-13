@@ -1,5 +1,10 @@
 # Changelog
 
+## Tag: v2.35.2-passo3-herois-da-fe (13/08/2026)
+
+- **`dados/passos.json`**: seção Aprofunde do passo 3 ("Certeza da Salvação") ganha o plano de leitura da YouVersion **"Heróis da Fé"** (`tipo: "plano"`, 13 dias, `https://www.bible.com/pt/reading-plans/60398`), com **descrição contextualizada** conforme a convenção — conhecer os heróis da fé de Hebreus 11 e aprender com suas histórias de confiança e perseverança
+- Página `passo-3.html` regenerada (conteúdo, sem mudança de CSS)
+
 ## Tag: v2.35.1-youversion-contexto (13/08/2026)
 
 - **`dados/passos.json`**: descrição do card "Quem Eu Sou Em Cristo" (passo 2) ganha a **contextualização do plano** — "Quem é você? Sua identidade não vem do que você faz, mas de quem Deus diz que você é. Um plano de 10 dias para descobrir quem você é em Cristo." — em vez de apenas "Plano de leitura · YouVersion (10 dias)"

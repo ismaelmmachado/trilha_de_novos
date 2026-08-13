@@ -202,7 +202,14 @@
       "tipo": "placeholder",
       "src": ""
     },
-    "aprofunde": [],
+    "aprofunde": [
+      {
+        "tipo": "plano",
+        "titulo": "Heróis da Fé",
+        "descricao": "Conheça os heróis da fé de Hebreus 11: pessoas comuns que confiaram em Deus e perseveraram. Em 13 dias, aprenda com suas histórias e deixe-se inspirar por uma fé viva.",
+        "link": "https://www.bible.com/pt/reading-plans/60398"
+      }
+    ],
     "pratique": {
       "experimento": "Esta semana, faça um exame sincero da sua fé:\n\nLeia Mateus 19.16-22 e reflita: o que pode estar ocupando o lugar de Deus no seu coração?\n\nIdentifique uma área da sua vida onde você tem confiado mais em si mesmo do que em Deus.\n\nPratique entregar essa área a Deus em oração — não para se sentir melhor, mas para descansar n'Ele.\n\nConverse com alguém da comunidade sobre o que você está aprendendo sobre a certeza da fé.\n\nPare de se cobrar por sentimentos e comece a confiar na promessa.",
       "pergunta": "O que você precisa entregar a Deus para descansar na certeza que só Ele pode dar?"
