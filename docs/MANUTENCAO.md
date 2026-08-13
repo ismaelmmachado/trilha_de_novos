@@ -53,6 +53,11 @@ Regras do mapeamento:
   📄 "Baixar", 🔗 "Abrir") — use `icon`/`rotulo` só para sobrescrever. Para
   **incluir** um material, adicione um item ao array; para **remover**, retire o
   item; array vazio → "Em breve".
+  - **Convenção (link do YouVersion):** todo plano de leitura do YouVersion deve
+    trazer a **contextualização na `descricao`** — o que é o plano, para quem e o
+    que a pessoa vai descobrir (ex.: "Quem é você? Sua identidade não vem do que
+    você faz, mas de quem Deus diz que você é. Um plano de 10 dias..."). Nunca
+    apenas o tema; quem vê o card precisa saber do que se trata antes de clicar.
 - **`ocultar_secoes` (controle de exibição):** campo **opcional** por passo —
   lista de seções que **não** devem aparecer na página (ex.: `["ferramentas",
   "ouca"]`). Se ausente, todas as 6 seções são exibidas. Os dados da seção ocultada

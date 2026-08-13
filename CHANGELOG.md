@@ -1,5 +1,11 @@
 # Changelog
 
+## Tag: v2.35.1-youversion-contexto (13/08/2026)
+
+- **`dados/passos.json`**: descrição do card "Quem Eu Sou Em Cristo" (passo 2) ganha a **contextualização do plano** — "Quem é você? Sua identidade não vem do que você faz, mas de quem Deus diz que você é. Um plano de 10 dias para descobrir quem você é em Cristo." — em vez de apenas "Plano de leitura · YouVersion (10 dias)"
+- **`docs/MANUTENCAO.md`**: nova convenção na regra de `aprofunde` — **todo link do YouVersion deve trazer a contextualização na `descricao`** (o que é o plano, para quem, o que a pessoa vai descobrir), nunca apenas o tema
+- Página `passo-2.html` regenerada (conteúdo, sem mudança de CSS)
+
 ## Tag: v2.35.0-aprofunde-flexivel (13/08/2026)
 
 - **Seção Aprofunde dos passos generalizada para materiais complementares variados**: o schema deixa de ser `{ livro: {...}, musica: {...} }` (2 slots fixos) e passa a ser um **array de itens** `{ tipo, titulo, descricao, link, icon?, rotulo? }` — livro, plano de leitura, vídeo, música ou PDF para baixar, quantos forem necessários
