@@ -168,13 +168,17 @@ function renderOuca(passo) {
 </div>`;
 }
 
+const APROFUNDE_TIPOS = {
+  livro: { icon: '📖', rotulo: 'Abrir' },
+  plano: { icon: '📖', rotulo: 'Abrir' },
+  video: { icon: '🎬', rotulo: 'Assistir' },
+  musica: { icon: '🎵', rotulo: 'Ouvir' },
+  pdf: { icon: '📄', rotulo: 'Baixar' }
+};
+
 function renderAprofunde(passo) {
-  const aprofunde = passo.aprofunde || {};
-  const livro = aprofunde.livro || {};
-  const musica = aprofunde.musica || {};
-  const temLivro = livro.titulo;
-  const temMusica = musica.titulo;
-  if (!temLivro && !temMusica) {
+  const itensDados = passo.aprofunde || [];
+  if (!Array.isArray(itensDados) || itensDados.length === 0) {
     return `
 <div class="step-section">
   ${renderSectionHeader('📚', 'Aprofunde')}
@@ -183,33 +187,25 @@ function renderAprofunde(passo) {
   </div>
 </div>`;
   }
-  let itens = '';
-  if (temLivro) {
-    itens += `
+  const itens = itensDados.map((item) => {
+    const tipo = APROFUNDE_TIPOS[item.tipo] || { icon: '🔗', rotulo: 'Abrir' };
+    const icon = item.icon || tipo.icon;
+    const rotulo = item.rotulo || tipo.rotulo;
+    const link = item.link
+      ? `<a class="aprofunde-link" href="${item.link}" target="_blank" rel="noopener noreferrer">${rotulo}</a>`
+      : `<span class="aprofunde-link is-empty">Em breve</span>`;
+    return `
       <div class="aprofunde-item">
         <div class="aprofunde-item-content">
-          <span class="aprofunde-item-icon">📖</span>
+          <span class="aprofunde-item-icon">${icon}</span>
           <div class="aprofunde-item-info">
-            <strong>${livro.titulo}</strong>
-            <span>${inlineFormat(livro.autor) || ''}</span>
+            <strong>${item.titulo}</strong>
+            <span>${inlineFormat(item.descricao) || ''}</span>
           </div>
         </div>
-        ${livro.link ? `<a class="aprofunde-link" href="${livro.link}" target="_blank" rel="noopener noreferrer">Abrir</a>` : `<span class="aprofunde-link is-empty">Em breve</span>`}
+        ${link}
       </div>`;
-  }
-  if (temMusica) {
-    itens += `
-      <div class="aprofunde-item">
-        <div class="aprofunde-item-content">
-          <span class="aprofunde-item-icon">🎵</span>
-          <div class="aprofunde-item-info">
-            <strong>${musica.titulo}</strong>
-            <span>${inlineFormat(musica.artista) || ''}</span>
-          </div>
-        </div>
-        ${musica.link ? `<a class="aprofunde-link" href="${musica.link}" target="_blank" rel="noopener noreferrer">Ouvir</a>` : `<span class="aprofunde-link is-empty">Em breve</span>`}
-      </div>`;
-  }
+  }).join('');
   return `
 <div class="step-section">
   ${renderSectionHeader('📚', 'Aprofunde')}

@@ -177,7 +177,7 @@ Todo o conteúdo dos 9 passos vive em `dados/passos.json`. **Nunca edite `passo-
 | Para Começar | `para_comecar` | `{ texto, pergunta }` — `texto` pode incluir `**Texto Bíblico:**` e `**Reflita:**` |
 | Ferramentas | `ferramentas` | `[{ icon, nome, descricao, link, rotulo }]` — vazio → "Em breve" (atualmente oculto via `ocultar_secoes`) |
 | Ouça | `ouca` | `{ tipo: "placeholder" \| "player", src, titulo, descricao }` — `tipo` ≠ `player` → "Em breve" (atualmente oculto via `ocultar_secoes`) |
-| Aprofunde | `aprofunde` | `{ livro: { titulo, autor, link }, musica: { titulo, artista, link } }` — vazio → "Em breve" |
+| Aprofunde | `aprofunde` | `[{ tipo, titulo, descricao, link, icon?, rotulo? }]` — array de materiais complementares (livro, plano, vídeo, música, PDF para baixar); vazio → "Em breve" |
 | Pratique | `pratique` | `{ experimento, pergunta }` |
 | Organize-se | `organizese` | `{ introducao, dias: [{ dia, texto }] }` — 7 dias, dias sem texto → "Em breve" |
 | Apostila | `pdf` | Token de busca do PDF na pasta `docs/apostilas/pdf/` (ver seção "Apostilas") |

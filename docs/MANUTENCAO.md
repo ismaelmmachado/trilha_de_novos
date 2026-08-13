@@ -32,7 +32,7 @@ Cada seção de um passo no site corresponde a um campo em `dados/passos.json`.
 | Para Começar | `para_comecar` | `{ texto, pergunta }` | — |
 | Ferramentas | `ferramentas` | `[{ icon, nome, descricao, link, rotulo }]` | "Em breve" (se não ocultada) |
 | Ouça | `ouca` | `{ tipo: "placeholder" \| "player", src, titulo, descricao }` | "Em breve" (se não ocultada) |
-| Aprofunde | `aprofunde` | `{ livro: { titulo, autor, link }, musica: { titulo, artista, link } }` | "Em breve" |
+| Aprofunde | `aprofunde` | `[{ tipo, titulo, descricao, link, icon?, rotulo? }]` — materiais complementares (livro, plano, vídeo, música, PDF) | "Em breve" |
 | Pratique | `pratique` | `{ experimento, pergunta }` | — |
 | Organize-se | `organizese` | `{ introducao, dias: [{ dia, texto }] }` | dias sem texto → "Em breve" |
 | Apostila | `pdf` | `"<token de busca>"` (ex.: `"PASSO 8"`, `"Quem Somos e Como Caminhamos"`) | botão "Apostila em breve" |
@@ -46,9 +46,13 @@ Regras do mapeamento:
 - **`ouca`:** para publicar um episódio/áudio, use `tipo: "player"` e preencha
   `src` (URL), `titulo` e `descricao`. Para esvaziar, volte para
   `{ "tipo": "placeholder", "src": "" }`.
-- **`aprofunde`:** preencha `livro.titulo` (e `autor`, `link`) para exibir o card
-  de livro; preencha `musica.titulo` (e `artista`, `link`) para exibir o card de
-  música. Deixe `{}` nos sub-objetos para esvaziar.
+- **`aprofunde`:** cada item é um material complementar com `tipo` (ex.:
+  `"livro"`, `"plano"`, `"video"`, `"musica"`, `"pdf"`), `titulo`, `descricao`,
+  `link` (URL) e `icon`/`rotulo` opcionais (ícone e texto do botão). O ícone e o
+  rótulo derivam do `tipo` automaticamente (📖 "Abrir", 🎬 "Assistir", 🎵 "Ouvir",
+  📄 "Baixar", 🔗 "Abrir") — use `icon`/`rotulo` só para sobrescrever. Para
+  **incluir** um material, adicione um item ao array; para **remover**, retire o
+  item; array vazio → "Em breve".
 - **`ocultar_secoes` (controle de exibição):** campo **opcional** por passo —
   lista de seções que **não** devem aparecer na página (ex.: `["ferramentas",
   "ouca"]`). Se ausente, todas as 6 seções são exibidas. Os dados da seção ocultada

@@ -1,5 +1,14 @@
 # Changelog
 
+## Tag: v2.35.0-aprofunde-flexivel (13/08/2026)
+
+- **Seção Aprofunde dos passos generalizada para materiais complementares variados**: o schema deixa de ser `{ livro: {...}, musica: {...} }` (2 slots fixos) e passa a ser um **array de itens** `{ tipo, titulo, descricao, link, icon?, rotulo? }` — livro, plano de leitura, vídeo, música ou PDF para baixar, quantos forem necessários
+- **`dados/passos.json`**: `aprofunde` de todos os 9 passos vira array (vazio → placeholder "Em breve"); passo 2 ("Quem Somos Diante de Deus") preenchido com o plano de leitura da YouVersion **"Quem Eu Sou Em Cristo"** (`tipo: "plano"`, 10 dias, `https://www.bible.com/pt/reading-plans/17170`)
+- **`scripts/gerar-passos.js`**: `renderAprofunde()` reescrito para iterar o array — ícone e rótulo do botão derivam do `tipo` (📖 "Abrir" livro/plano, 🎬 "Assistir" vídeo, 🎵 "Ouvir" música, 📄 "Baixar" PDF, 🔗 "Abrir" padrão), com `icon`/`rotulo` como override opcional; mesmo CSS de card, sem mudança visual
+- **Spec `openspec/specs/step-page-generator/spec.md`**: schema de `aprofunde` e cenários atualizados (itens por tipo + placeholder)
+- Docs sincronizados: `README.md`, `docs/MANUTENCAO.md`, `docs/ORIENTACAO-BOOTSTRAP-CONTRATO.md`, `docs/TEMPLO-PASSO-PAGINA.md`
+- Páginas regeneradas via `node scripts/gerar-passos.js`
+
 ## Tag: v2.34.0-box-ferramentas-home (12/08/2026)
 
 - **`index.html`**: novo Box Rico **"Ferramentas para o Caminho"** adicionado à home, entre a grid "Os 9 Passos" e a seção CTA "Pronto para começar?"

@@ -37,10 +37,7 @@
       "tipo": "placeholder",
       "src": ""
     },
-    "aprofunde": {
-      "livro": {},
-      "musica": {}
-    },
+    "aprofunde": [],
     "pratique": {
       "experimento": "Esta semana, viva o jeito Vitral:\n\nLeia João 15.5 e reflita: o que significa \"permanecer em Jesus\" no seu dia a dia?\n\nIdentifique em qual dos quatro movimentos da missão (Acolher, Formar, Enraizar, Enviar) você está hoje.\n\nConverse com alguém sobre como os três pilares (Encontro, Casa, PG) têm sustentado sua fé.\n\nPergunte a si mesmo: \"O que significa 'venha como você está' para mim?\"\n\nSe você ainda não está em um Pequeno Grupo, converse com seu acompanhante sobre como começar.",
       "pergunta": "O que significa para você fazer parte de uma comunidade que não exige perfeição, mas caminha junto?"
@@ -119,10 +116,14 @@
       "tipo": "placeholder",
       "src": ""
     },
-    "aprofunde": {
-      "livro": {},
-      "musica": {}
-    },
+    "aprofunde": [
+      {
+        "tipo": "plano",
+        "titulo": "Quem Eu Sou Em Cristo",
+        "descricao": "Plano de leitura · YouVersion (10 dias)",
+        "link": "https://www.bible.com/pt/reading-plans/17170"
+      }
+    ],
     "pratique": {
       "experimento": "Gestos para viver sua identidade esta semana:\n\nReserve 15 minutos para escrever uma coisa que você já viveu e que hoje pode ver com mais compaixão.\n\nPergunte a alguém da comunidade: \"O que você vê em mim que eu talvez não veja?\"\n\nCompartilhe com uma pessoa esta semana: \"Você não precisa ser perfeito para ser amado.\"\n\nOlhe para suas marcas e agradeça — elas são lugar de luz.\n\nPare de carregar algo que já foi perdoado.",
       "pergunta": "Que \"marcas\" você carrega na sua história? E como elas podem ser lugar de luz para outras pessoas?"
@@ -201,10 +202,7 @@
       "tipo": "placeholder",
       "src": ""
     },
-    "aprofunde": {
-      "livro": {},
-      "musica": {}
-    },
+    "aprofunde": [],
     "pratique": {
       "experimento": "Esta semana, faça um exame sincero da sua fé:\n\nLeia Mateus 19.16-22 e reflita: o que pode estar ocupando o lugar de Deus no seu coração?\n\nIdentifique uma área da sua vida onde você tem confiado mais em si mesmo do que em Deus.\n\nPratique entregar essa área a Deus em oração — não para se sentir melhor, mas para descansar n'Ele.\n\nConverse com alguém da comunidade sobre o que você está aprendendo sobre a certeza da fé.\n\nPare de se cobrar por sentimentos e comece a confiar na promessa.",
       "pergunta": "O que você precisa entregar a Deus para descansar na certeza que só Ele pode dar?"
@@ -283,10 +281,7 @@
       "tipo": "placeholder",
       "src": ""
     },
-    "aprofunde": {
-      "livro": {},
-      "musica": {}
-    },
+    "aprofunde": [],
     "pratique": {
       "experimento": "Esta semana, escolha uma área do C.A.F.É. para cuidar com um gesto simples:\n\nSepare um momento para escrever como você está se sentindo — sem filtrar, sem julgar.\n\nReserve 10 minutos de silêncio para ouvir sua própria respiração e lembrar que Deus está ali.\n\nDurma uma hora mais cedo em um dia desta semana — sem culpa.\n\nDesligue as notificações do celular por uma hora e leia algo que alimente sua mente.\n\nPergunte a alguém de confiança: \"Como você tem cuidado de você?\" — e escute.",
       "pergunta": "Se você pudesse começar hoje com um único gesto de cuidado, qual seria?"
@@ -365,10 +360,7 @@
       "tipo": "placeholder",
       "src": ""
     },
-    "aprofunde": {
-      "livro": {},
-      "musica": {}
-    },
+    "aprofunde": [],
     "pratique": {
       "experimento": "Esta semana, dê um passo para descobrir seu lugar:\n\nPergunte a duas pessoas próximas: \"O que você vê em mim que eu talvez não veja?\"\n\nLeia Romanos 12.4-8 e identifique qual dos dons listados mais combina com você.\n\nExperimente um gesto de serviço fora da igreja — em casa, no trabalho ou na vizinhança.\n\nEscolha um dos quatro times da Vitral (Acolhimento, Logística, Experiência, Ensino) e observe como ele funciona.\n\nConverse com alguém que já serve em algum time e pergunte como é a experiência.",
       "pergunta": "Que cor você está descobrindo que tem? Como ela pode brilhar no vitral?"
@@ -447,10 +439,7 @@
       "tipo": "placeholder",
       "src": ""
     },
-    "aprofunde": {
-      "livro": {},
-      "musica": {}
-    },
+    "aprofunde": [],
     "pratique": {
       "experimento": "Esta semana, viva os sinais da caminhada:\n\nSe você já foi batizado, lembre-se do que isso significa: você foi marcado por Deus, inserido na família da fé, e a Aliança de Deus é sua.\n\nSe você ainda não foi batizado, reflita: o que te impede de dar esse passo? Converse com seu acompanhante sobre isso.\n\nNa próxima Ceia, sente-se à mesa com um coração aberto — não para se examinar com culpa, mas para receber graça.\n\nPergunte a alguém da comunidade como foi a experiência do Batismo ou da Ceia para ela.\n\nAnote uma verdade sobre o Batismo ou a Ceia que você quer lembrar sempre.",
       "pergunta": "O que significa para você saber que há sempre um lugar na mesa de Deus, mesmo quando você não está bem?"
@@ -529,10 +518,7 @@
       "tipo": "placeholder",
       "src": ""
     },
-    "aprofunde": {
-      "livro": {},
-      "musica": {}
-    },
+    "aprofunde": [],
     "pratique": {
       "experimento": "Esta semana, dê um passo em direção ao pertencimento:\n\nMarque um café com seu acompanhante e converse sobre o que você está sentindo em relação a se tornar membro.\n\nLeia Efésios 2.19 e reflita: você já se sente em casa na Vitral?\n\nObserve a comunidade com outros olhos — não como visitante, mas como alguém que pode pertencer.\n\nPergunte a alguém que já é membro: \"O que mudou para você quando decidiu fazer parte?\"\n\nSe você já se sente em casa, converse com seu acompanhante sobre os próximos passos para a membresia.",
       "pergunta": "Você está pronto para dizer: \"Este é o meu lugar\"?"
@@ -611,10 +597,7 @@
       "tipo": "placeholder",
       "src": ""
     },
-    "aprofunde": {
-      "livro": {},
-      "musica": {}
-    },
+    "aprofunde": [],
     "pratique": {
       "experimento": "Esta semana, viva o envio:\n\nConverse com seu acompanhante sobre qual será seu próximo passo: qual PG você vai frequentar? Onde você pode servir?\n\nEscolha um lugar onde você já está (casa, trabalho, vizinhança) e pergunte: \"Como posso servir aqui?\"\n\nPratique um gesto intencional de cuidado com alguém que não faz parte da igreja.\n\nAnote três coisas que você descobriu sobre si mesmo durante a Trilha.\n\nCompartilhe com alguém o que você aprendeu — pode ser uma conversa simples.",
       "pergunta": "O que você está levando desta caminhada? E para onde você está sendo enviado?"
@@ -693,10 +676,7 @@
       "tipo": "placeholder",
       "src": ""
     },
-    "aprofunde": {
-      "livro": {},
-      "musica": {}
-    },
+    "aprofunde": [],
     "pratique": {
       "experimento": "Esta semana, prepare-se para a decisão:\n\nConverse com alguém que já está na Vitral há mais tempo. Pergunte: \"O que você sabe sobre a história da nossa igreja? O que te faz sentir orgulho de fazer parte da IPIB?\"\n\nLeia a Aliança de Mordomia (disponível com seus líderes) e entenda o que você está assumindo.\n\nReflita sobre os cinco pilares da fé Reformada — qual deles mais toca o seu coração?\n\nPergunte a si mesmo: \"Estou pronto para dizer: este é o meu lugar?\"\n\nConverse com seu acompanhante sobre o que você está sentindo em relação à membresia.",
       "pergunta": "Você confia que este é o seu lugar?"

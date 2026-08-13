@@ -26,7 +26,7 @@ O arquivo `dados/passos.json` SHALL estruturar as seções `ferramentas`, `ouca`
 
 - `ferramentas`: array de itens `{ icon, nome, descricao, link, rotulo }`
 - `ouca`: objeto `{ tipo, src, titulo, descricao }`, com `tipo` sendo `"placeholder"` ou `"player"`
-- `aprofunde`: objeto `{ livro: { titulo, autor, link }, musica: { titulo, artista, link } }`
+- `aprofunde`: array de itens `{ tipo, titulo, descricao, link, icon?, rotulo? }` — materiais complementares (livros, planos de leitura, vídeos, músicas, PDFs para baixar), com `tipo` entre `"livro"`, `"plano"`, `"video"`, `"musica"`, `"pdf"` (ou outro, caindo no padrão) e ícone/rótulo derivados do `tipo` (com `icon` e `rotulo` como override opcional)
 
 #### Scenario: Ferramentas preenchidas
 
@@ -48,14 +48,14 @@ O arquivo `dados/passos.json` SHALL estruturar as seções `ferramentas`, `ouca`
 - **WHEN** `ouca.tipo` é `"placeholder"` (ou `src` está vazio)
 - **THEN** a seção exibe um placeholder estilizado com o texto "Em breve" no lugar do player
 
-#### Scenario: Aprofunde com livro e/ou música
+#### Scenario: Aprofunde com itens preenchidos
 
-- **WHEN** `aprofunde.livro.titulo` e/ou `aprofunde.musica.titulo` estão preenchidos
-- **THEN** a seção exibe um card de livro (📖, com `titulo`, `autor` e link "Abrir" quando `livro.link` existe) e/ou um card de música (🎵, com `titulo`, `artista` e link "Ouvir" quando `musica.link` existe)
+- **WHEN** `aprofunde` é um array com um ou mais itens (ex.: `{ tipo: "plano", titulo, descricao, link }`)
+- **THEN** a seção exibe um card por item, com `titulo`, `descricao`, ícone derivado do `tipo` (📖 livro/plano, 🎬 vídeo, 🎵 música, 📄 pdf, 🔗 padrão) e um link (`link`) rotulado pelo `rotulo` derivado do `tipo` ("Abrir", "Assistir", "Ouvir", "Baixar") ou pelo `rotulo` explícito
 
 #### Scenario: Aprofunde sem conteúdo
 
-- **WHEN** `aprofunde` não tem `livro.titulo` nem `musica.titulo`
+- **WHEN** `aprofunde` é um array vazio
 - **THEN** a seção exibe um placeholder estilizado com o texto "Em breve"
 
 ### Requirement: Geração de páginas HTML

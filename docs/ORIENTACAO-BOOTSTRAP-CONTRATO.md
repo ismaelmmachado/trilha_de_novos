@@ -44,7 +44,7 @@ As seções do site são **semelhantes** às 6 seções de referência abaixo �
 | Para Começar | `para_comecar` | `{ texto, pergunta }` | — |
 | Ferramentas | `ferramentas` | `[{ icon, nome, descricao, link, rotulo }]` | "Em breve" (ou oculta via `ocultar_secoes`) |
 | Ouça | `ouca` | `{ tipo: "placeholder" \| "player", src, titulo, descricao }` | "Em breve" (ou oculta via `ocultar_secoes`) |
-| Aprofunde | `aprofunde` | `{ livro: { titulo, autor, link }, musica: { titulo, artista, link } }` | "Em breve" |
+| Aprofunde | `aprofunde` | `[{ tipo, titulo, descricao, link, icon?, rotulo? }]` — materiais complementares (livro, plano, vídeo, música, PDF) | "Em breve" |
 | Pratique | `pratique` | `{ experimento, pergunta }` | — |
 | Organize-se | `organizese` | `{ introducao, dias: [{ dia, texto }] }` | dias vazios → "Em breve" |
 | (Controle de exibição) | `ocultar_secoes` | array opcional de seções a não renderizar por passo (ex.: `["ferramentas", "ouca"]`) | — |
@@ -68,7 +68,7 @@ conter:
    do gerador (ex.: `node scripts/gerar-passos.js`).
 2. **Tabela seção → campo do JSON** (a da Fase 1), com regras de mapeamento
    (`ferramentas` como lista de itens, `ouca` com `tipo: "player"` para publicar,
-   `aprofunde` com `livro`/`musica`).
+   `aprofunde` como array de itens com `tipo` — livro, plano, vídeo, música, PDF).
 3. **Formatos de solicitação** — os DOIS formatos aceitos:
    - **Formato 1 — Arquivo Markdown completo por passo (canônico):** espelho do
      passo inteiro, com `PASSO: N — NOME`, título, seções com emoji, e convenções
