@@ -24,3 +24,13 @@ A página SHALL incluir o mesmo header, navegação e breadcrumb das demais pág
 - **WHEN** o usuário acessa `material-de-apoio.html`
 - **THEN** o header tem links para Início, Mapa e Material de Apoio (destacado como página atual)
 - **AND** o breadcrumb mostra "Início / Material de Apoio"
+
+### Requirement: Ferramentas para o Caminho
+
+A página SHALL exibir uma seção "Ferramentas para o Caminho" listando ferramentas da caminhada, incluindo o canal Spotify da Comunidade Vitral como ferramenta de escuta. Cada ferramenta SHALL mostrar nome, descrição e um link de ação (ex.: "Baixar").
+
+#### Scenario: Seção de ferramentas
+
+- **WHEN** o usuário acessa `material-de-apoio.html`
+- **THEN** a seção "Ferramentas para o Caminho" lista as ferramentas (Bible App YouVersion, Lectio 365 e Canal Spotify da Comunidade Vitral)
+- **AND** cada item mostra nome, descrição e um link rotulado (ex.: "Baixar")

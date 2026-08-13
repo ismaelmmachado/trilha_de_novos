@@ -44,7 +44,7 @@ O sistema SHALL definir as variáveis de espaçamento (`--space-xs` a `--space-3
 
 ### Requirement: Componentes reutilizáveis em estilo.css
 
-O arquivo `css/estilo.css` SHALL definir estilos para: header desktop, mobile header, skip link, breadcrumb, botão de download, cards de ferramentas, grid semanal, e layout de container. O arquivo `css/print.css` SHALL definir os estilos de impressão dos componentes do site. Páginas específicas SHALL carregar estilos próprios por página: `css/mapa.css` para `mapa.html` e `css/material-de-apoio.css` para `material-de-apoio.html`.
+O arquivo `css/estilo.css` SHALL definir estilos para: header desktop, mobile header, skip link, breadcrumb, botão de download, cards de ferramentas, box "Ferramentas para o Caminho" (`ferramentas-box`), grid semanal, e layout de container. O arquivo `css/print.css` SHALL definir os estilos de impressão dos componentes do site. Páginas específicas SHALL carregar estilos próprios por página: `css/mapa.css` para `mapa.html` e `css/material-de-apoio.css` para `material-de-apoio.html`.
 
 #### Scenario: Componentes estilizados
 

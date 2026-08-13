@@ -1,5 +1,13 @@
 # Changelog
 
+## Tag: v2.36.0-specs-v2-33-v2-34 (13/08/2026)
+
+- **Specs OpenSpec sincronizadas com as mudanças v2.33 e v2.34** (as features já estavam no código, mas as specs não refletiam):
+  - **`openspec/specs/landing-page/spec.md`**: novo requirement "Box 'Ferramentas para o Caminho' na home" — seção que orienta o novo a usar as ferramentas entre os encontros, com itens (ícone, nome, descrição, link rotulado) e container de ações quando há mais de um link (ex.: Vitral no Spotify com "Ouvir" e "Baixar")
+  - **`openspec/specs/material-de-apoio-page/spec.md`**: novo requirement "Ferramentas para o Caminho" — seção que lista as ferramentas da caminhada (Bible App YouVersion, Lectio 365 e o canal Spotify da Comunidade Vitral) com nome, descrição e link rotulado
+  - **`openspec/specs/design-system/spec.md`**: componente `ferramentas-box` (box "Ferramentas para o Caminho") incluído na lista de estilos de `css/estilo.css`
+- Sem mudança de código/páginas — apenas sincronização de documentação (specs)
+
 ## Tag: v2.35.2-passo3-herois-da-fe (13/08/2026)
 
 - **`dados/passos.json`**: seção Aprofunde do passo 3 ("Certeza da Salvação") ganha o plano de leitura da YouVersion **"Heróis da Fé"** (`tipo: "plano"`, 13 dias, `https://www.bible.com/pt/reading-plans/60398`), com **descrição contextualizada** conforme a convenção — conhecer os heróis da fé de Hebreus 11 e aprender com suas histórias de confiança e perseverança
